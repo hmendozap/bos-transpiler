@@ -2,7 +2,7 @@
 using System.IO;
 using Antlr4.Runtime;
 
-namespace bosCompiler
+namespace BosTranspiler
 {
     internal class ThrowingErrorListener<Tsymbol> : IAntlrErrorListener<Tsymbol>
     {
