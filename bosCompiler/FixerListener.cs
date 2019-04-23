@@ -1,4 +1,5 @@
 ﻿using Antlr4.Runtime;
+using Antlr4.Runtime.Misc;
 using System;
 using System.Collections.Generic;
 
@@ -9,11 +10,11 @@ namespace BosTranspiler
     internal class FixerListener : BOSBaseListener
     {
         #region  Private Props
-        private string FileName {get; set; };
+        private string FileName {get; set; }
         private bool IsMainFile { get; set; } = false;
 
         // Needed to rewrite "wrong" parts
-        private CommonTokenStream TokenStream {get; set; };
+        private CommonTokenStream TokenStream {get; set; }
         private TokenStreamRewriter StreamRewriter { get; set; }
 
         private Dictionary<string, StructureInitializer> InitStructures { get; set; } =

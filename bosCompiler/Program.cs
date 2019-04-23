@@ -5,7 +5,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using System.Diagnostics;
-// using Microsoft.CodeAnalysis.VisualBasic;
+using Microsoft.CodeAnalysis.VisualBasic;
 
 
 namespace BosTranspiler
@@ -78,7 +78,7 @@ namespace BosTranspiler
                 string input = program.GetInput();
                 int result = program.EvaluateInput(input);
 
-                program.DisplayResult(result);
+                //program.DisplayResult(result);
 
             } catch (Exception ex ) {
                 program.DisplayError(ex);

@@ -1,8 +1,9 @@
+using Microsoft.CodeAnalysis.VisualBasic;
 using System.Collections.Generic;
 
 namespace BosTranspiler
 {
-    internal class BOSRewriter
+    internal class BOSRewriter : VisualBasicSyntaxRewriter
     {
         private List<string> structuresWithInit;
 
@@ -10,5 +11,6 @@ namespace BosTranspiler
         {
             this.structuresWithInit = structuresWithInit;
         }
+
     }
 }

@@ -8,7 +8,7 @@ using Antlr4.Runtime.Tree;
 using OperandContext = ICalculatorParser.OperandContext;
 using ExpressionContext = ICalculatorParser.ExpressionContext;
 
-namespace bosCompiler
+namespace BosTranspiler
 {
     internal class CalculatorVisitor : CalculatorBaseVisitor<int>
     {
