@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using System.Diagnostics;
 using Microsoft.CodeAnalysis.VisualBasic;
-
+using Antlr4.Runtime.Tree;
 
 namespace BosTranspiler
 {
@@ -15,7 +15,7 @@ namespace BosTranspiler
         static string BasePath = @"C:\Users\hmend\vsCode_Projects\BOS-Transpilation\";
 
         private static List<(string file, string text)> SourceCode =
-         new List<(string text, string file)>();
+         new List<(string file, string text)>();
         private static string NameProgram = "bosCode";
 
         public static Object locker = new object();
@@ -27,8 +27,8 @@ namespace BosTranspiler
             Directory.CreateDirectory(outDirName);
 
             // Delete ALL old artifacts
-            if (Directory.Exists(outDirName + "\\files")) {
-                Directory.Delete(outDirName + "\\files", true);
+            if (Directory.Exists(outDirName + "/files")) {
+                Directory.Delete(outDirName + "/files", true);
             }
 
             Console.WriteLine($"=== Starting Transpilation ===");
@@ -42,7 +42,7 @@ namespace BosTranspiler
             var firstPassErrors = new List<Error>();
 
             Parallel.ForEach(Directory.EnumerateFiles(dirName, "bos"), bosFile => {
-                // parsing and first pass
+                // parsing and first processing (pass)
                 ParseFile(bosFile, ref firstPassErrors);
             });
              
@@ -60,7 +60,7 @@ namespace BosTranspiler
             Console.WriteLine("=============================");
             Console.WriteLine(Environment.NewLine);
 
-            // Second pass - transpilation
+            // Second processing (pass) - transpilation
             TranspileCode(FixerListener.StructuresWithInit);
             // Compilation of the transpiled files
             CompileCode(NameProgram);
@@ -71,13 +71,12 @@ namespace BosTranspiler
             Console.WriteLine("=== Process of Transpilation completed ===");
             Console.WriteLine($"Time elapsed {sw.Elapsed}");
 
-            #region OldExample
+            #region old tutorial tryout program
 
             Program program = new Program();
             try {
                 string input = program.GetInput();
                 int result = program.EvaluateInput(input);
-
                 //program.DisplayResult(result);
 
             } catch (Exception ex ) {
@@ -122,27 +121,34 @@ namespace BosTranspiler
             lexer.AddErrorListener(errorListener);
             parser.AddErrorListener(errorListener);
 
-            tree = parser.startRule();
+            var parsedTree = parser.startRule();
 
-            FixerListener fixer = new FixerListener(tokenStreams, Path.GetFileName(bosFile));
-            ParserTreeWalker.Default.Walk(fixer, tree);
+            // first processing (pass) of transpilation
+            FixerListener listener = new FixerListener(tokenStreams, Path.GetFileName(bosFile));
+            ParseTreeWalker.Default.Walk(listener, parsedTree);
 
-            if (fixer.IsMainFile) {
-                NameProgram = fixer.FileName;
+            if (listener.IsMainFile) {
+                NameProgram = listener.FileName;
             }
             // Ensure additions are multi-thread safe
             lock (locker) {
-                SourceCode.Add(bosFile, fixer.GetText());
+                // Adding of a tuple element to the list
+                SourceCode.Add((file: bosFile, text: listener.GetText()));
             }
             // throw new NotImplementedException();
         }
 
-        private string GetInput() {
+        #region Old tryout program's functions
+
+        // The old tryout program uses the visitor pattern from ANTLR
+        private string GetInput()
+        {
             Console.WriteLine("Enter to evaluate: ");
             return Console.ReadLine();
         }
 
-        private void DisplayError(Exception ex) {
+        private void DisplayError(Exception ex)
+        {
             Console.WriteLine("Something didn't go as expected'");
             Console.WriteLine(ex.Message);
         }
@@ -160,5 +166,6 @@ namespace BosTranspiler
             return new CalculatorVisitor().Visit(parser.expression());
         }
 
+        #endregion
     }
 }
