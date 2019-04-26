@@ -1,7 +1,15 @@
-﻿namespace BosTranspiler
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BosTranspiler
 {
-    internal class Error
+    public class Error
     {
-        public bool Msg { get; internal set; }
+        public string Stack { get; set; } = "";
+        public string Symbol { get; set; } = "";
+        public string Exception { get; set; } = "";
+        public string Msg { get; set; } = "";
+        public string File { get; set; } = "";
     }
 }

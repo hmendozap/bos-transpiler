@@ -106,7 +106,7 @@ namespace BosTranspiler
             parser.RemoveErrorListeners();
             lexer.RemoveErrorListeners();
 
-            BOSErrorListener errorListener = new BOSErrorListener();
+            BOSErrorListener errorListener = new BOSErrorListener(ref firstPassErrors);
             lexer.AddErrorListener(errorListener);
             parser.AddErrorListener(errorListener);
 
