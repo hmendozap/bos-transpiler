@@ -9,7 +9,9 @@ namespace BosTranspiler
         {
         }
 
-        public void SyntaxError(TextWriter output, IRecognizer recognizer, int offendingSymbol, int line, int charPositionInLine, string msg, RecognitionException e)
+        public void SyntaxError(TextWriter output, IRecognizer recognizer,
+            int offendingSymbol, int line, int charPositionInLine, string msg,
+            RecognitionException e)
         {
             throw new System.NotImplementedException();
         }

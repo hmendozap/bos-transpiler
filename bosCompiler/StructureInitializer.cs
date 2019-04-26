@@ -1,28 +1,34 @@
 ﻿using System;
+using System.Text;
 
 namespace BosTranspiler
 {
-    internal class StructureInitializer
+    public class StructureInitializer
     {
-        private string typeName;
+        private string TypeName { get; set; }
+        private StringBuilder Body { get; set; } = new StringBuilder();
+        public string Text {
+            get {
+                if (Body.Length == 0)
+                    return String.Empty;
+                else
+                    return $"{Body.ToString()}End Sub{Environment.NewLine}";
+            }
+        }
 
         public StructureInitializer(string typeName)
         {
-            this.typeName = typeName;
+            this.TypeName = typeName;
         }
 
-        public string Text { get; set; }
-
-        internal void Add(string text)
+        public void Add(string text)
         {
             if (Body.Length == 0)
             {
-                Body.Append($"Sub Init{Name}(){Environment.NewLine}");
+                Body.Append($"Sub Init{TypeName}(){Environment.NewLine}");
             }
 
             Body.Append($"{text}{Environment.NewLine}");
-
-            throw new NotImplementedException();
         }
     }
 }
