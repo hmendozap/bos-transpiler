@@ -150,6 +150,10 @@ namespace BosTranspiler
                 StreamRewriter.InsertBefore(context.Stop, InitStructures[currentType].Text);
                 StructuresWithInit.Add(currentType);
             }
+            else
+            {
+                InitStructures.Remove(currentType);
+            }
             //base.ExitTypeStmt(context);
         }
 
@@ -164,20 +168,32 @@ namespace BosTranspiler
 
                 // Some function of VB.Net are culture-aware,
                 // this means, for instance, that when parsing a double from a
-                // string it searchs for the proper-culture decimal separato
+                // string it searches for the proper-culture decimal separator
                 // (e.g, ',' or '.'). So, we set a culture that ensure
                 // that VB.Net uses a decimal separator '.'                
-                StreamRewriter.InsertBefore(context.block().Start, "");
-                StreamRewriter.InsertBefore(context.block().Start, "");
+                string startWatchStr = $"{ Environment.NewLine} Dim sw As System.Diagnostics.Stopwatch = System.Diagnostics.Stopwatch.StartNew(){Environment.NewLine}";
+                string invariantCultureStr = $"{Environment.NewLine}System.Globalization.CultureInfo.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture{Environment.NewLine}";
+
+                StreamRewriter.InsertBefore(context.block().Start, startWatchStr);
+                // StreamRewriter.InsertBefore(context.block().Start, invariantCultureStr);
 
                 // Make the program wait at the end
-
+                var waitStr = $"{Environment.NewLine}Console.WriteLine(\"Press any key to exit the program\"){Environment.NewLine}Console.ReadKey(){Environment.NewLine}";
+                var stopWatchStr = $"{ Environment.NewLine}" +
+                $"sw.Stop(){ Environment.NewLine}" +
+                $"Console.WriteLine($\"Time elapsed {{sw.Elapsed}}\"){Environment.NewLine}";
+                // InsertBefore reverses the position of the transpiled lines,
+                // so at the end one has stopWatchstr and then waitStr
+                StreamRewriter.InsertAfter(context.block().Stop, waitStr);
+                StreamRewriter.InsertAfter(context.block().Stop, stopWatchStr);
             }
-            base.EnterSubStmt(context);
+            //base.EnterSubStmt(context);
         }
 
         // Returns the translated text
         public string GetText() {
+            // The rewriter deos not change the input, it just records them
+            // and plays them out when you asks for the text
             return StreamRewriter.GetText();
         }
 
