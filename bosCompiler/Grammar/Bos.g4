@@ -16,20 +16,26 @@
 * and .
 */
 
-grammar BOS;
+grammar Bos;
 
 // module ----------------------------------
 
+// entry point
 startRule
    : module EOF
    ;
 
+// Update module imports location
 module
-   : WS? NEWLINE* (moduleHeader NEWLINE +)? moduleReferences? NEWLINE* controlProperties? NEWLINE* moduleConfig? NEWLINE* moduleAttributes? NEWLINE* moduleOptions? NEWLINE* moduleBody? NEWLINE* WS?
+   : WS? NEWLINE* (moduleHeader NEWLINE +)? moduleReferences? NEWLINE* moduleImports? NEWLINE* controlProperties? NEWLINE* moduleConfig? NEWLINE* moduleAttributes? NEWLINE* moduleOptions? NEWLINE* moduleBody? NEWLINE*  WS?
    ;
 
 moduleReferences
    : moduleReference+
+   ;
+
+moduleImports
+   : (importStmt NEWLINE+) +
    ;
 
 moduleReference
@@ -76,7 +82,8 @@ moduleBody
    ;
 
 moduleBodyElement
-   : moduleBlock
+   : classStmt
+   | moduleBlock
    | moduleOption
    | declareStmt
    | enumerationStmt
@@ -88,6 +95,22 @@ moduleBodyElement
    | propertyLetStmt
    | subStmt
    | typeStmt
+   ;
+
+// class statements ---------------------------------
+classBody
+   : classBodyElement (NEWLINE + classBodyElement)*
+   ;
+
+classBodyElement
+   : block
+   | declareStmt
+   | enumerationStmt
+   | eventStmt
+   | functionStmt
+   | propertyGetStmt
+   | propertySetStmt
+   | subStmt
    ;
 
 // controls ----------------------------------
@@ -129,6 +152,10 @@ cp_ControlIdentifier
 
 moduleBlock
    : block
+   ;
+
+importStmt
+   : IMPORT WS type
    ;
 
 attributeStmt
@@ -225,6 +252,10 @@ chDirStmt
 
 chDriveStmt
    : CHDRIVE WS valueStmt
+   ;
+
+classStmt
+   : (visibility WS)? CLASS WS ambiguousIdentifier NEWLINE + (classBody NEWLINE+)? END_CLASS
    ;
 
 closeStmt
@@ -1203,6 +1234,11 @@ ELSEIF
    ;
 
 
+END_CLASS
+   : E N D ' ' C L A S S
+   ;
+
+
 END_ENUM
    : E N D ' ' E N U M
    ;
@@ -1355,6 +1391,11 @@ IF
 
 IMP
    : I M P
+   ;
+
+
+IMPORT
+   : I M P O R T
    ;
 
 
@@ -2055,6 +2096,7 @@ GUID
     ;
 
 // identifier
+BYTE_ORDER_MARK: '\u00EF\u00BB\u00BF';
 
 IDENTIFIER
    : LETTER LETTERORDIGIT*
