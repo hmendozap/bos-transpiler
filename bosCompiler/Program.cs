@@ -8,6 +8,7 @@ using System.Diagnostics;
 using Microsoft.CodeAnalysis.VisualBasic;
 using Antlr4.Runtime.Tree;
 using System.Reflection;
+using System.Linq;
 
 namespace BosTranspiler
 {
@@ -98,15 +99,18 @@ namespace BosTranspiler
 
 
             ICharStream inputStream = CharStreams.fromPath(bosFile);
-            BOSLexer lexer = new BOSLexer(inputStream);
+            BosLexer lexer = new BosLexer(inputStream);
             var tokenStreams = new CommonTokenStream(lexer);
-            BOSParser parser = new BOSParser(tokenStreams);
+            BosParser parser = new BosParser(tokenStreams);
+
+            var tokenCommentStreams = new CommonTokenStream(lexer, 2);
+            var alltokenComments = CollectTokens(tokenCommentStreams);
 
             // remove standard listener to add custom
             parser.RemoveErrorListeners();
             lexer.RemoveErrorListeners();
 
-            BOSErrorListener errorListener = new BOSErrorListener(ref firstPassErrors);
+            BosErrorListener errorListener = new BosErrorListener(ref firstPassErrors);
             lexer.AddErrorListener(errorListener);
             parser.AddErrorListener(errorListener);
 
@@ -115,6 +119,7 @@ namespace BosTranspiler
             // first processing (pass) of transpilation
             FixerListener listener = new FixerListener(tokenStreams, Path.GetFileName(bosFile));
             ParseTreeWalker.Default.Walk(listener, parsedTree);
+            listener.ReplaceCommentTokens(alltokenComments);
 
             if (listener.IsMainFile)
                 NameProgram = listener.FileName;
@@ -125,6 +130,17 @@ namespace BosTranspiler
                 // Adding of a tuple element to the list
                 SourceCode.Add((file: bosFile, text: listener.GetText()));
             }
+            // throw new NotImplementedException();
+        }
+
+        private static List<IToken> CollectTokens(CommonTokenStream cts)
+        {
+            IList<IToken> tokens = new List<IToken>();
+            while (cts.LA(1) != BosParser.Eof) {
+                tokens.Add(cts.LT(1));
+                cts.Consume();
+            }
+            return tokens?.ToList();
             // throw new NotImplementedException();
         }
 
@@ -255,7 +271,7 @@ namespace BosTranspiler
         private static void TranspileCode(List<string> structuresWithInitializer)
         {
             List<SyntaxTree> bosTrees = new List<SyntaxTree>();
-            BOSRewriter rewriter = new BOSRewriter(structuresWithInitializer);
+            BosRewriter rewriter = new BosRewriter(structuresWithInitializer);
 
             Parallel.ForEach(SourceCode, src => {
                 Console.WriteLine($"Completing transpilation of {Path.GetFileName(src.file)}");

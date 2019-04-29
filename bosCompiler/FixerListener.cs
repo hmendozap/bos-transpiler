@@ -9,7 +9,7 @@ namespace BosTranspiler
 {
     // Remember that listener will automatically call the Enter & Exit methods
     // whenever finds the corresponding node (e.g. EnterAssignOperator & EndAssignOperator)
-    internal class FixerListener : BOSBaseListener
+    internal class FixerListener : BosBaseListener
     {
         #region  Private Props
 
@@ -44,9 +44,9 @@ namespace BosTranspiler
         // ANTLR. Inheriting from this listener allows us to implement only the 
         // methods we need. The rest remain the default empty one, like the 
         // following example.
-        // public virtual void ExitStartRule([NotNull] BOSParser.StartRuleContext ruleContext) { }
+        // public virtual void ExitStartRule([NotNull] BosParser.StartRuleContext ruleContext) { }
 
-        public override void EnterAttributeStmt([NotNull] BOSParser.AttributeStmtContext context) {
+        public override void EnterAttributeStmt([NotNull] BosParser.AttributeStmtContext context) {
             // AttributeStmt Rule is in vba.g4 line 166 / bos.g4 line 134
 
             // Initial state = Attribute VB_NAME = "ThisWorkbook"
@@ -59,8 +59,13 @@ namespace BosTranspiler
             StreamRewriter.Replace(context.Start, context.Stop, "");
         }
 
-        // Is not needed for BOS
-        //public override void EnterModule(BOSParser.ModuleContext context) {
+        public override void EnterImportStmt([NotNull] BosParser.ImportStmtContext context) {
+            // ImportStmt Rule in Bos.g4 line 157
+            StreamRewriter.Replace(context.IMPORT().Symbol, "Imports");
+        }
+
+        // Is not needed for Bos
+        //public override void EnterModule(BosParser.ModuleContext context) {
         //    // check if an option is present
         //    if (context?.moduleOptions() != null && !context.moduleOptions().IsEmpty) {
         //        TokenImport = context.moduleOptions().Stop;
@@ -69,10 +74,10 @@ namespace BosTranspiler
 
         // Rule called after the building of the tree, is the exit function of the entry
         // parsing point. To wrap VBA In A Module (for example)
-        public override void ExitStartRule([NotNull] BOSParser.StartRuleContext ruleContext) {
+        public override void ExitStartRule([NotNull] BosParser.StartRuleContext ruleContext) {
             //  If an option is present it must be before everything else, therefore we have
             // to check where to put the start of the module
-            var baseText = $"Imports System {Environment.NewLine}{Environment.NewLine}Imports Microsoft.VisualBasic{Environment.NewLine}Imports System.Math{Environment.NewLine}Imports System.Linq{Environment.NewLine}Imports System.Collections.Generic{Environment.NewLine}{Environment.NewLine}";
+            var baseText = $"Imports System {Environment.NewLine}{Environment.NewLine}Imports Microsoft.VisualBasic{Environment.NewLine}Imports System.Math{Environment.NewLine}Imports System.Linq{Environment.NewLine}{Environment.NewLine}";
             var moduleBaseText = $"Module {FileName}{Environment.NewLine}";
             baseText = baseText + moduleBaseText;
 
@@ -86,11 +91,17 @@ namespace BosTranspiler
             string moduleEndText = $"{Environment.NewLine}End Module";
             StreamRewriter.InsertAfter(ruleContext.Stop.StopIndex,
                 moduleEndText);
+        }
 
+        internal void ReplaceCommentTokens(List<IToken> alltokenComments)
+        {
+            foreach (var token in alltokenComments) {
+                RewriteComment(token);
+            }
         }
 
         // Example to rewrite incompatible statements ( VBA.g4 Line 296)
-        public override void EnterEraseStmt(BOSParser.EraseStmtContext context) {
+        public override void EnterEraseStmt(BosParser.EraseStmtContext context) {
             string arrayName = context.valueStmt()[0].GetText();
             var translatedStmt = $"Array.Clear({arrayName} , 0, {arrayName}.Length)";
             StreamRewriter.Replace(context.Start, context.Stop, translatedStmt);
@@ -100,7 +111,7 @@ namespace BosTranspiler
 
         //transform a Type in a Structure
         // typeStmt rule (VBA.g4 Line 502)
-        public override void EnterTypeStmt([NotNull] BOSParser.TypeStmtContext context)
+        public override void EnterTypeStmt([NotNull] BosParser.TypeStmtContext context)
         {
             // Find the type name or in the grammar the identifier
             var typeName = context.ambiguousIdentifier().GetText();
@@ -113,16 +124,16 @@ namespace BosTranspiler
             string visibility = context.visibility().GetText();
             foreach (var st in context.typeStmt_Element())
             {
-                StreamRewriter.InsertBefore(st.Start, "${visibility} ");
+                StreamRewriter.InsertBefore(st.Start, $"{visibility} ");
             }
         }
 
         // Cannot initialize elements inside a Structure
         // since VBA Types are transformed in VB.NET Structures
         // Remove the initialization of array
-        public override void ExitTypeStmt_Element([NotNull] BOSParser.TypeStmt_ElementContext context)
+        public override void ExitTypeStmt_Element([NotNull] BosParser.TypeStmt_ElementContext context)
         {
-            // Peek: See the next element, without removing it frmo stack
+            // Peek: See the next element, without removing it from stack
             var currentType = TypesStack.Peek();
             // subscripts are the (1 TO 10) part of the arrays
             if (context.subscripts() != null && context.subscripts().IsEmpty)
@@ -142,7 +153,7 @@ namespace BosTranspiler
         }
 
         // Add initialization of Sub for the current Structure
-        public override void ExitTypeStmt([NotNull] BOSParser.TypeStmtContext context)
+        public override void ExitTypeStmt([NotNull] BosParser.TypeStmtContext context)
         {
             var currentType = TypesStack.Pop();
             if (InitStructures.ContainsKey(currentType) && InitStructures[currentType].Text.Length > 0)
@@ -157,7 +168,7 @@ namespace BosTranspiler
             //base.ExitTypeStmt(context);
         }
 
-        public override void EnterSubStmt([NotNull] BOSParser.SubStmtContext context)
+        public override void EnterSubStmt([NotNull] BosParser.SubStmtContext context)
         {
             if (context.ambiguousIdentifier().GetText().Trim() == "Main_Run" ||
                 context.ambiguousIdentifier().GetText().Trim() == "Main_Sub" ||
@@ -183,16 +194,42 @@ namespace BosTranspiler
                 $"sw.Stop(){ Environment.NewLine}" +
                 $"Console.WriteLine($\"Time elapsed {{sw.Elapsed}}\"){Environment.NewLine}";
                 // InsertBefore reverses the position of the transpiled lines,
-                // so at the end one has stopWatchstr and then waitStr
+                // so at the end one has stopWatchStr and then waitStr
                 StreamRewriter.InsertAfter(context.block().Stop, waitStr);
                 StreamRewriter.InsertAfter(context.block().Stop, stopWatchStr);
             }
             //base.EnterSubStmt(context);
         }
 
+        public override void ExitArgList([NotNull] BosParser.ArgListContext context)
+        {
+            IToken semi = context.Stop;
+            int i = semi.TokenIndex;
+            // RewriteComment(i);
+        }
+
+        public override void ExitVariableStmt([NotNull] BosParser.VariableStmtContext context)
+        {
+            IToken semi = context.Stop;
+            int i = semi.TokenIndex;
+            // RewriteComment (i);
+        }
+
+        private void RewriteComment(IToken cmt)
+        {
+            // List<IToken> cmtChannel = TokenStream.GetHiddenTokensToRight(tokenIndex, 2)?.ToList();
+            // if (cmtChannel != null) {
+                // IToken cmt = cmtChannel[0];
+                if (cmt != null) {
+                    string newCmt = cmt.Text.Replace("//", "'");
+                    StreamRewriter.Replace(cmt, newCmt);
+                }
+            // }
+        }
+
         // Returns the translated text
         public string GetText() {
-            // The rewriter deos not change the input, it just records them
+            // The rewriter does not change the input, it just records them
             // and plays them out when you asks for the text
             return StreamRewriter.GetText();
         }

@@ -4,10 +4,10 @@ using Antlr4.Runtime;
 
 namespace BosTranspiler
 {
-    public class BOSErrorListener : BaseErrorListener, IAntlrErrorListener<int>, IAntlrErrorListener<IToken>
+    public class BosErrorListener : BaseErrorListener, IAntlrErrorListener<int>, IAntlrErrorListener<IToken>
     {
         public List<Error> Errors {get; private set;}
-        public BOSErrorListener(ref List<Error> errors)
+        public BosErrorListener(ref List<Error> errors)
         {
             Errors = errors;
         }
@@ -18,8 +18,8 @@ namespace BosTranspiler
         {
             Error error = new Error();
 
-            if (recognizer.GetType()  == typeof(BOSParser))
-                error.Stack = (recognizer as BOSParser).GetRuleInvocationStackAsString();
+            if (recognizer.GetType()  == typeof(BosParser))
+                error.Stack = (recognizer as BosParser).GetRuleInvocationStackAsString();
 
             error.File = Path.GetFileName(e.InputStream.SourceName);
             error.Msg = $"{error.File}: {msg} at {line}:{charPositionInLine}";

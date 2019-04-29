@@ -9,7 +9,8 @@ using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 namespace BosTranspiler
 {
     // Actually is like a visitor (using ANTLR Terminology)
-    public class BOSRewriter : VisualBasicSyntaxRewriter
+    // Used for the second processing pass
+    public class BosRewriter : VisualBasicSyntaxRewriter
     {
         private List<string> structuresWithInit;
         private StatementSyntax CreateInitializer(string identifier, string type, bool isArray)
@@ -26,7 +27,7 @@ namespace BosTranspiler
             }
         }
 
-        public BOSRewriter(List<string> structuresWithInit)
+        public BosRewriter(List<string> structuresWithInit)
         {
             this.structuresWithInit = structuresWithInit;
         }
