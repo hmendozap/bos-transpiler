@@ -18,6 +18,7 @@
 
 grammar Bos;
 
+
 // module ----------------------------------
 
 // entry point
@@ -169,7 +170,6 @@ block
 blockStmt
    : appActivateStmt
    | attributeStmt
-   | beepStmt
    | chDirStmt
    | chDriveStmt
    | closeStmt
@@ -2115,8 +2115,8 @@ NEWLINE
 
 
 COMMENT
-   : WS? ('\'' | COLON? REM ' ') (LINE_CONTINUATION | ~ ('\n' | '\r'))* -> channel(HIDDEN)
-   ;
+   : WS? ('//') (~ ('\n' | '\r'))* -> channel(2)
+   ; // Now with new channel for comments
 
 
 WS

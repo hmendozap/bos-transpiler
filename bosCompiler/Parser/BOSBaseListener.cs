@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from ../Grammar/BOS.g4 by ANTLR 4.7.2
+// Generated from ./Grammar/Bos.g4 by ANTLR 4.7.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -27,2401 +27,2461 @@ using IToken = Antlr4.Runtime.IToken;
 using ParserRuleContext = Antlr4.Runtime.ParserRuleContext;
 
 /// <summary>
-/// This class provides an empty implementation of <see cref="IBOSListener"/>,
+/// This class provides an empty implementation of <see cref="IBosListener"/>,
 /// which can be extended to create a listener which only needs to handle a subset
 /// of the available methods.
 /// </summary>
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.7.2")]
 [System.CLSCompliant(false)]
-public partial class BOSBaseListener : IBOSListener {
+public partial class BosBaseListener : IBosListener {
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.startRule"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.startRule"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterStartRule([NotNull] BOSParser.StartRuleContext context) { }
+	public virtual void EnterStartRule([NotNull] BosParser.StartRuleContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.startRule"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.startRule"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitStartRule([NotNull] BOSParser.StartRuleContext context) { }
+	public virtual void ExitStartRule([NotNull] BosParser.StartRuleContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.module"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.module"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModule([NotNull] BOSParser.ModuleContext context) { }
+	public virtual void EnterModule([NotNull] BosParser.ModuleContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.module"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.module"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModule([NotNull] BOSParser.ModuleContext context) { }
+	public virtual void ExitModule([NotNull] BosParser.ModuleContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReferences"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReferences"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleReferences([NotNull] BOSParser.ModuleReferencesContext context) { }
+	public virtual void EnterModuleReferences([NotNull] BosParser.ModuleReferencesContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReferences"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReferences"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleReferences([NotNull] BOSParser.ModuleReferencesContext context) { }
+	public virtual void ExitModuleReferences([NotNull] BosParser.ModuleReferencesContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReference"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleImports"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleReference([NotNull] BOSParser.ModuleReferenceContext context) { }
+	public virtual void EnterModuleImports([NotNull] BosParser.ModuleImportsContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReference"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleImports"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleReference([NotNull] BOSParser.ModuleReferenceContext context) { }
+	public virtual void ExitModuleImports([NotNull] BosParser.ModuleImportsContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReferenceValue"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReference"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleReferenceValue([NotNull] BOSParser.ModuleReferenceValueContext context) { }
+	public virtual void EnterModuleReference([NotNull] BosParser.ModuleReferenceContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReferenceValue"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReference"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleReferenceValue([NotNull] BOSParser.ModuleReferenceValueContext context) { }
+	public virtual void ExitModuleReference([NotNull] BosParser.ModuleReferenceContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReferenceComponent"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReferenceValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleReferenceComponent([NotNull] BOSParser.ModuleReferenceComponentContext context) { }
+	public virtual void EnterModuleReferenceValue([NotNull] BosParser.ModuleReferenceValueContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReferenceComponent"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReferenceValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleReferenceComponent([NotNull] BOSParser.ModuleReferenceComponentContext context) { }
+	public virtual void ExitModuleReferenceValue([NotNull] BosParser.ModuleReferenceValueContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleHeader"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReferenceComponent"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleHeader([NotNull] BOSParser.ModuleHeaderContext context) { }
+	public virtual void EnterModuleReferenceComponent([NotNull] BosParser.ModuleReferenceComponentContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleHeader"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReferenceComponent"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleHeader([NotNull] BOSParser.ModuleHeaderContext context) { }
+	public virtual void ExitModuleReferenceComponent([NotNull] BosParser.ModuleReferenceComponentContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleConfig"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleHeader"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleConfig([NotNull] BOSParser.ModuleConfigContext context) { }
+	public virtual void EnterModuleHeader([NotNull] BosParser.ModuleHeaderContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleConfig"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleHeader"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleConfig([NotNull] BOSParser.ModuleConfigContext context) { }
+	public virtual void ExitModuleHeader([NotNull] BosParser.ModuleHeaderContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleConfigElement"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleConfig"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleConfigElement([NotNull] BOSParser.ModuleConfigElementContext context) { }
+	public virtual void EnterModuleConfig([NotNull] BosParser.ModuleConfigContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleConfigElement"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleConfig"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleConfigElement([NotNull] BOSParser.ModuleConfigElementContext context) { }
+	public virtual void ExitModuleConfig([NotNull] BosParser.ModuleConfigContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleAttributes"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleConfigElement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleAttributes([NotNull] BOSParser.ModuleAttributesContext context) { }
+	public virtual void EnterModuleConfigElement([NotNull] BosParser.ModuleConfigElementContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleAttributes"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleConfigElement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleAttributes([NotNull] BOSParser.ModuleAttributesContext context) { }
+	public virtual void ExitModuleConfigElement([NotNull] BosParser.ModuleConfigElementContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleOptions"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleAttributes"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleOptions([NotNull] BOSParser.ModuleOptionsContext context) { }
+	public virtual void EnterModuleAttributes([NotNull] BosParser.ModuleAttributesContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleOptions"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleAttributes"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleOptions([NotNull] BOSParser.ModuleOptionsContext context) { }
+	public virtual void ExitModuleAttributes([NotNull] BosParser.ModuleAttributesContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.moduleOptions"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterModuleOptions([NotNull] BosParser.ModuleOptionsContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.moduleOptions"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitModuleOptions([NotNull] BosParser.ModuleOptionsContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionBaseStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOptionBaseStmt([NotNull] BOSParser.OptionBaseStmtContext context) { }
+	public virtual void EnterOptionBaseStmt([NotNull] BosParser.OptionBaseStmtContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionBaseStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOptionBaseStmt([NotNull] BOSParser.OptionBaseStmtContext context) { }
+	public virtual void ExitOptionBaseStmt([NotNull] BosParser.OptionBaseStmtContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionCompareStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOptionCompareStmt([NotNull] BOSParser.OptionCompareStmtContext context) { }
+	public virtual void EnterOptionCompareStmt([NotNull] BosParser.OptionCompareStmtContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionCompareStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOptionCompareStmt([NotNull] BOSParser.OptionCompareStmtContext context) { }
+	public virtual void ExitOptionCompareStmt([NotNull] BosParser.OptionCompareStmtContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionExplicitStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOptionExplicitStmt([NotNull] BOSParser.OptionExplicitStmtContext context) { }
+	public virtual void EnterOptionExplicitStmt([NotNull] BosParser.OptionExplicitStmtContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionExplicitStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOptionExplicitStmt([NotNull] BOSParser.OptionExplicitStmtContext context) { }
+	public virtual void ExitOptionExplicitStmt([NotNull] BosParser.OptionExplicitStmtContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionPrivateModuleStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOptionPrivateModuleStmt([NotNull] BOSParser.OptionPrivateModuleStmtContext context) { }
+	public virtual void EnterOptionPrivateModuleStmt([NotNull] BosParser.OptionPrivateModuleStmtContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionPrivateModuleStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOptionPrivateModuleStmt([NotNull] BOSParser.OptionPrivateModuleStmtContext context) { }
+	public virtual void ExitOptionPrivateModuleStmt([NotNull] BosParser.OptionPrivateModuleStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleBody"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleBody"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleBody([NotNull] BOSParser.ModuleBodyContext context) { }
+	public virtual void EnterModuleBody([NotNull] BosParser.ModuleBodyContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleBody"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleBody"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleBody([NotNull] BOSParser.ModuleBodyContext context) { }
+	public virtual void ExitModuleBody([NotNull] BosParser.ModuleBodyContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleBodyElement"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleBodyElement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleBodyElement([NotNull] BOSParser.ModuleBodyElementContext context) { }
+	public virtual void EnterModuleBodyElement([NotNull] BosParser.ModuleBodyElementContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleBodyElement"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleBodyElement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleBodyElement([NotNull] BOSParser.ModuleBodyElementContext context) { }
+	public virtual void ExitModuleBodyElement([NotNull] BosParser.ModuleBodyElementContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.controlProperties"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.classBody"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterControlProperties([NotNull] BOSParser.ControlPropertiesContext context) { }
+	public virtual void EnterClassBody([NotNull] BosParser.ClassBodyContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.controlProperties"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.classBody"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitControlProperties([NotNull] BOSParser.ControlPropertiesContext context) { }
+	public virtual void ExitClassBody([NotNull] BosParser.ClassBodyContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_Properties"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.classBodyElement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCp_Properties([NotNull] BOSParser.Cp_PropertiesContext context) { }
+	public virtual void EnterClassBodyElement([NotNull] BosParser.ClassBodyElementContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_Properties"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.classBodyElement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCp_Properties([NotNull] BOSParser.Cp_PropertiesContext context) { }
+	public virtual void ExitClassBodyElement([NotNull] BosParser.ClassBodyElementContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_SingleProperty"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.controlProperties"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCp_SingleProperty([NotNull] BOSParser.Cp_SinglePropertyContext context) { }
+	public virtual void EnterControlProperties([NotNull] BosParser.ControlPropertiesContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_SingleProperty"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.controlProperties"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCp_SingleProperty([NotNull] BOSParser.Cp_SinglePropertyContext context) { }
+	public virtual void ExitControlProperties([NotNull] BosParser.ControlPropertiesContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_PropertyName"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_Properties"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCp_PropertyName([NotNull] BOSParser.Cp_PropertyNameContext context) { }
+	public virtual void EnterCp_Properties([NotNull] BosParser.Cp_PropertiesContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_PropertyName"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_Properties"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCp_PropertyName([NotNull] BOSParser.Cp_PropertyNameContext context) { }
+	public virtual void ExitCp_Properties([NotNull] BosParser.Cp_PropertiesContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_PropertyValue"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_SingleProperty"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCp_PropertyValue([NotNull] BOSParser.Cp_PropertyValueContext context) { }
+	public virtual void EnterCp_SingleProperty([NotNull] BosParser.Cp_SinglePropertyContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_PropertyValue"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_SingleProperty"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCp_PropertyValue([NotNull] BOSParser.Cp_PropertyValueContext context) { }
+	public virtual void ExitCp_SingleProperty([NotNull] BosParser.Cp_SinglePropertyContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_NestedProperty"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_PropertyName"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCp_NestedProperty([NotNull] BOSParser.Cp_NestedPropertyContext context) { }
+	public virtual void EnterCp_PropertyName([NotNull] BosParser.Cp_PropertyNameContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_NestedProperty"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_PropertyName"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCp_NestedProperty([NotNull] BOSParser.Cp_NestedPropertyContext context) { }
+	public virtual void ExitCp_PropertyName([NotNull] BosParser.Cp_PropertyNameContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_ControlType"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_PropertyValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCp_ControlType([NotNull] BOSParser.Cp_ControlTypeContext context) { }
+	public virtual void EnterCp_PropertyValue([NotNull] BosParser.Cp_PropertyValueContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_ControlType"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_PropertyValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCp_ControlType([NotNull] BOSParser.Cp_ControlTypeContext context) { }
+	public virtual void ExitCp_PropertyValue([NotNull] BosParser.Cp_PropertyValueContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_ControlIdentifier"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_NestedProperty"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCp_ControlIdentifier([NotNull] BOSParser.Cp_ControlIdentifierContext context) { }
+	public virtual void EnterCp_NestedProperty([NotNull] BosParser.Cp_NestedPropertyContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_ControlIdentifier"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_NestedProperty"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCp_ControlIdentifier([NotNull] BOSParser.Cp_ControlIdentifierContext context) { }
+	public virtual void ExitCp_NestedProperty([NotNull] BosParser.Cp_NestedPropertyContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleBlock"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_ControlType"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterModuleBlock([NotNull] BOSParser.ModuleBlockContext context) { }
+	public virtual void EnterCp_ControlType([NotNull] BosParser.Cp_ControlTypeContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleBlock"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_ControlType"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitModuleBlock([NotNull] BOSParser.ModuleBlockContext context) { }
+	public virtual void ExitCp_ControlType([NotNull] BosParser.Cp_ControlTypeContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.attributeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_ControlIdentifier"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterAttributeStmt([NotNull] BOSParser.AttributeStmtContext context) { }
+	public virtual void EnterCp_ControlIdentifier([NotNull] BosParser.Cp_ControlIdentifierContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.attributeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_ControlIdentifier"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitAttributeStmt([NotNull] BOSParser.AttributeStmtContext context) { }
+	public virtual void ExitCp_ControlIdentifier([NotNull] BosParser.Cp_ControlIdentifierContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.block"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleBlock"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterBlock([NotNull] BOSParser.BlockContext context) { }
+	public virtual void EnterModuleBlock([NotNull] BosParser.ModuleBlockContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.block"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleBlock"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitBlock([NotNull] BOSParser.BlockContext context) { }
+	public virtual void ExitModuleBlock([NotNull] BosParser.ModuleBlockContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.blockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.importStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterBlockStmt([NotNull] BOSParser.BlockStmtContext context) { }
+	public virtual void EnterImportStmt([NotNull] BosParser.ImportStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.blockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.importStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitBlockStmt([NotNull] BOSParser.BlockStmtContext context) { }
+	public virtual void ExitImportStmt([NotNull] BosParser.ImportStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.appActivateStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.attributeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterAppActivateStmt([NotNull] BOSParser.AppActivateStmtContext context) { }
+	public virtual void EnterAttributeStmt([NotNull] BosParser.AttributeStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.appActivateStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.attributeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitAppActivateStmt([NotNull] BOSParser.AppActivateStmtContext context) { }
+	public virtual void ExitAttributeStmt([NotNull] BosParser.AttributeStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.beepStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.block"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterBeepStmt([NotNull] BOSParser.BeepStmtContext context) { }
+	public virtual void EnterBlock([NotNull] BosParser.BlockContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.beepStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.block"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitBeepStmt([NotNull] BOSParser.BeepStmtContext context) { }
+	public virtual void ExitBlock([NotNull] BosParser.BlockContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.chDirStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.blockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterChDirStmt([NotNull] BOSParser.ChDirStmtContext context) { }
+	public virtual void EnterBlockStmt([NotNull] BosParser.BlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.chDirStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.blockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitChDirStmt([NotNull] BOSParser.ChDirStmtContext context) { }
+	public virtual void ExitBlockStmt([NotNull] BosParser.BlockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.chDriveStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.appActivateStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterChDriveStmt([NotNull] BOSParser.ChDriveStmtContext context) { }
+	public virtual void EnterAppActivateStmt([NotNull] BosParser.AppActivateStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.chDriveStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.appActivateStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitChDriveStmt([NotNull] BOSParser.ChDriveStmtContext context) { }
+	public virtual void ExitAppActivateStmt([NotNull] BosParser.AppActivateStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.closeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.beepStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCloseStmt([NotNull] BOSParser.CloseStmtContext context) { }
+	public virtual void EnterBeepStmt([NotNull] BosParser.BeepStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.closeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.beepStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCloseStmt([NotNull] BOSParser.CloseStmtContext context) { }
+	public virtual void ExitBeepStmt([NotNull] BosParser.BeepStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.constStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.chDirStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterConstStmt([NotNull] BOSParser.ConstStmtContext context) { }
+	public virtual void EnterChDirStmt([NotNull] BosParser.ChDirStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.constStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.chDirStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitConstStmt([NotNull] BOSParser.ConstStmtContext context) { }
+	public virtual void ExitChDirStmt([NotNull] BosParser.ChDirStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.constSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.chDriveStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterConstSubStmt([NotNull] BOSParser.ConstSubStmtContext context) { }
+	public virtual void EnterChDriveStmt([NotNull] BosParser.ChDriveStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.constSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.chDriveStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitConstSubStmt([NotNull] BOSParser.ConstSubStmtContext context) { }
+	public virtual void ExitChDriveStmt([NotNull] BosParser.ChDriveStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.dateStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.classStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterDateStmt([NotNull] BOSParser.DateStmtContext context) { }
+	public virtual void EnterClassStmt([NotNull] BosParser.ClassStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.dateStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.classStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitDateStmt([NotNull] BOSParser.DateStmtContext context) { }
+	public virtual void ExitClassStmt([NotNull] BosParser.ClassStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.declareStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.closeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterDeclareStmt([NotNull] BOSParser.DeclareStmtContext context) { }
+	public virtual void EnterCloseStmt([NotNull] BosParser.CloseStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.declareStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.closeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitDeclareStmt([NotNull] BOSParser.DeclareStmtContext context) { }
+	public virtual void ExitCloseStmt([NotNull] BosParser.CloseStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.deftypeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.constStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterDeftypeStmt([NotNull] BOSParser.DeftypeStmtContext context) { }
+	public virtual void EnterConstStmt([NotNull] BosParser.ConstStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.deftypeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.constStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitDeftypeStmt([NotNull] BOSParser.DeftypeStmtContext context) { }
+	public virtual void ExitConstStmt([NotNull] BosParser.ConstStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.deleteSettingStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.constSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterDeleteSettingStmt([NotNull] BOSParser.DeleteSettingStmtContext context) { }
+	public virtual void EnterConstSubStmt([NotNull] BosParser.ConstSubStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.deleteSettingStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.constSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitDeleteSettingStmt([NotNull] BOSParser.DeleteSettingStmtContext context) { }
+	public virtual void ExitConstSubStmt([NotNull] BosParser.ConstSubStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.doLoopStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.dateStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterDoLoopStmt([NotNull] BOSParser.DoLoopStmtContext context) { }
+	public virtual void EnterDateStmt([NotNull] BosParser.DateStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.doLoopStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.dateStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitDoLoopStmt([NotNull] BOSParser.DoLoopStmtContext context) { }
+	public virtual void ExitDateStmt([NotNull] BosParser.DateStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.endStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.declareStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterEndStmt([NotNull] BOSParser.EndStmtContext context) { }
+	public virtual void EnterDeclareStmt([NotNull] BosParser.DeclareStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.endStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.declareStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitEndStmt([NotNull] BOSParser.EndStmtContext context) { }
+	public virtual void ExitDeclareStmt([NotNull] BosParser.DeclareStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.enumerationStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.deftypeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterEnumerationStmt([NotNull] BOSParser.EnumerationStmtContext context) { }
+	public virtual void EnterDeftypeStmt([NotNull] BosParser.DeftypeStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.enumerationStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.deftypeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitEnumerationStmt([NotNull] BOSParser.EnumerationStmtContext context) { }
+	public virtual void ExitDeftypeStmt([NotNull] BosParser.DeftypeStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.enumerationStmt_Constant"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.deleteSettingStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterEnumerationStmt_Constant([NotNull] BOSParser.EnumerationStmt_ConstantContext context) { }
+	public virtual void EnterDeleteSettingStmt([NotNull] BosParser.DeleteSettingStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.enumerationStmt_Constant"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.deleteSettingStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitEnumerationStmt_Constant([NotNull] BOSParser.EnumerationStmt_ConstantContext context) { }
+	public virtual void ExitDeleteSettingStmt([NotNull] BosParser.DeleteSettingStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eraseStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.doLoopStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterEraseStmt([NotNull] BOSParser.EraseStmtContext context) { }
+	public virtual void EnterDoLoopStmt([NotNull] BosParser.DoLoopStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eraseStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.doLoopStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitEraseStmt([NotNull] BOSParser.EraseStmtContext context) { }
+	public virtual void ExitDoLoopStmt([NotNull] BosParser.DoLoopStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.errorStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.endStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterErrorStmt([NotNull] BOSParser.ErrorStmtContext context) { }
+	public virtual void EnterEndStmt([NotNull] BosParser.EndStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.errorStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.endStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitErrorStmt([NotNull] BOSParser.ErrorStmtContext context) { }
+	public virtual void ExitEndStmt([NotNull] BosParser.EndStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eventStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.enumerationStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterEventStmt([NotNull] BOSParser.EventStmtContext context) { }
+	public virtual void EnterEnumerationStmt([NotNull] BosParser.EnumerationStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eventStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.enumerationStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitEventStmt([NotNull] BOSParser.EventStmtContext context) { }
+	public virtual void ExitEnumerationStmt([NotNull] BosParser.EnumerationStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.exitStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.enumerationStmt_Constant"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterExitStmt([NotNull] BOSParser.ExitStmtContext context) { }
+	public virtual void EnterEnumerationStmt_Constant([NotNull] BosParser.EnumerationStmt_ConstantContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.exitStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.enumerationStmt_Constant"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitExitStmt([NotNull] BOSParser.ExitStmtContext context) { }
+	public virtual void ExitEnumerationStmt_Constant([NotNull] BosParser.EnumerationStmt_ConstantContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.filecopyStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eraseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterFilecopyStmt([NotNull] BOSParser.FilecopyStmtContext context) { }
+	public virtual void EnterEraseStmt([NotNull] BosParser.EraseStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.filecopyStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eraseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitFilecopyStmt([NotNull] BOSParser.FilecopyStmtContext context) { }
+	public virtual void ExitEraseStmt([NotNull] BosParser.EraseStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.forEachStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.errorStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterForEachStmt([NotNull] BOSParser.ForEachStmtContext context) { }
+	public virtual void EnterErrorStmt([NotNull] BosParser.ErrorStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.forEachStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.errorStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitForEachStmt([NotNull] BOSParser.ForEachStmtContext context) { }
+	public virtual void ExitErrorStmt([NotNull] BosParser.ErrorStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.forNextStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eventStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterForNextStmt([NotNull] BOSParser.ForNextStmtContext context) { }
+	public virtual void EnterEventStmt([NotNull] BosParser.EventStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.forNextStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eventStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitForNextStmt([NotNull] BOSParser.ForNextStmtContext context) { }
+	public virtual void ExitEventStmt([NotNull] BosParser.EventStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.functionStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.exitStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterFunctionStmt([NotNull] BOSParser.FunctionStmtContext context) { }
+	public virtual void EnterExitStmt([NotNull] BosParser.ExitStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.functionStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.exitStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitFunctionStmt([NotNull] BOSParser.FunctionStmtContext context) { }
+	public virtual void ExitExitStmt([NotNull] BosParser.ExitStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.getStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.filecopyStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterGetStmt([NotNull] BOSParser.GetStmtContext context) { }
+	public virtual void EnterFilecopyStmt([NotNull] BosParser.FilecopyStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.getStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.filecopyStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitGetStmt([NotNull] BOSParser.GetStmtContext context) { }
+	public virtual void ExitFilecopyStmt([NotNull] BosParser.FilecopyStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.goSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.forEachStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterGoSubStmt([NotNull] BOSParser.GoSubStmtContext context) { }
+	public virtual void EnterForEachStmt([NotNull] BosParser.ForEachStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.goSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.forEachStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitGoSubStmt([NotNull] BOSParser.GoSubStmtContext context) { }
+	public virtual void ExitForEachStmt([NotNull] BosParser.ForEachStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.goToStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.forNextStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterGoToStmt([NotNull] BOSParser.GoToStmtContext context) { }
+	public virtual void EnterForNextStmt([NotNull] BosParser.ForNextStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.goToStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.forNextStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitGoToStmt([NotNull] BOSParser.GoToStmtContext context) { }
+	public virtual void ExitForNextStmt([NotNull] BosParser.ForNextStmtContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.functionStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterFunctionStmt([NotNull] BosParser.FunctionStmtContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.functionStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitFunctionStmt([NotNull] BosParser.FunctionStmtContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.getStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterGetStmt([NotNull] BosParser.GetStmtContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.getStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitGetStmt([NotNull] BosParser.GetStmtContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.goSubStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterGoSubStmt([NotNull] BosParser.GoSubStmtContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.goSubStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitGoSubStmt([NotNull] BosParser.GoSubStmtContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.goToStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterGoToStmt([NotNull] BosParser.GoToStmtContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.goToStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitGoToStmt([NotNull] BosParser.GoToStmtContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>inlineIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterInlineIfThenElse([NotNull] BOSParser.InlineIfThenElseContext context) { }
+	public virtual void EnterInlineIfThenElse([NotNull] BosParser.InlineIfThenElseContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>inlineIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitInlineIfThenElse([NotNull] BOSParser.InlineIfThenElseContext context) { }
+	public virtual void ExitInlineIfThenElse([NotNull] BosParser.InlineIfThenElseContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>blockIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterBlockIfThenElse([NotNull] BOSParser.BlockIfThenElseContext context) { }
+	public virtual void EnterBlockIfThenElse([NotNull] BosParser.BlockIfThenElseContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>blockIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitBlockIfThenElse([NotNull] BOSParser.BlockIfThenElseContext context) { }
+	public virtual void ExitBlockIfThenElse([NotNull] BosParser.BlockIfThenElseContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterIfBlockStmt([NotNull] BOSParser.IfBlockStmtContext context) { }
+	public virtual void EnterIfBlockStmt([NotNull] BosParser.IfBlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitIfBlockStmt([NotNull] BOSParser.IfBlockStmtContext context) { }
+	public virtual void ExitIfBlockStmt([NotNull] BosParser.IfBlockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifConditionStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifConditionStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterIfConditionStmt([NotNull] BOSParser.IfConditionStmtContext context) { }
+	public virtual void EnterIfConditionStmt([NotNull] BosParser.IfConditionStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifConditionStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifConditionStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitIfConditionStmt([NotNull] BOSParser.IfConditionStmtContext context) { }
+	public virtual void ExitIfConditionStmt([NotNull] BosParser.IfConditionStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifElseIfBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifElseIfBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterIfElseIfBlockStmt([NotNull] BOSParser.IfElseIfBlockStmtContext context) { }
+	public virtual void EnterIfElseIfBlockStmt([NotNull] BosParser.IfElseIfBlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifElseIfBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifElseIfBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitIfElseIfBlockStmt([NotNull] BOSParser.IfElseIfBlockStmtContext context) { }
+	public virtual void ExitIfElseIfBlockStmt([NotNull] BosParser.IfElseIfBlockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifElseBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifElseBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterIfElseBlockStmt([NotNull] BOSParser.IfElseBlockStmtContext context) { }
+	public virtual void EnterIfElseBlockStmt([NotNull] BosParser.IfElseBlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifElseBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifElseBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitIfElseBlockStmt([NotNull] BOSParser.IfElseBlockStmtContext context) { }
+	public virtual void ExitIfElseBlockStmt([NotNull] BosParser.IfElseBlockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.implementsStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.implementsStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterImplementsStmt([NotNull] BOSParser.ImplementsStmtContext context) { }
+	public virtual void EnterImplementsStmt([NotNull] BosParser.ImplementsStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.implementsStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.implementsStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitImplementsStmt([NotNull] BOSParser.ImplementsStmtContext context) { }
+	public virtual void ExitImplementsStmt([NotNull] BosParser.ImplementsStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.inputStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.inputStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterInputStmt([NotNull] BOSParser.InputStmtContext context) { }
+	public virtual void EnterInputStmt([NotNull] BosParser.InputStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.inputStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.inputStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitInputStmt([NotNull] BOSParser.InputStmtContext context) { }
+	public virtual void ExitInputStmt([NotNull] BosParser.InputStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.killStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.killStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterKillStmt([NotNull] BOSParser.KillStmtContext context) { }
+	public virtual void EnterKillStmt([NotNull] BosParser.KillStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.killStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.killStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitKillStmt([NotNull] BOSParser.KillStmtContext context) { }
+	public virtual void ExitKillStmt([NotNull] BosParser.KillStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.letStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.letStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLetStmt([NotNull] BOSParser.LetStmtContext context) { }
+	public virtual void EnterLetStmt([NotNull] BosParser.LetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.letStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.letStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLetStmt([NotNull] BOSParser.LetStmtContext context) { }
+	public virtual void ExitLetStmt([NotNull] BosParser.LetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lineInputStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.lineInputStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLineInputStmt([NotNull] BOSParser.LineInputStmtContext context) { }
+	public virtual void EnterLineInputStmt([NotNull] BosParser.LineInputStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lineInputStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.lineInputStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLineInputStmt([NotNull] BOSParser.LineInputStmtContext context) { }
+	public virtual void ExitLineInputStmt([NotNull] BosParser.LineInputStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.loadStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.loadStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLoadStmt([NotNull] BOSParser.LoadStmtContext context) { }
+	public virtual void EnterLoadStmt([NotNull] BosParser.LoadStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.loadStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.loadStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLoadStmt([NotNull] BOSParser.LoadStmtContext context) { }
+	public virtual void ExitLoadStmt([NotNull] BosParser.LoadStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.lockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLockStmt([NotNull] BOSParser.LockStmtContext context) { }
+	public virtual void EnterLockStmt([NotNull] BosParser.LockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.lockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLockStmt([NotNull] BOSParser.LockStmtContext context) { }
+	public virtual void ExitLockStmt([NotNull] BosParser.LockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lsetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.lsetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLsetStmt([NotNull] BOSParser.LsetStmtContext context) { }
+	public virtual void EnterLsetStmt([NotNull] BosParser.LsetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lsetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.lsetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLsetStmt([NotNull] BOSParser.LsetStmtContext context) { }
+	public virtual void ExitLsetStmt([NotNull] BosParser.LsetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroIfThenElseStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroIfThenElseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMacroIfThenElseStmt([NotNull] BOSParser.MacroIfThenElseStmtContext context) { }
+	public virtual void EnterMacroIfThenElseStmt([NotNull] BosParser.MacroIfThenElseStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroIfThenElseStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroIfThenElseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMacroIfThenElseStmt([NotNull] BOSParser.MacroIfThenElseStmtContext context) { }
+	public virtual void ExitMacroIfThenElseStmt([NotNull] BosParser.MacroIfThenElseStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroIfBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroIfBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMacroIfBlockStmt([NotNull] BOSParser.MacroIfBlockStmtContext context) { }
+	public virtual void EnterMacroIfBlockStmt([NotNull] BosParser.MacroIfBlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroIfBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroIfBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMacroIfBlockStmt([NotNull] BOSParser.MacroIfBlockStmtContext context) { }
+	public virtual void ExitMacroIfBlockStmt([NotNull] BosParser.MacroIfBlockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroElseIfBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroElseIfBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMacroElseIfBlockStmt([NotNull] BOSParser.MacroElseIfBlockStmtContext context) { }
+	public virtual void EnterMacroElseIfBlockStmt([NotNull] BosParser.MacroElseIfBlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroElseIfBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroElseIfBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMacroElseIfBlockStmt([NotNull] BOSParser.MacroElseIfBlockStmtContext context) { }
+	public virtual void ExitMacroElseIfBlockStmt([NotNull] BosParser.MacroElseIfBlockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroElseBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroElseBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMacroElseBlockStmt([NotNull] BOSParser.MacroElseBlockStmtContext context) { }
+	public virtual void EnterMacroElseBlockStmt([NotNull] BosParser.MacroElseBlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroElseBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroElseBlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMacroElseBlockStmt([NotNull] BOSParser.MacroElseBlockStmtContext context) { }
+	public virtual void ExitMacroElseBlockStmt([NotNull] BosParser.MacroElseBlockStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.midStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.midStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMidStmt([NotNull] BOSParser.MidStmtContext context) { }
+	public virtual void EnterMidStmt([NotNull] BosParser.MidStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.midStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.midStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMidStmt([NotNull] BOSParser.MidStmtContext context) { }
+	public virtual void ExitMidStmt([NotNull] BosParser.MidStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.mkdirStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.mkdirStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMkdirStmt([NotNull] BOSParser.MkdirStmtContext context) { }
+	public virtual void EnterMkdirStmt([NotNull] BosParser.MkdirStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.mkdirStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.mkdirStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMkdirStmt([NotNull] BOSParser.MkdirStmtContext context) { }
+	public virtual void ExitMkdirStmt([NotNull] BosParser.MkdirStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.nameStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.nameStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterNameStmt([NotNull] BOSParser.NameStmtContext context) { }
+	public virtual void EnterNameStmt([NotNull] BosParser.NameStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.nameStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.nameStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitNameStmt([NotNull] BOSParser.NameStmtContext context) { }
+	public virtual void ExitNameStmt([NotNull] BosParser.NameStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.onErrorStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.onErrorStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOnErrorStmt([NotNull] BOSParser.OnErrorStmtContext context) { }
+	public virtual void EnterOnErrorStmt([NotNull] BosParser.OnErrorStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.onErrorStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.onErrorStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOnErrorStmt([NotNull] BOSParser.OnErrorStmtContext context) { }
+	public virtual void ExitOnErrorStmt([NotNull] BosParser.OnErrorStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.onGoToStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.onGoToStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOnGoToStmt([NotNull] BOSParser.OnGoToStmtContext context) { }
+	public virtual void EnterOnGoToStmt([NotNull] BosParser.OnGoToStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.onGoToStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.onGoToStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOnGoToStmt([NotNull] BOSParser.OnGoToStmtContext context) { }
+	public virtual void ExitOnGoToStmt([NotNull] BosParser.OnGoToStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.onGoSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.onGoSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOnGoSubStmt([NotNull] BOSParser.OnGoSubStmtContext context) { }
+	public virtual void EnterOnGoSubStmt([NotNull] BosParser.OnGoSubStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.onGoSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.onGoSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOnGoSubStmt([NotNull] BOSParser.OnGoSubStmtContext context) { }
+	public virtual void ExitOnGoSubStmt([NotNull] BosParser.OnGoSubStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.openStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.openStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOpenStmt([NotNull] BOSParser.OpenStmtContext context) { }
+	public virtual void EnterOpenStmt([NotNull] BosParser.OpenStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.openStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.openStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOpenStmt([NotNull] BOSParser.OpenStmtContext context) { }
+	public virtual void ExitOpenStmt([NotNull] BosParser.OpenStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.outputList"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.outputList"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOutputList([NotNull] BOSParser.OutputListContext context) { }
+	public virtual void EnterOutputList([NotNull] BosParser.OutputListContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.outputList"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.outputList"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOutputList([NotNull] BOSParser.OutputListContext context) { }
+	public virtual void ExitOutputList([NotNull] BosParser.OutputListContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.outputList_Expression"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.outputList_Expression"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterOutputList_Expression([NotNull] BOSParser.OutputList_ExpressionContext context) { }
+	public virtual void EnterOutputList_Expression([NotNull] BosParser.OutputList_ExpressionContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.outputList_Expression"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.outputList_Expression"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitOutputList_Expression([NotNull] BOSParser.OutputList_ExpressionContext context) { }
+	public virtual void ExitOutputList_Expression([NotNull] BosParser.OutputList_ExpressionContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.printStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.printStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterPrintStmt([NotNull] BOSParser.PrintStmtContext context) { }
+	public virtual void EnterPrintStmt([NotNull] BosParser.PrintStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.printStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.printStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitPrintStmt([NotNull] BOSParser.PrintStmtContext context) { }
+	public virtual void ExitPrintStmt([NotNull] BosParser.PrintStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.propertyGetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.propertyGetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterPropertyGetStmt([NotNull] BOSParser.PropertyGetStmtContext context) { }
+	public virtual void EnterPropertyGetStmt([NotNull] BosParser.PropertyGetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.propertyGetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.propertyGetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitPropertyGetStmt([NotNull] BOSParser.PropertyGetStmtContext context) { }
+	public virtual void ExitPropertyGetStmt([NotNull] BosParser.PropertyGetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.propertySetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.propertySetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterPropertySetStmt([NotNull] BOSParser.PropertySetStmtContext context) { }
+	public virtual void EnterPropertySetStmt([NotNull] BosParser.PropertySetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.propertySetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.propertySetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitPropertySetStmt([NotNull] BOSParser.PropertySetStmtContext context) { }
+	public virtual void ExitPropertySetStmt([NotNull] BosParser.PropertySetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.propertyLetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.propertyLetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterPropertyLetStmt([NotNull] BOSParser.PropertyLetStmtContext context) { }
+	public virtual void EnterPropertyLetStmt([NotNull] BosParser.PropertyLetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.propertyLetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.propertyLetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitPropertyLetStmt([NotNull] BOSParser.PropertyLetStmtContext context) { }
+	public virtual void ExitPropertyLetStmt([NotNull] BosParser.PropertyLetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.putStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.putStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterPutStmt([NotNull] BOSParser.PutStmtContext context) { }
+	public virtual void EnterPutStmt([NotNull] BosParser.PutStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.putStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.putStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitPutStmt([NotNull] BOSParser.PutStmtContext context) { }
+	public virtual void ExitPutStmt([NotNull] BosParser.PutStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.raiseEventStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.raiseEventStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterRaiseEventStmt([NotNull] BOSParser.RaiseEventStmtContext context) { }
+	public virtual void EnterRaiseEventStmt([NotNull] BosParser.RaiseEventStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.raiseEventStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.raiseEventStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitRaiseEventStmt([NotNull] BOSParser.RaiseEventStmtContext context) { }
+	public virtual void ExitRaiseEventStmt([NotNull] BosParser.RaiseEventStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.randomizeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.randomizeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterRandomizeStmt([NotNull] BOSParser.RandomizeStmtContext context) { }
+	public virtual void EnterRandomizeStmt([NotNull] BosParser.RandomizeStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.randomizeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.randomizeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitRandomizeStmt([NotNull] BOSParser.RandomizeStmtContext context) { }
+	public virtual void ExitRandomizeStmt([NotNull] BosParser.RandomizeStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.redimStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.redimStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterRedimStmt([NotNull] BOSParser.RedimStmtContext context) { }
+	public virtual void EnterRedimStmt([NotNull] BosParser.RedimStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.redimStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.redimStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitRedimStmt([NotNull] BOSParser.RedimStmtContext context) { }
+	public virtual void ExitRedimStmt([NotNull] BosParser.RedimStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.redimSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.redimSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterRedimSubStmt([NotNull] BOSParser.RedimSubStmtContext context) { }
+	public virtual void EnterRedimSubStmt([NotNull] BosParser.RedimSubStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.redimSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.redimSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitRedimSubStmt([NotNull] BOSParser.RedimSubStmtContext context) { }
+	public virtual void ExitRedimSubStmt([NotNull] BosParser.RedimSubStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.resetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.resetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterResetStmt([NotNull] BOSParser.ResetStmtContext context) { }
+	public virtual void EnterResetStmt([NotNull] BosParser.ResetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.resetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.resetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitResetStmt([NotNull] BOSParser.ResetStmtContext context) { }
+	public virtual void ExitResetStmt([NotNull] BosParser.ResetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.resumeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.resumeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterResumeStmt([NotNull] BOSParser.ResumeStmtContext context) { }
+	public virtual void EnterResumeStmt([NotNull] BosParser.ResumeStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.resumeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.resumeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitResumeStmt([NotNull] BOSParser.ResumeStmtContext context) { }
+	public virtual void ExitResumeStmt([NotNull] BosParser.ResumeStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.returnStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.returnStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterReturnStmt([NotNull] BOSParser.ReturnStmtContext context) { }
+	public virtual void EnterReturnStmt([NotNull] BosParser.ReturnStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.returnStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.returnStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitReturnStmt([NotNull] BOSParser.ReturnStmtContext context) { }
+	public virtual void ExitReturnStmt([NotNull] BosParser.ReturnStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.rmdirStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.rmdirStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterRmdirStmt([NotNull] BOSParser.RmdirStmtContext context) { }
+	public virtual void EnterRmdirStmt([NotNull] BosParser.RmdirStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.rmdirStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.rmdirStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitRmdirStmt([NotNull] BOSParser.RmdirStmtContext context) { }
+	public virtual void ExitRmdirStmt([NotNull] BosParser.RmdirStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.rsetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.rsetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterRsetStmt([NotNull] BOSParser.RsetStmtContext context) { }
+	public virtual void EnterRsetStmt([NotNull] BosParser.RsetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.rsetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.rsetStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitRsetStmt([NotNull] BOSParser.RsetStmtContext context) { }
+	public virtual void ExitRsetStmt([NotNull] BosParser.RsetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.savepictureStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.savepictureStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSavepictureStmt([NotNull] BOSParser.SavepictureStmtContext context) { }
+	public virtual void EnterSavepictureStmt([NotNull] BosParser.SavepictureStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.savepictureStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.savepictureStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSavepictureStmt([NotNull] BOSParser.SavepictureStmtContext context) { }
+	public virtual void ExitSavepictureStmt([NotNull] BosParser.SavepictureStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.saveSettingStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.saveSettingStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSaveSettingStmt([NotNull] BOSParser.SaveSettingStmtContext context) { }
+	public virtual void EnterSaveSettingStmt([NotNull] BosParser.SaveSettingStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.saveSettingStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.saveSettingStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSaveSettingStmt([NotNull] BOSParser.SaveSettingStmtContext context) { }
+	public virtual void ExitSaveSettingStmt([NotNull] BosParser.SaveSettingStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.seekStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.seekStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSeekStmt([NotNull] BOSParser.SeekStmtContext context) { }
+	public virtual void EnterSeekStmt([NotNull] BosParser.SeekStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.seekStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.seekStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSeekStmt([NotNull] BOSParser.SeekStmtContext context) { }
+	public virtual void ExitSeekStmt([NotNull] BosParser.SeekStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.selectCaseStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.selectCaseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSelectCaseStmt([NotNull] BOSParser.SelectCaseStmtContext context) { }
+	public virtual void EnterSelectCaseStmt([NotNull] BosParser.SelectCaseStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.selectCaseStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.selectCaseStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSelectCaseStmt([NotNull] BOSParser.SelectCaseStmtContext context) { }
+	public virtual void ExitSelectCaseStmt([NotNull] BosParser.SelectCaseStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.sC_Case"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.sC_Case"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSC_Case([NotNull] BOSParser.SC_CaseContext context) { }
+	public virtual void EnterSC_Case([NotNull] BosParser.SC_CaseContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.sC_Case"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.sC_Case"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSC_Case([NotNull] BOSParser.SC_CaseContext context) { }
+	public virtual void ExitSC_Case([NotNull] BosParser.SC_CaseContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondElse</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCaseCondElse([NotNull] BOSParser.CaseCondElseContext context) { }
+	public virtual void EnterCaseCondElse([NotNull] BosParser.CaseCondElseContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondElse</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCaseCondElse([NotNull] BOSParser.CaseCondElseContext context) { }
+	public virtual void ExitCaseCondElse([NotNull] BosParser.CaseCondElseContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExpr</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCaseCondExpr([NotNull] BOSParser.CaseCondExprContext context) { }
+	public virtual void EnterCaseCondExpr([NotNull] BosParser.CaseCondExprContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExpr</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCaseCondExpr([NotNull] BOSParser.CaseCondExprContext context) { }
+	public virtual void ExitCaseCondExpr([NotNull] BosParser.CaseCondExprContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExprIs</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCaseCondExprIs([NotNull] BOSParser.CaseCondExprIsContext context) { }
+	public virtual void EnterCaseCondExprIs([NotNull] BosParser.CaseCondExprIsContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExprIs</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCaseCondExprIs([NotNull] BOSParser.CaseCondExprIsContext context) { }
+	public virtual void ExitCaseCondExprIs([NotNull] BosParser.CaseCondExprIsContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExprValue</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCaseCondExprValue([NotNull] BOSParser.CaseCondExprValueContext context) { }
+	public virtual void EnterCaseCondExprValue([NotNull] BosParser.CaseCondExprValueContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExprValue</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCaseCondExprValue([NotNull] BOSParser.CaseCondExprValueContext context) { }
+	public virtual void ExitCaseCondExprValue([NotNull] BosParser.CaseCondExprValueContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExprTo</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCaseCondExprTo([NotNull] BOSParser.CaseCondExprToContext context) { }
+	public virtual void EnterCaseCondExprTo([NotNull] BosParser.CaseCondExprToContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExprTo</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCaseCondExprTo([NotNull] BOSParser.CaseCondExprToContext context) { }
+	public virtual void ExitCaseCondExprTo([NotNull] BosParser.CaseCondExprToContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.sendkeysStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.sendkeysStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSendkeysStmt([NotNull] BOSParser.SendkeysStmtContext context) { }
+	public virtual void EnterSendkeysStmt([NotNull] BosParser.SendkeysStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.sendkeysStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.sendkeysStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSendkeysStmt([NotNull] BOSParser.SendkeysStmtContext context) { }
+	public virtual void ExitSendkeysStmt([NotNull] BosParser.SendkeysStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.setattrStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.setattrStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSetattrStmt([NotNull] BOSParser.SetattrStmtContext context) { }
+	public virtual void EnterSetattrStmt([NotNull] BosParser.SetattrStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.setattrStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.setattrStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSetattrStmt([NotNull] BOSParser.SetattrStmtContext context) { }
+	public virtual void ExitSetattrStmt([NotNull] BosParser.SetattrStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.setStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.setStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSetStmt([NotNull] BOSParser.SetStmtContext context) { }
+	public virtual void EnterSetStmt([NotNull] BosParser.SetStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.setStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.setStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSetStmt([NotNull] BOSParser.SetStmtContext context) { }
+	public virtual void ExitSetStmt([NotNull] BosParser.SetStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.stopStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.stopStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterStopStmt([NotNull] BOSParser.StopStmtContext context) { }
+	public virtual void EnterStopStmt([NotNull] BosParser.StopStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.stopStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.stopStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitStopStmt([NotNull] BOSParser.StopStmtContext context) { }
+	public virtual void ExitStopStmt([NotNull] BosParser.StopStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.subStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.subStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSubStmt([NotNull] BOSParser.SubStmtContext context) { }
+	public virtual void EnterSubStmt([NotNull] BosParser.SubStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.subStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.subStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSubStmt([NotNull] BOSParser.SubStmtContext context) { }
+	public virtual void ExitSubStmt([NotNull] BosParser.SubStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.timeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.timeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterTimeStmt([NotNull] BOSParser.TimeStmtContext context) { }
+	public virtual void EnterTimeStmt([NotNull] BosParser.TimeStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.timeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.timeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitTimeStmt([NotNull] BOSParser.TimeStmtContext context) { }
+	public virtual void ExitTimeStmt([NotNull] BosParser.TimeStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.typeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterTypeStmt([NotNull] BOSParser.TypeStmtContext context) { }
+	public virtual void EnterTypeStmt([NotNull] BosParser.TypeStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.typeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitTypeStmt([NotNull] BOSParser.TypeStmtContext context) { }
+	public virtual void ExitTypeStmt([NotNull] BosParser.TypeStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeStmt_Element"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.typeStmt_Element"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterTypeStmt_Element([NotNull] BOSParser.TypeStmt_ElementContext context) { }
+	public virtual void EnterTypeStmt_Element([NotNull] BosParser.TypeStmt_ElementContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeStmt_Element"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.typeStmt_Element"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitTypeStmt_Element([NotNull] BOSParser.TypeStmt_ElementContext context) { }
+	public virtual void ExitTypeStmt_Element([NotNull] BosParser.TypeStmt_ElementContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeOfStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.typeOfStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterTypeOfStmt([NotNull] BOSParser.TypeOfStmtContext context) { }
+	public virtual void EnterTypeOfStmt([NotNull] BosParser.TypeOfStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeOfStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.typeOfStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitTypeOfStmt([NotNull] BOSParser.TypeOfStmtContext context) { }
+	public virtual void ExitTypeOfStmt([NotNull] BosParser.TypeOfStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.unloadStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.unloadStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterUnloadStmt([NotNull] BOSParser.UnloadStmtContext context) { }
+	public virtual void EnterUnloadStmt([NotNull] BosParser.UnloadStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.unloadStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.unloadStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitUnloadStmt([NotNull] BOSParser.UnloadStmtContext context) { }
+	public virtual void ExitUnloadStmt([NotNull] BosParser.UnloadStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.unlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.unlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterUnlockStmt([NotNull] BOSParser.UnlockStmtContext context) { }
+	public virtual void EnterUnlockStmt([NotNull] BosParser.UnlockStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.unlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.unlockStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitUnlockStmt([NotNull] BOSParser.UnlockStmtContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsDiv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsDiv([NotNull] BOSParser.VsDivContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsDiv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsDiv([NotNull] BOSParser.VsDivContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsNegation</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsNegation([NotNull] BOSParser.VsNegationContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsNegation</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsNegation([NotNull] BOSParser.VsNegationContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMinus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsMinus([NotNull] BOSParser.VsMinusContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMinus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsMinus([NotNull] BOSParser.VsMinusContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsImp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsImp([NotNull] BOSParser.VsImpContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsImp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsImp([NotNull] BOSParser.VsImpContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsGeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsGeq([NotNull] BOSParser.VsGeqContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsGeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsGeq([NotNull] BOSParser.VsGeqContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsLt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsLt([NotNull] BOSParser.VsLtContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsLt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsLt([NotNull] BOSParser.VsLtContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsLiteral</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsLiteral([NotNull] BOSParser.VsLiteralContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsLiteral</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsLiteral([NotNull] BOSParser.VsLiteralContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsEqv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsEqv([NotNull] BOSParser.VsEqvContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsEqv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsEqv([NotNull] BOSParser.VsEqvContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsLike</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsLike([NotNull] BOSParser.VsLikeContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsLike</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsLike([NotNull] BOSParser.VsLikeContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsICS</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsICS([NotNull] BOSParser.VsICSContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsICS</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsICS([NotNull] BOSParser.VsICSContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsNeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsNeq([NotNull] BOSParser.VsNeqContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsNeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsNeq([NotNull] BOSParser.VsNeqContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsTypeOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsTypeOf([NotNull] BOSParser.VsTypeOfContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsTypeOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsTypeOf([NotNull] BOSParser.VsTypeOfContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsPow</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsPow([NotNull] BOSParser.VsPowContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsPow</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsPow([NotNull] BOSParser.VsPowContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMult</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsMult([NotNull] BOSParser.VsMultContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMult</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsMult([NotNull] BOSParser.VsMultContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAssign</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsAssign([NotNull] BOSParser.VsAssignContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAssign</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsAssign([NotNull] BOSParser.VsAssignContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAdd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsAdd([NotNull] BOSParser.VsAddContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAdd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsAdd([NotNull] BOSParser.VsAddContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsPlus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsPlus([NotNull] BOSParser.VsPlusContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsPlus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsPlus([NotNull] BOSParser.VsPlusContext context) { }
+	public virtual void ExitUnlockStmt([NotNull] BosParser.UnlockStmtContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsStruct</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsStruct([NotNull] BOSParser.VsStructContext context) { }
+	public virtual void EnterVsStruct([NotNull] BosParser.VsStructContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsStruct</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsStruct([NotNull] BOSParser.VsStructContext context) { }
+	public virtual void ExitVsStruct([NotNull] BosParser.VsStructContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsOr</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsAdd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsOr([NotNull] BOSParser.VsOrContext context) { }
+	public virtual void EnterVsAdd([NotNull] BosParser.VsAddContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsOr</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsAdd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsOr([NotNull] BOSParser.VsOrContext context) { }
+	public virtual void ExitVsAdd([NotNull] BosParser.VsAddContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsLt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsLt([NotNull] BosParser.VsLtContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsLt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsLt([NotNull] BosParser.VsLtContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsAddressOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsAddressOf([NotNull] BOSParser.VsAddressOfContext context) { }
+	public virtual void EnterVsAddressOf([NotNull] BosParser.VsAddressOfContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsAddressOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsAddressOf([NotNull] BOSParser.VsAddressOfContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMod</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsMod([NotNull] BOSParser.VsModContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMod</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsMod([NotNull] BOSParser.VsModContext context) { }
+	public virtual void ExitVsAddressOf([NotNull] BosParser.VsAddressOfContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsNew</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsNew([NotNull] BOSParser.VsNewContext context) { }
+	public virtual void EnterVsNew([NotNull] BosParser.VsNewContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsNew</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsNew([NotNull] BOSParser.VsNewContext context) { }
+	public virtual void ExitVsNew([NotNull] BosParser.VsNewContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsMult</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsMult([NotNull] BosParser.VsMultContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsMult</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsMult([NotNull] BosParser.VsMultContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsNegation</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsNegation([NotNull] BosParser.VsNegationContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsNegation</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsNegation([NotNull] BosParser.VsNegationContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsAssign</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsAssign([NotNull] BosParser.VsAssignContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsAssign</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsAssign([NotNull] BosParser.VsAssignContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsDiv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsDiv([NotNull] BosParser.VsDivContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsDiv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsDiv([NotNull] BosParser.VsDivContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsLike</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsLike([NotNull] BosParser.VsLikeContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsLike</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsLike([NotNull] BosParser.VsLikeContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsPlus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsPlus([NotNull] BosParser.VsPlusContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsPlus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsPlus([NotNull] BosParser.VsPlusContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsNot</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsNot([NotNull] BOSParser.VsNotContext context) { }
+	public virtual void EnterVsNot([NotNull] BosParser.VsNotContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsNot</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsNot([NotNull] BOSParser.VsNotContext context) { }
+	public virtual void ExitVsNot([NotNull] BosParser.VsNotContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAmp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsGeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsAmp([NotNull] BOSParser.VsAmpContext context) { }
+	public virtual void EnterVsGeq([NotNull] BosParser.VsGeqContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAmp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsGeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsAmp([NotNull] BOSParser.VsAmpContext context) { }
+	public virtual void ExitVsGeq([NotNull] BosParser.VsGeqContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMid</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsTypeOf</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsMid([NotNull] BOSParser.VsMidContext context) { }
+	public virtual void EnterVsTypeOf([NotNull] BosParser.VsTypeOfContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMid</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsTypeOf</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsMid([NotNull] BOSParser.VsMidContext context) { }
+	public virtual void ExitVsTypeOf([NotNull] BosParser.VsTypeOfContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAnd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsICS</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsAnd([NotNull] BOSParser.VsAndContext context) { }
+	public virtual void EnterVsICS([NotNull] BosParser.VsICSContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAnd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsICS</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsAnd([NotNull] BOSParser.VsAndContext context) { }
+	public virtual void ExitVsICS([NotNull] BosParser.VsICSContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsEq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsNeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsEq([NotNull] BOSParser.VsEqContext context) { }
+	public virtual void EnterVsNeq([NotNull] BosParser.VsNeqContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsEq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsNeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsEq([NotNull] BOSParser.VsEqContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsIs</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsIs([NotNull] BOSParser.VsIsContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsIs</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsIs([NotNull] BOSParser.VsIsContext context) { }
+	public virtual void ExitVsNeq([NotNull] BosParser.VsNeqContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsXor</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsXor([NotNull] BOSParser.VsXorContext context) { }
+	public virtual void EnterVsXor([NotNull] BosParser.VsXorContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsXor</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsXor([NotNull] BOSParser.VsXorContext context) { }
+	public virtual void ExitVsXor([NotNull] BosParser.VsXorContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsGt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsAnd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsGt([NotNull] BOSParser.VsGtContext context) { }
+	public virtual void EnterVsAnd([NotNull] BosParser.VsAndContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsGt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsAnd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsGt([NotNull] BOSParser.VsGtContext context) { }
+	public virtual void ExitVsAnd([NotNull] BosParser.VsAndContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsPow</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVsPow([NotNull] BosParser.VsPowContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsPow</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVsPow([NotNull] BosParser.VsPowContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsLeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVsLeq([NotNull] BOSParser.VsLeqContext context) { }
+	public virtual void EnterVsLeq([NotNull] BosParser.VsLeqContext context) { }
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsLeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVsLeq([NotNull] BOSParser.VsLeqContext context) { }
+	public virtual void ExitVsLeq([NotNull] BosParser.VsLeqContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.variableStmt"/>.
+	/// Enter a parse tree produced by the <c>vsIs</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVariableStmt([NotNull] BOSParser.VariableStmtContext context) { }
+	public virtual void EnterVsIs([NotNull] BosParser.VsIsContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.variableStmt"/>.
+	/// Exit a parse tree produced by the <c>vsIs</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVariableStmt([NotNull] BOSParser.VariableStmtContext context) { }
+	public virtual void ExitVsIs([NotNull] BosParser.VsIsContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.variableListStmt"/>.
+	/// Enter a parse tree produced by the <c>vsMod</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVariableListStmt([NotNull] BOSParser.VariableListStmtContext context) { }
+	public virtual void EnterVsMod([NotNull] BosParser.VsModContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.variableListStmt"/>.
+	/// Exit a parse tree produced by the <c>vsMod</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVariableListStmt([NotNull] BOSParser.VariableListStmtContext context) { }
+	public virtual void ExitVsMod([NotNull] BosParser.VsModContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.variableSubStmt"/>.
+	/// Enter a parse tree produced by the <c>vsAmp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVariableSubStmt([NotNull] BOSParser.VariableSubStmtContext context) { }
+	public virtual void EnterVsAmp([NotNull] BosParser.VsAmpContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.variableSubStmt"/>.
+	/// Exit a parse tree produced by the <c>vsAmp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVariableSubStmt([NotNull] BOSParser.VariableSubStmtContext context) { }
+	public virtual void ExitVsAmp([NotNull] BosParser.VsAmpContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.whileWendStmt"/>.
+	/// Enter a parse tree produced by the <c>vsOr</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterWhileWendStmt([NotNull] BOSParser.WhileWendStmtContext context) { }
+	public virtual void EnterVsOr([NotNull] BosParser.VsOrContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.whileWendStmt"/>.
+	/// Exit a parse tree produced by the <c>vsOr</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitWhileWendStmt([NotNull] BOSParser.WhileWendStmtContext context) { }
+	public virtual void ExitVsOr([NotNull] BosParser.VsOrContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.widthStmt"/>.
+	/// Enter a parse tree produced by the <c>vsMinus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterWidthStmt([NotNull] BOSParser.WidthStmtContext context) { }
+	public virtual void EnterVsMinus([NotNull] BosParser.VsMinusContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.widthStmt"/>.
+	/// Exit a parse tree produced by the <c>vsMinus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitWidthStmt([NotNull] BOSParser.WidthStmtContext context) { }
+	public virtual void ExitVsMinus([NotNull] BosParser.VsMinusContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.withStmt"/>.
+	/// Enter a parse tree produced by the <c>vsLiteral</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterWithStmt([NotNull] BOSParser.WithStmtContext context) { }
+	public virtual void EnterVsLiteral([NotNull] BosParser.VsLiteralContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.withStmt"/>.
+	/// Exit a parse tree produced by the <c>vsLiteral</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitWithStmt([NotNull] BOSParser.WithStmtContext context) { }
+	public virtual void ExitVsLiteral([NotNull] BosParser.VsLiteralContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.writeStmt"/>.
+	/// Enter a parse tree produced by the <c>vsEqv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterWriteStmt([NotNull] BOSParser.WriteStmtContext context) { }
+	public virtual void EnterVsEqv([NotNull] BosParser.VsEqvContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.writeStmt"/>.
+	/// Exit a parse tree produced by the <c>vsEqv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitWriteStmt([NotNull] BOSParser.WriteStmtContext context) { }
+	public virtual void ExitVsEqv([NotNull] BosParser.VsEqvContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.explicitCallStmt"/>.
+	/// Enter a parse tree produced by the <c>vsImp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterExplicitCallStmt([NotNull] BOSParser.ExplicitCallStmtContext context) { }
+	public virtual void EnterVsImp([NotNull] BosParser.VsImpContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.explicitCallStmt"/>.
+	/// Exit a parse tree produced by the <c>vsImp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitExplicitCallStmt([NotNull] BOSParser.ExplicitCallStmtContext context) { }
+	public virtual void ExitVsImp([NotNull] BosParser.VsImpContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eCS_ProcedureCall"/>.
+	/// Enter a parse tree produced by the <c>vsGt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterECS_ProcedureCall([NotNull] BOSParser.ECS_ProcedureCallContext context) { }
+	public virtual void EnterVsGt([NotNull] BosParser.VsGtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eCS_ProcedureCall"/>.
+	/// Exit a parse tree produced by the <c>vsGt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitECS_ProcedureCall([NotNull] BOSParser.ECS_ProcedureCallContext context) { }
+	public virtual void ExitVsGt([NotNull] BosParser.VsGtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eCS_MemberProcedureCall"/>.
+	/// Enter a parse tree produced by the <c>vsEq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterECS_MemberProcedureCall([NotNull] BOSParser.ECS_MemberProcedureCallContext context) { }
+	public virtual void EnterVsEq([NotNull] BosParser.VsEqContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eCS_MemberProcedureCall"/>.
+	/// Exit a parse tree produced by the <c>vsEq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitECS_MemberProcedureCall([NotNull] BOSParser.ECS_MemberProcedureCallContext context) { }
+	public virtual void ExitVsEq([NotNull] BosParser.VsEqContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.implicitCallStmt_InBlock"/>.
+	/// Enter a parse tree produced by the <c>vsMid</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterImplicitCallStmt_InBlock([NotNull] BOSParser.ImplicitCallStmt_InBlockContext context) { }
+	public virtual void EnterVsMid([NotNull] BosParser.VsMidContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InBlock"/>.
+	/// Exit a parse tree produced by the <c>vsMid</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitImplicitCallStmt_InBlock([NotNull] BOSParser.ImplicitCallStmt_InBlockContext context) { }
+	public virtual void ExitVsMid([NotNull] BosParser.VsMidContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_B_ProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.variableStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_B_ProcedureCall([NotNull] BOSParser.ICS_B_ProcedureCallContext context) { }
+	public virtual void EnterVariableStmt([NotNull] BosParser.VariableStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_B_ProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.variableStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_B_ProcedureCall([NotNull] BOSParser.ICS_B_ProcedureCallContext context) { }
+	public virtual void ExitVariableStmt([NotNull] BosParser.VariableStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_B_MemberProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.variableListStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_B_MemberProcedureCall([NotNull] BOSParser.ICS_B_MemberProcedureCallContext context) { }
+	public virtual void EnterVariableListStmt([NotNull] BosParser.VariableListStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_B_MemberProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.variableListStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_B_MemberProcedureCall([NotNull] BOSParser.ICS_B_MemberProcedureCallContext context) { }
+	public virtual void ExitVariableListStmt([NotNull] BosParser.VariableListStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.implicitCallStmt_InStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.variableSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterImplicitCallStmt_InStmt([NotNull] BOSParser.ImplicitCallStmt_InStmtContext context) { }
+	public virtual void EnterVariableSubStmt([NotNull] BosParser.VariableSubStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.variableSubStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitImplicitCallStmt_InStmt([NotNull] BOSParser.ImplicitCallStmt_InStmtContext context) { }
+	public virtual void ExitVariableSubStmt([NotNull] BosParser.VariableSubStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_VariableOrProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.whileWendStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_S_VariableOrProcedureCall([NotNull] BOSParser.ICS_S_VariableOrProcedureCallContext context) { }
+	public virtual void EnterWhileWendStmt([NotNull] BosParser.WhileWendStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_VariableOrProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.whileWendStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_S_VariableOrProcedureCall([NotNull] BOSParser.ICS_S_VariableOrProcedureCallContext context) { }
+	public virtual void ExitWhileWendStmt([NotNull] BosParser.WhileWendStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_ProcedureOrArrayCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.widthStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_S_ProcedureOrArrayCall([NotNull] BOSParser.ICS_S_ProcedureOrArrayCallContext context) { }
+	public virtual void EnterWidthStmt([NotNull] BosParser.WidthStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_ProcedureOrArrayCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.widthStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_S_ProcedureOrArrayCall([NotNull] BOSParser.ICS_S_ProcedureOrArrayCallContext context) { }
+	public virtual void ExitWidthStmt([NotNull] BosParser.WidthStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_NestedProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.withStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_S_NestedProcedureCall([NotNull] BOSParser.ICS_S_NestedProcedureCallContext context) { }
+	public virtual void EnterWithStmt([NotNull] BosParser.WithStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_NestedProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.withStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_S_NestedProcedureCall([NotNull] BOSParser.ICS_S_NestedProcedureCallContext context) { }
+	public virtual void ExitWithStmt([NotNull] BosParser.WithStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_MembersCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.writeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_S_MembersCall([NotNull] BOSParser.ICS_S_MembersCallContext context) { }
+	public virtual void EnterWriteStmt([NotNull] BosParser.WriteStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_MembersCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.writeStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_S_MembersCall([NotNull] BOSParser.ICS_S_MembersCallContext context) { }
+	public virtual void ExitWriteStmt([NotNull] BosParser.WriteStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_MemberCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.explicitCallStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_S_MemberCall([NotNull] BOSParser.ICS_S_MemberCallContext context) { }
+	public virtual void EnterExplicitCallStmt([NotNull] BosParser.ExplicitCallStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_MemberCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.explicitCallStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_S_MemberCall([NotNull] BOSParser.ICS_S_MemberCallContext context) { }
+	public virtual void ExitExplicitCallStmt([NotNull] BosParser.ExplicitCallStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_DictionaryCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eCS_ProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterICS_S_DictionaryCall([NotNull] BOSParser.ICS_S_DictionaryCallContext context) { }
+	public virtual void EnterECS_ProcedureCall([NotNull] BosParser.ECS_ProcedureCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_DictionaryCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eCS_ProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitICS_S_DictionaryCall([NotNull] BOSParser.ICS_S_DictionaryCallContext context) { }
+	public virtual void ExitECS_ProcedureCall([NotNull] BosParser.ECS_ProcedureCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argsCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eCS_MemberProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterArgsCall([NotNull] BOSParser.ArgsCallContext context) { }
+	public virtual void EnterECS_MemberProcedureCall([NotNull] BosParser.ECS_MemberProcedureCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argsCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eCS_MemberProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitArgsCall([NotNull] BOSParser.ArgsCallContext context) { }
+	public virtual void ExitECS_MemberProcedureCall([NotNull] BosParser.ECS_MemberProcedureCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.implicitCallStmt_InBlock"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterArgCall([NotNull] BOSParser.ArgCallContext context) { }
+	public virtual void EnterImplicitCallStmt_InBlock([NotNull] BosParser.ImplicitCallStmt_InBlockContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.implicitCallStmt_InBlock"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitArgCall([NotNull] BOSParser.ArgCallContext context) { }
+	public virtual void ExitImplicitCallStmt_InBlock([NotNull] BosParser.ImplicitCallStmt_InBlockContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.dictionaryCallStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_B_ProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterDictionaryCallStmt([NotNull] BOSParser.DictionaryCallStmtContext context) { }
+	public virtual void EnterICS_B_ProcedureCall([NotNull] BosParser.ICS_B_ProcedureCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.dictionaryCallStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_B_ProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitDictionaryCallStmt([NotNull] BOSParser.DictionaryCallStmtContext context) { }
+	public virtual void ExitICS_B_ProcedureCall([NotNull] BosParser.ICS_B_ProcedureCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argList"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_B_MemberProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterArgList([NotNull] BOSParser.ArgListContext context) { }
+	public virtual void EnterICS_B_MemberProcedureCall([NotNull] BosParser.ICS_B_MemberProcedureCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argList"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_B_MemberProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitArgList([NotNull] BOSParser.ArgListContext context) { }
+	public virtual void ExitICS_B_MemberProcedureCall([NotNull] BosParser.ICS_B_MemberProcedureCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.arg"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.implicitCallStmt_InStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterArg([NotNull] BOSParser.ArgContext context) { }
+	public virtual void EnterImplicitCallStmt_InStmt([NotNull] BosParser.ImplicitCallStmt_InStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.arg"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.implicitCallStmt_InStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitArg([NotNull] BOSParser.ArgContext context) { }
+	public virtual void ExitImplicitCallStmt_InStmt([NotNull] BosParser.ImplicitCallStmt_InStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argDefaultValue"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_VariableOrProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterArgDefaultValue([NotNull] BOSParser.ArgDefaultValueContext context) { }
+	public virtual void EnterICS_S_VariableOrProcedureCall([NotNull] BosParser.ICS_S_VariableOrProcedureCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argDefaultValue"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_VariableOrProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitArgDefaultValue([NotNull] BOSParser.ArgDefaultValueContext context) { }
+	public virtual void ExitICS_S_VariableOrProcedureCall([NotNull] BosParser.ICS_S_VariableOrProcedureCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.subscripts"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_ProcedureOrArrayCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSubscripts([NotNull] BOSParser.SubscriptsContext context) { }
+	public virtual void EnterICS_S_ProcedureOrArrayCall([NotNull] BosParser.ICS_S_ProcedureOrArrayCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.subscripts"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_ProcedureOrArrayCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSubscripts([NotNull] BOSParser.SubscriptsContext context) { }
+	public virtual void ExitICS_S_ProcedureOrArrayCall([NotNull] BosParser.ICS_S_ProcedureOrArrayCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.subscript"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_NestedProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSubscript([NotNull] BOSParser.SubscriptContext context) { }
+	public virtual void EnterICS_S_NestedProcedureCall([NotNull] BosParser.ICS_S_NestedProcedureCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.subscript"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_NestedProcedureCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSubscript([NotNull] BOSParser.SubscriptContext context) { }
+	public virtual void ExitICS_S_NestedProcedureCall([NotNull] BosParser.ICS_S_NestedProcedureCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ambiguousIdentifier"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_MembersCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterAmbiguousIdentifier([NotNull] BOSParser.AmbiguousIdentifierContext context) { }
+	public virtual void EnterICS_S_MembersCall([NotNull] BosParser.ICS_S_MembersCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ambiguousIdentifier"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_MembersCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitAmbiguousIdentifier([NotNull] BOSParser.AmbiguousIdentifierContext context) { }
+	public virtual void ExitICS_S_MembersCall([NotNull] BosParser.ICS_S_MembersCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.asTypeClause"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_MemberCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterAsTypeClause([NotNull] BOSParser.AsTypeClauseContext context) { }
+	public virtual void EnterICS_S_MemberCall([NotNull] BosParser.ICS_S_MemberCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.asTypeClause"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_MemberCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitAsTypeClause([NotNull] BOSParser.AsTypeClauseContext context) { }
+	public virtual void ExitICS_S_MemberCall([NotNull] BosParser.ICS_S_MemberCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.baseType"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_DictionaryCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterBaseType([NotNull] BOSParser.BaseTypeContext context) { }
+	public virtual void EnterICS_S_DictionaryCall([NotNull] BosParser.ICS_S_DictionaryCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.baseType"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_DictionaryCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitBaseType([NotNull] BOSParser.BaseTypeContext context) { }
+	public virtual void ExitICS_S_DictionaryCall([NotNull] BosParser.ICS_S_DictionaryCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.certainIdentifier"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argsCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCertainIdentifier([NotNull] BOSParser.CertainIdentifierContext context) { }
+	public virtual void EnterArgsCall([NotNull] BosParser.ArgsCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.certainIdentifier"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argsCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCertainIdentifier([NotNull] BOSParser.CertainIdentifierContext context) { }
+	public virtual void ExitArgsCall([NotNull] BosParser.ArgsCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.comparisonOperator"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterComparisonOperator([NotNull] BOSParser.ComparisonOperatorContext context) { }
+	public virtual void EnterArgCall([NotNull] BosParser.ArgCallContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.comparisonOperator"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitComparisonOperator([NotNull] BOSParser.ComparisonOperatorContext context) { }
+	public virtual void ExitArgCall([NotNull] BosParser.ArgCallContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.complexType"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.dictionaryCallStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterComplexType([NotNull] BOSParser.ComplexTypeContext context) { }
+	public virtual void EnterDictionaryCallStmt([NotNull] BosParser.DictionaryCallStmtContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.complexType"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.dictionaryCallStmt"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitComplexType([NotNull] BOSParser.ComplexTypeContext context) { }
+	public virtual void ExitDictionaryCallStmt([NotNull] BosParser.DictionaryCallStmtContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.fieldLength"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argList"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterFieldLength([NotNull] BOSParser.FieldLengthContext context) { }
+	public virtual void EnterArgList([NotNull] BosParser.ArgListContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.fieldLength"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argList"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitFieldLength([NotNull] BOSParser.FieldLengthContext context) { }
+	public virtual void ExitArgList([NotNull] BosParser.ArgListContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.letterrange"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.arg"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLetterrange([NotNull] BOSParser.LetterrangeContext context) { }
+	public virtual void EnterArg([NotNull] BosParser.ArgContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.letterrange"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.arg"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLetterrange([NotNull] BOSParser.LetterrangeContext context) { }
+	public virtual void ExitArg([NotNull] BosParser.ArgContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lineLabel"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argDefaultValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLineLabel([NotNull] BOSParser.LineLabelContext context) { }
+	public virtual void EnterArgDefaultValue([NotNull] BosParser.ArgDefaultValueContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lineLabel"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argDefaultValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLineLabel([NotNull] BOSParser.LineLabelContext context) { }
+	public virtual void ExitArgDefaultValue([NotNull] BosParser.ArgDefaultValueContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.literal"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.subscripts"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterLiteral([NotNull] BOSParser.LiteralContext context) { }
+	public virtual void EnterSubscripts([NotNull] BosParser.SubscriptsContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.literal"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.subscripts"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitLiteral([NotNull] BOSParser.LiteralContext context) { }
+	public virtual void ExitSubscripts([NotNull] BosParser.SubscriptsContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.publicPrivateVisibility"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.subscript"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterPublicPrivateVisibility([NotNull] BOSParser.PublicPrivateVisibilityContext context) { }
+	public virtual void EnterSubscript([NotNull] BosParser.SubscriptContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.publicPrivateVisibility"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.subscript"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitPublicPrivateVisibility([NotNull] BOSParser.PublicPrivateVisibilityContext context) { }
+	public virtual void ExitSubscript([NotNull] BosParser.SubscriptContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.publicPrivateGlobalVisibility"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ambiguousIdentifier"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterPublicPrivateGlobalVisibility([NotNull] BOSParser.PublicPrivateGlobalVisibilityContext context) { }
+	public virtual void EnterAmbiguousIdentifier([NotNull] BosParser.AmbiguousIdentifierContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.publicPrivateGlobalVisibility"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ambiguousIdentifier"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitPublicPrivateGlobalVisibility([NotNull] BOSParser.PublicPrivateGlobalVisibilityContext context) { }
+	public virtual void ExitAmbiguousIdentifier([NotNull] BosParser.AmbiguousIdentifierContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.type"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.asTypeClause"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterType([NotNull] BOSParser.TypeContext context) { }
+	public virtual void EnterAsTypeClause([NotNull] BosParser.AsTypeClauseContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.type"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.asTypeClause"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitType([NotNull] BOSParser.TypeContext context) { }
+	public virtual void ExitAsTypeClause([NotNull] BosParser.AsTypeClauseContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeHint"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.baseType"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterTypeHint([NotNull] BOSParser.TypeHintContext context) { }
+	public virtual void EnterBaseType([NotNull] BosParser.BaseTypeContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeHint"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.baseType"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitTypeHint([NotNull] BOSParser.TypeHintContext context) { }
+	public virtual void ExitBaseType([NotNull] BosParser.BaseTypeContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.visibility"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.certainIdentifier"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVisibility([NotNull] BOSParser.VisibilityContext context) { }
+	public virtual void EnterCertainIdentifier([NotNull] BosParser.CertainIdentifierContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.visibility"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.certainIdentifier"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVisibility([NotNull] BOSParser.VisibilityContext context) { }
+	public virtual void ExitCertainIdentifier([NotNull] BosParser.CertainIdentifierContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ambiguousKeyword"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.comparisonOperator"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterAmbiguousKeyword([NotNull] BOSParser.AmbiguousKeywordContext context) { }
+	public virtual void EnterComparisonOperator([NotNull] BosParser.ComparisonOperatorContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ambiguousKeyword"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.comparisonOperator"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitAmbiguousKeyword([NotNull] BOSParser.AmbiguousKeywordContext context) { }
+	public virtual void ExitComparisonOperator([NotNull] BosParser.ComparisonOperatorContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.complexType"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterComplexType([NotNull] BosParser.ComplexTypeContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.complexType"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitComplexType([NotNull] BosParser.ComplexTypeContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.fieldLength"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterFieldLength([NotNull] BosParser.FieldLengthContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.fieldLength"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitFieldLength([NotNull] BosParser.FieldLengthContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.letterrange"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterLetterrange([NotNull] BosParser.LetterrangeContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.letterrange"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitLetterrange([NotNull] BosParser.LetterrangeContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.lineLabel"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterLineLabel([NotNull] BosParser.LineLabelContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.lineLabel"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitLineLabel([NotNull] BosParser.LineLabelContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.literal"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterLiteral([NotNull] BosParser.LiteralContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.literal"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitLiteral([NotNull] BosParser.LiteralContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.publicPrivateVisibility"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterPublicPrivateVisibility([NotNull] BosParser.PublicPrivateVisibilityContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.publicPrivateVisibility"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitPublicPrivateVisibility([NotNull] BosParser.PublicPrivateVisibilityContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.publicPrivateGlobalVisibility"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterPublicPrivateGlobalVisibility([NotNull] BosParser.PublicPrivateGlobalVisibilityContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.publicPrivateGlobalVisibility"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitPublicPrivateGlobalVisibility([NotNull] BosParser.PublicPrivateGlobalVisibilityContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.type"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterType([NotNull] BosParser.TypeContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.type"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitType([NotNull] BosParser.TypeContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.typeHint"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterTypeHint([NotNull] BosParser.TypeHintContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.typeHint"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitTypeHint([NotNull] BosParser.TypeHintContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.visibility"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVisibility([NotNull] BosParser.VisibilityContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.visibility"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVisibility([NotNull] BosParser.VisibilityContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.ambiguousKeyword"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterAmbiguousKeyword([NotNull] BosParser.AmbiguousKeywordContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.ambiguousKeyword"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitAmbiguousKeyword([NotNull] BosParser.AmbiguousKeywordContext context) { }
 
 	/// <inheritdoc/>
 	/// <remarks>The default implementation does nothing.</remarks>

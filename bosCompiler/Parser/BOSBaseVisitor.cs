@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from ../Grammar/BOS.g4 by ANTLR 4.7.2
+// Generated from ./Grammar/Bos.g4 by ANTLR 4.7.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -25,16 +25,16 @@ using IToken = Antlr4.Runtime.IToken;
 using ParserRuleContext = Antlr4.Runtime.ParserRuleContext;
 
 /// <summary>
-/// This class provides an empty implementation of <see cref="IBOSVisitor{Result}"/>,
+/// This class provides an empty implementation of <see cref="IBosVisitor{Result}"/>,
 /// which can be extended to create a visitor which only needs to handle a subset
 /// of the available methods.
 /// </summary>
 /// <typeparam name="Result">The return type of the visit operation.</typeparam>
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.7.2")]
 [System.CLSCompliant(false)]
-public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, IBOSVisitor<Result> {
+public partial class BosBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, IBosVisitor<Result> {
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.startRule"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.startRule"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -42,9 +42,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitStartRule([NotNull] BOSParser.StartRuleContext context) { return VisitChildren(context); }
+	public virtual Result VisitStartRule([NotNull] BosParser.StartRuleContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.module"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.module"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -52,9 +52,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModule([NotNull] BOSParser.ModuleContext context) { return VisitChildren(context); }
+	public virtual Result VisitModule([NotNull] BosParser.ModuleContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReferences"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReferences"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -62,9 +62,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleReferences([NotNull] BOSParser.ModuleReferencesContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleReferences([NotNull] BosParser.ModuleReferencesContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReference"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleImports"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -72,9 +72,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleReference([NotNull] BOSParser.ModuleReferenceContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleImports([NotNull] BosParser.ModuleImportsContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReferenceValue"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReference"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -82,9 +82,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleReferenceValue([NotNull] BOSParser.ModuleReferenceValueContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleReference([NotNull] BosParser.ModuleReferenceContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReferenceComponent"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReferenceValue"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -92,9 +92,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleReferenceComponent([NotNull] BOSParser.ModuleReferenceComponentContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleReferenceValue([NotNull] BosParser.ModuleReferenceValueContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleHeader"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReferenceComponent"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -102,9 +102,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleHeader([NotNull] BOSParser.ModuleHeaderContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleReferenceComponent([NotNull] BosParser.ModuleReferenceComponentContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleConfig"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleHeader"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -112,9 +112,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleConfig([NotNull] BOSParser.ModuleConfigContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleHeader([NotNull] BosParser.ModuleHeaderContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleConfigElement"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleConfig"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -122,9 +122,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleConfigElement([NotNull] BOSParser.ModuleConfigElementContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleConfig([NotNull] BosParser.ModuleConfigContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleAttributes"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleConfigElement"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -132,9 +132,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleAttributes([NotNull] BOSParser.ModuleAttributesContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleConfigElement([NotNull] BosParser.ModuleConfigElementContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleOptions"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleAttributes"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -142,10 +142,20 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleOptions([NotNull] BOSParser.ModuleOptionsContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleAttributes([NotNull] BosParser.ModuleAttributesContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.moduleOptions"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitModuleOptions([NotNull] BosParser.ModuleOptionsContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionBaseStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -153,10 +163,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOptionBaseStmt([NotNull] BOSParser.OptionBaseStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOptionBaseStmt([NotNull] BosParser.OptionBaseStmtContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionCompareStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -164,10 +174,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOptionCompareStmt([NotNull] BOSParser.OptionCompareStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOptionCompareStmt([NotNull] BosParser.OptionCompareStmtContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionExplicitStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -175,10 +185,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOptionExplicitStmt([NotNull] BOSParser.OptionExplicitStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOptionExplicitStmt([NotNull] BosParser.OptionExplicitStmtContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionPrivateModuleStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -186,9 +196,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOptionPrivateModuleStmt([NotNull] BOSParser.OptionPrivateModuleStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOptionPrivateModuleStmt([NotNull] BosParser.OptionPrivateModuleStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleBody"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleBody"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -196,9 +206,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleBody([NotNull] BOSParser.ModuleBodyContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleBody([NotNull] BosParser.ModuleBodyContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleBodyElement"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleBodyElement"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -206,9 +216,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleBodyElement([NotNull] BOSParser.ModuleBodyElementContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleBodyElement([NotNull] BosParser.ModuleBodyElementContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.controlProperties"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.classBody"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -216,9 +226,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitControlProperties([NotNull] BOSParser.ControlPropertiesContext context) { return VisitChildren(context); }
+	public virtual Result VisitClassBody([NotNull] BosParser.ClassBodyContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_Properties"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.classBodyElement"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -226,9 +236,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCp_Properties([NotNull] BOSParser.Cp_PropertiesContext context) { return VisitChildren(context); }
+	public virtual Result VisitClassBodyElement([NotNull] BosParser.ClassBodyElementContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_SingleProperty"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.controlProperties"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -236,9 +246,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCp_SingleProperty([NotNull] BOSParser.Cp_SinglePropertyContext context) { return VisitChildren(context); }
+	public virtual Result VisitControlProperties([NotNull] BosParser.ControlPropertiesContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_PropertyName"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_Properties"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -246,9 +256,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCp_PropertyName([NotNull] BOSParser.Cp_PropertyNameContext context) { return VisitChildren(context); }
+	public virtual Result VisitCp_Properties([NotNull] BosParser.Cp_PropertiesContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_PropertyValue"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_SingleProperty"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -256,9 +266,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCp_PropertyValue([NotNull] BOSParser.Cp_PropertyValueContext context) { return VisitChildren(context); }
+	public virtual Result VisitCp_SingleProperty([NotNull] BosParser.Cp_SinglePropertyContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_NestedProperty"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_PropertyName"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -266,9 +276,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCp_NestedProperty([NotNull] BOSParser.Cp_NestedPropertyContext context) { return VisitChildren(context); }
+	public virtual Result VisitCp_PropertyName([NotNull] BosParser.Cp_PropertyNameContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_ControlType"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_PropertyValue"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -276,9 +286,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCp_ControlType([NotNull] BOSParser.Cp_ControlTypeContext context) { return VisitChildren(context); }
+	public virtual Result VisitCp_PropertyValue([NotNull] BosParser.Cp_PropertyValueContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_ControlIdentifier"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_NestedProperty"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -286,9 +296,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCp_ControlIdentifier([NotNull] BOSParser.Cp_ControlIdentifierContext context) { return VisitChildren(context); }
+	public virtual Result VisitCp_NestedProperty([NotNull] BosParser.Cp_NestedPropertyContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleBlock"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_ControlType"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -296,9 +306,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitModuleBlock([NotNull] BOSParser.ModuleBlockContext context) { return VisitChildren(context); }
+	public virtual Result VisitCp_ControlType([NotNull] BosParser.Cp_ControlTypeContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.attributeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_ControlIdentifier"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -306,9 +316,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitAttributeStmt([NotNull] BOSParser.AttributeStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitCp_ControlIdentifier([NotNull] BosParser.Cp_ControlIdentifierContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.block"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleBlock"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -316,9 +326,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitBlock([NotNull] BOSParser.BlockContext context) { return VisitChildren(context); }
+	public virtual Result VisitModuleBlock([NotNull] BosParser.ModuleBlockContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.blockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.importStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -326,9 +336,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitBlockStmt([NotNull] BOSParser.BlockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitImportStmt([NotNull] BosParser.ImportStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.appActivateStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.attributeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -336,9 +346,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitAppActivateStmt([NotNull] BOSParser.AppActivateStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitAttributeStmt([NotNull] BosParser.AttributeStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.beepStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.block"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -346,9 +356,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitBeepStmt([NotNull] BOSParser.BeepStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitBlock([NotNull] BosParser.BlockContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.chDirStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.blockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -356,9 +366,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitChDirStmt([NotNull] BOSParser.ChDirStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitBlockStmt([NotNull] BosParser.BlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.chDriveStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.appActivateStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -366,9 +376,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitChDriveStmt([NotNull] BOSParser.ChDriveStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitAppActivateStmt([NotNull] BosParser.AppActivateStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.closeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.beepStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -376,9 +386,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCloseStmt([NotNull] BOSParser.CloseStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitBeepStmt([NotNull] BosParser.BeepStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.constStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.chDirStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -386,9 +396,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitConstStmt([NotNull] BOSParser.ConstStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitChDirStmt([NotNull] BosParser.ChDirStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.constSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.chDriveStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -396,9 +406,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitConstSubStmt([NotNull] BOSParser.ConstSubStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitChDriveStmt([NotNull] BosParser.ChDriveStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.dateStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.classStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -406,9 +416,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitDateStmt([NotNull] BOSParser.DateStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitClassStmt([NotNull] BosParser.ClassStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.declareStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.closeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -416,9 +426,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitDeclareStmt([NotNull] BOSParser.DeclareStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitCloseStmt([NotNull] BosParser.CloseStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.deftypeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.constStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -426,9 +436,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitDeftypeStmt([NotNull] BOSParser.DeftypeStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitConstStmt([NotNull] BosParser.ConstStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.deleteSettingStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.constSubStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -436,9 +446,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitDeleteSettingStmt([NotNull] BOSParser.DeleteSettingStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitConstSubStmt([NotNull] BosParser.ConstSubStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.doLoopStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.dateStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -446,9 +456,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitDoLoopStmt([NotNull] BOSParser.DoLoopStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitDateStmt([NotNull] BosParser.DateStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.endStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.declareStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -456,9 +466,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitEndStmt([NotNull] BOSParser.EndStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitDeclareStmt([NotNull] BosParser.DeclareStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.enumerationStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.deftypeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -466,9 +476,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitEnumerationStmt([NotNull] BOSParser.EnumerationStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitDeftypeStmt([NotNull] BosParser.DeftypeStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.enumerationStmt_Constant"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.deleteSettingStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -476,9 +486,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitEnumerationStmt_Constant([NotNull] BOSParser.EnumerationStmt_ConstantContext context) { return VisitChildren(context); }
+	public virtual Result VisitDeleteSettingStmt([NotNull] BosParser.DeleteSettingStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eraseStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.doLoopStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -486,9 +496,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitEraseStmt([NotNull] BOSParser.EraseStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitDoLoopStmt([NotNull] BosParser.DoLoopStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.errorStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.endStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -496,9 +506,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitErrorStmt([NotNull] BOSParser.ErrorStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitEndStmt([NotNull] BosParser.EndStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eventStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.enumerationStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -506,9 +516,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitEventStmt([NotNull] BOSParser.EventStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitEnumerationStmt([NotNull] BosParser.EnumerationStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.exitStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.enumerationStmt_Constant"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -516,9 +526,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitExitStmt([NotNull] BOSParser.ExitStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitEnumerationStmt_Constant([NotNull] BosParser.EnumerationStmt_ConstantContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.filecopyStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eraseStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -526,9 +536,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitFilecopyStmt([NotNull] BOSParser.FilecopyStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitEraseStmt([NotNull] BosParser.EraseStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.forEachStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.errorStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -536,9 +546,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitForEachStmt([NotNull] BOSParser.ForEachStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitErrorStmt([NotNull] BosParser.ErrorStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.forNextStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eventStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -546,9 +556,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitForNextStmt([NotNull] BOSParser.ForNextStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitEventStmt([NotNull] BosParser.EventStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.functionStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.exitStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -556,9 +566,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitFunctionStmt([NotNull] BOSParser.FunctionStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitExitStmt([NotNull] BosParser.ExitStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.getStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.filecopyStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -566,9 +576,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitGetStmt([NotNull] BOSParser.GetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitFilecopyStmt([NotNull] BosParser.FilecopyStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.goSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.forEachStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -576,9 +586,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitGoSubStmt([NotNull] BOSParser.GoSubStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitForEachStmt([NotNull] BosParser.ForEachStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.goToStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.forNextStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -586,10 +596,50 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitGoToStmt([NotNull] BOSParser.GoToStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitForNextStmt([NotNull] BosParser.ForNextStmtContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.functionStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitFunctionStmt([NotNull] BosParser.FunctionStmtContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.getStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitGetStmt([NotNull] BosParser.GetStmtContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.goSubStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitGoSubStmt([NotNull] BosParser.GoSubStmtContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.goToStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitGoToStmt([NotNull] BosParser.GoToStmtContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>inlineIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -597,10 +647,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitInlineIfThenElse([NotNull] BOSParser.InlineIfThenElseContext context) { return VisitChildren(context); }
+	public virtual Result VisitInlineIfThenElse([NotNull] BosParser.InlineIfThenElseContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>blockIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -608,9 +658,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitBlockIfThenElse([NotNull] BOSParser.BlockIfThenElseContext context) { return VisitChildren(context); }
+	public virtual Result VisitBlockIfThenElse([NotNull] BosParser.BlockIfThenElseContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifBlockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -618,9 +668,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitIfBlockStmt([NotNull] BOSParser.IfBlockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitIfBlockStmt([NotNull] BosParser.IfBlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifConditionStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifConditionStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -628,9 +678,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitIfConditionStmt([NotNull] BOSParser.IfConditionStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitIfConditionStmt([NotNull] BosParser.IfConditionStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifElseIfBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifElseIfBlockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -638,9 +688,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitIfElseIfBlockStmt([NotNull] BOSParser.IfElseIfBlockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitIfElseIfBlockStmt([NotNull] BosParser.IfElseIfBlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifElseBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifElseBlockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -648,9 +698,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitIfElseBlockStmt([NotNull] BOSParser.IfElseBlockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitIfElseBlockStmt([NotNull] BosParser.IfElseBlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.implementsStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.implementsStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -658,9 +708,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitImplementsStmt([NotNull] BOSParser.ImplementsStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitImplementsStmt([NotNull] BosParser.ImplementsStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.inputStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.inputStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -668,9 +718,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitInputStmt([NotNull] BOSParser.InputStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitInputStmt([NotNull] BosParser.InputStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.killStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.killStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -678,9 +728,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitKillStmt([NotNull] BOSParser.KillStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitKillStmt([NotNull] BosParser.KillStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.letStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.letStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -688,9 +738,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLetStmt([NotNull] BOSParser.LetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitLetStmt([NotNull] BosParser.LetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lineInputStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.lineInputStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -698,9 +748,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLineInputStmt([NotNull] BOSParser.LineInputStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitLineInputStmt([NotNull] BosParser.LineInputStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.loadStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.loadStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -708,9 +758,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLoadStmt([NotNull] BOSParser.LoadStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitLoadStmt([NotNull] BosParser.LoadStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.lockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -718,9 +768,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLockStmt([NotNull] BOSParser.LockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitLockStmt([NotNull] BosParser.LockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lsetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.lsetStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -728,9 +778,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLsetStmt([NotNull] BOSParser.LsetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitLsetStmt([NotNull] BosParser.LsetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroIfThenElseStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroIfThenElseStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -738,9 +788,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitMacroIfThenElseStmt([NotNull] BOSParser.MacroIfThenElseStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitMacroIfThenElseStmt([NotNull] BosParser.MacroIfThenElseStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroIfBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroIfBlockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -748,9 +798,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitMacroIfBlockStmt([NotNull] BOSParser.MacroIfBlockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitMacroIfBlockStmt([NotNull] BosParser.MacroIfBlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroElseIfBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroElseIfBlockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -758,9 +808,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitMacroElseIfBlockStmt([NotNull] BOSParser.MacroElseIfBlockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitMacroElseIfBlockStmt([NotNull] BosParser.MacroElseIfBlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroElseBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroElseBlockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -768,9 +818,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitMacroElseBlockStmt([NotNull] BOSParser.MacroElseBlockStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitMacroElseBlockStmt([NotNull] BosParser.MacroElseBlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.midStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.midStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -778,9 +828,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitMidStmt([NotNull] BOSParser.MidStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitMidStmt([NotNull] BosParser.MidStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.mkdirStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.mkdirStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -788,9 +838,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitMkdirStmt([NotNull] BOSParser.MkdirStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitMkdirStmt([NotNull] BosParser.MkdirStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.nameStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.nameStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -798,9 +848,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitNameStmt([NotNull] BOSParser.NameStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitNameStmt([NotNull] BosParser.NameStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.onErrorStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.onErrorStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -808,9 +858,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOnErrorStmt([NotNull] BOSParser.OnErrorStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOnErrorStmt([NotNull] BosParser.OnErrorStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.onGoToStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.onGoToStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -818,9 +868,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOnGoToStmt([NotNull] BOSParser.OnGoToStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOnGoToStmt([NotNull] BosParser.OnGoToStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.onGoSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.onGoSubStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -828,9 +878,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOnGoSubStmt([NotNull] BOSParser.OnGoSubStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOnGoSubStmt([NotNull] BosParser.OnGoSubStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.openStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.openStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -838,9 +888,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOpenStmt([NotNull] BOSParser.OpenStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitOpenStmt([NotNull] BosParser.OpenStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.outputList"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.outputList"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -848,9 +898,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOutputList([NotNull] BOSParser.OutputListContext context) { return VisitChildren(context); }
+	public virtual Result VisitOutputList([NotNull] BosParser.OutputListContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.outputList_Expression"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.outputList_Expression"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -858,9 +908,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitOutputList_Expression([NotNull] BOSParser.OutputList_ExpressionContext context) { return VisitChildren(context); }
+	public virtual Result VisitOutputList_Expression([NotNull] BosParser.OutputList_ExpressionContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.printStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.printStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -868,9 +918,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitPrintStmt([NotNull] BOSParser.PrintStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitPrintStmt([NotNull] BosParser.PrintStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.propertyGetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.propertyGetStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -878,9 +928,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitPropertyGetStmt([NotNull] BOSParser.PropertyGetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitPropertyGetStmt([NotNull] BosParser.PropertyGetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.propertySetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.propertySetStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -888,9 +938,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitPropertySetStmt([NotNull] BOSParser.PropertySetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitPropertySetStmt([NotNull] BosParser.PropertySetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.propertyLetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.propertyLetStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -898,9 +948,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitPropertyLetStmt([NotNull] BOSParser.PropertyLetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitPropertyLetStmt([NotNull] BosParser.PropertyLetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.putStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.putStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -908,9 +958,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitPutStmt([NotNull] BOSParser.PutStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitPutStmt([NotNull] BosParser.PutStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.raiseEventStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.raiseEventStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -918,9 +968,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitRaiseEventStmt([NotNull] BOSParser.RaiseEventStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitRaiseEventStmt([NotNull] BosParser.RaiseEventStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.randomizeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.randomizeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -928,9 +978,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitRandomizeStmt([NotNull] BOSParser.RandomizeStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitRandomizeStmt([NotNull] BosParser.RandomizeStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.redimStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.redimStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -938,9 +988,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitRedimStmt([NotNull] BOSParser.RedimStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitRedimStmt([NotNull] BosParser.RedimStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.redimSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.redimSubStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -948,9 +998,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitRedimSubStmt([NotNull] BOSParser.RedimSubStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitRedimSubStmt([NotNull] BosParser.RedimSubStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.resetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.resetStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -958,9 +1008,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitResetStmt([NotNull] BOSParser.ResetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitResetStmt([NotNull] BosParser.ResetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.resumeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.resumeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -968,9 +1018,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitResumeStmt([NotNull] BOSParser.ResumeStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitResumeStmt([NotNull] BosParser.ResumeStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.returnStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.returnStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -978,9 +1028,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitReturnStmt([NotNull] BOSParser.ReturnStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitReturnStmt([NotNull] BosParser.ReturnStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.rmdirStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.rmdirStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -988,9 +1038,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitRmdirStmt([NotNull] BOSParser.RmdirStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitRmdirStmt([NotNull] BosParser.RmdirStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.rsetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.rsetStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -998,9 +1048,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitRsetStmt([NotNull] BOSParser.RsetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitRsetStmt([NotNull] BosParser.RsetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.savepictureStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.savepictureStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1008,9 +1058,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSavepictureStmt([NotNull] BOSParser.SavepictureStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSavepictureStmt([NotNull] BosParser.SavepictureStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.saveSettingStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.saveSettingStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1018,9 +1068,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSaveSettingStmt([NotNull] BOSParser.SaveSettingStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSaveSettingStmt([NotNull] BosParser.SaveSettingStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.seekStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.seekStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1028,9 +1078,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSeekStmt([NotNull] BOSParser.SeekStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSeekStmt([NotNull] BosParser.SeekStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.selectCaseStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.selectCaseStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1038,9 +1088,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSelectCaseStmt([NotNull] BOSParser.SelectCaseStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSelectCaseStmt([NotNull] BosParser.SelectCaseStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.sC_Case"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.sC_Case"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1048,10 +1098,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSC_Case([NotNull] BOSParser.SC_CaseContext context) { return VisitChildren(context); }
+	public virtual Result VisitSC_Case([NotNull] BosParser.SC_CaseContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondElse</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1059,10 +1109,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCaseCondElse([NotNull] BOSParser.CaseCondElseContext context) { return VisitChildren(context); }
+	public virtual Result VisitCaseCondElse([NotNull] BosParser.CaseCondElseContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExpr</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1070,10 +1120,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCaseCondExpr([NotNull] BOSParser.CaseCondExprContext context) { return VisitChildren(context); }
+	public virtual Result VisitCaseCondExpr([NotNull] BosParser.CaseCondExprContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExprIs</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1081,10 +1131,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCaseCondExprIs([NotNull] BOSParser.CaseCondExprIsContext context) { return VisitChildren(context); }
+	public virtual Result VisitCaseCondExprIs([NotNull] BosParser.CaseCondExprIsContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExprValue</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1092,10 +1142,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCaseCondExprValue([NotNull] BOSParser.CaseCondExprValueContext context) { return VisitChildren(context); }
+	public virtual Result VisitCaseCondExprValue([NotNull] BosParser.CaseCondExprValueContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExprTo</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1103,9 +1153,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCaseCondExprTo([NotNull] BOSParser.CaseCondExprToContext context) { return VisitChildren(context); }
+	public virtual Result VisitCaseCondExprTo([NotNull] BosParser.CaseCondExprToContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.sendkeysStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.sendkeysStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1113,9 +1163,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSendkeysStmt([NotNull] BOSParser.SendkeysStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSendkeysStmt([NotNull] BosParser.SendkeysStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.setattrStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.setattrStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1123,9 +1173,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSetattrStmt([NotNull] BOSParser.SetattrStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSetattrStmt([NotNull] BosParser.SetattrStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.setStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.setStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1133,9 +1183,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSetStmt([NotNull] BOSParser.SetStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSetStmt([NotNull] BosParser.SetStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.stopStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.stopStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1143,9 +1193,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitStopStmt([NotNull] BOSParser.StopStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitStopStmt([NotNull] BosParser.StopStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.subStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.subStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1153,9 +1203,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSubStmt([NotNull] BOSParser.SubStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitSubStmt([NotNull] BosParser.SubStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.timeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.timeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1163,9 +1213,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitTimeStmt([NotNull] BOSParser.TimeStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitTimeStmt([NotNull] BosParser.TimeStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.typeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1173,9 +1223,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitTypeStmt([NotNull] BOSParser.TypeStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitTypeStmt([NotNull] BosParser.TypeStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeStmt_Element"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.typeStmt_Element"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1183,9 +1233,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitTypeStmt_Element([NotNull] BOSParser.TypeStmt_ElementContext context) { return VisitChildren(context); }
+	public virtual Result VisitTypeStmt_Element([NotNull] BosParser.TypeStmt_ElementContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeOfStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.typeOfStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1193,9 +1243,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitTypeOfStmt([NotNull] BOSParser.TypeOfStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitTypeOfStmt([NotNull] BosParser.TypeOfStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.unloadStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.unloadStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1203,9 +1253,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitUnloadStmt([NotNull] BOSParser.UnloadStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitUnloadStmt([NotNull] BosParser.UnloadStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.unlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.unlockStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1213,197 +1263,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitUnlockStmt([NotNull] BOSParser.UnlockStmtContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsDiv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsDiv([NotNull] BOSParser.VsDivContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsNegation</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsNegation([NotNull] BOSParser.VsNegationContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMinus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsMinus([NotNull] BOSParser.VsMinusContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsImp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsImp([NotNull] BOSParser.VsImpContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsGeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsGeq([NotNull] BOSParser.VsGeqContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsLt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsLt([NotNull] BOSParser.VsLtContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsLiteral</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsLiteral([NotNull] BOSParser.VsLiteralContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsEqv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsEqv([NotNull] BOSParser.VsEqvContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsLike</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsLike([NotNull] BOSParser.VsLikeContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsICS</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsICS([NotNull] BOSParser.VsICSContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsNeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsNeq([NotNull] BOSParser.VsNeqContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsTypeOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsTypeOf([NotNull] BOSParser.VsTypeOfContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsPow</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsPow([NotNull] BOSParser.VsPowContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMult</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsMult([NotNull] BOSParser.VsMultContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAssign</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsAssign([NotNull] BOSParser.VsAssignContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAdd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsAdd([NotNull] BOSParser.VsAddContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsPlus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsPlus([NotNull] BOSParser.VsPlusContext context) { return VisitChildren(context); }
+	public virtual Result VisitUnlockStmt([NotNull] BosParser.UnlockStmtContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsStruct</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1411,10 +1274,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsStruct([NotNull] BOSParser.VsStructContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsStruct([NotNull] BosParser.VsStructContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsOr</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsAdd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1422,10 +1285,21 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsOr([NotNull] BOSParser.VsOrContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsAdd([NotNull] BosParser.VsAddContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsLt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsLt([NotNull] BosParser.VsLtContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsAddressOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1433,21 +1307,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsAddressOf([NotNull] BOSParser.VsAddressOfContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMod</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsMod([NotNull] BOSParser.VsModContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsAddressOf([NotNull] BosParser.VsAddressOfContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsNew</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1455,10 +1318,76 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsNew([NotNull] BOSParser.VsNewContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsNew([NotNull] BosParser.VsNewContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsMult</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsMult([NotNull] BosParser.VsMultContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsNegation</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsNegation([NotNull] BosParser.VsNegationContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsAssign</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsAssign([NotNull] BosParser.VsAssignContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsDiv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsDiv([NotNull] BosParser.VsDivContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsLike</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsLike([NotNull] BosParser.VsLikeContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsPlus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsPlus([NotNull] BosParser.VsPlusContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsNot</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1466,10 +1395,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsNot([NotNull] BOSParser.VsNotContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsNot([NotNull] BosParser.VsNotContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAmp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsGeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1477,10 +1406,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsAmp([NotNull] BOSParser.VsAmpContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsGeq([NotNull] BosParser.VsGeqContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMid</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsTypeOf</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1488,10 +1417,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsMid([NotNull] BOSParser.VsMidContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsTypeOf([NotNull] BosParser.VsTypeOfContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAnd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsICS</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1499,10 +1428,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsAnd([NotNull] BOSParser.VsAndContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsICS([NotNull] BosParser.VsICSContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsEq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsNeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1510,21 +1439,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsEq([NotNull] BOSParser.VsEqContext context) { return VisitChildren(context); }
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsIs</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// <para>
-	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
-	/// on <paramref name="context"/>.
-	/// </para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	public virtual Result VisitVsIs([NotNull] BOSParser.VsIsContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsNeq([NotNull] BosParser.VsNeqContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsXor</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1532,10 +1450,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsXor([NotNull] BOSParser.VsXorContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsXor([NotNull] BosParser.VsXorContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsGt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsAnd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1543,10 +1461,21 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsGt([NotNull] BOSParser.VsGtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsAnd([NotNull] BosParser.VsAndContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsPow</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVsPow([NotNull] BosParser.VsPowContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsLeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1554,9 +1483,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVsLeq([NotNull] BOSParser.VsLeqContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsLeq([NotNull] BosParser.VsLeqContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.variableStmt"/>.
+	/// Visit a parse tree produced by the <c>vsIs</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1564,9 +1494,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVariableStmt([NotNull] BOSParser.VariableStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsIs([NotNull] BosParser.VsIsContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.variableListStmt"/>.
+	/// Visit a parse tree produced by the <c>vsMod</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1574,9 +1505,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVariableListStmt([NotNull] BOSParser.VariableListStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsMod([NotNull] BosParser.VsModContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.variableSubStmt"/>.
+	/// Visit a parse tree produced by the <c>vsAmp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1584,9 +1516,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVariableSubStmt([NotNull] BOSParser.VariableSubStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsAmp([NotNull] BosParser.VsAmpContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.whileWendStmt"/>.
+	/// Visit a parse tree produced by the <c>vsOr</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1594,9 +1527,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitWhileWendStmt([NotNull] BOSParser.WhileWendStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsOr([NotNull] BosParser.VsOrContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.widthStmt"/>.
+	/// Visit a parse tree produced by the <c>vsMinus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1604,9 +1538,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitWidthStmt([NotNull] BOSParser.WidthStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsMinus([NotNull] BosParser.VsMinusContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.withStmt"/>.
+	/// Visit a parse tree produced by the <c>vsLiteral</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1614,9 +1549,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitWithStmt([NotNull] BOSParser.WithStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsLiteral([NotNull] BosParser.VsLiteralContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.writeStmt"/>.
+	/// Visit a parse tree produced by the <c>vsEqv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1624,9 +1560,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitWriteStmt([NotNull] BOSParser.WriteStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsEqv([NotNull] BosParser.VsEqvContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.explicitCallStmt"/>.
+	/// Visit a parse tree produced by the <c>vsImp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1634,9 +1571,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitExplicitCallStmt([NotNull] BOSParser.ExplicitCallStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsImp([NotNull] BosParser.VsImpContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eCS_ProcedureCall"/>.
+	/// Visit a parse tree produced by the <c>vsGt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1644,9 +1582,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitECS_ProcedureCall([NotNull] BOSParser.ECS_ProcedureCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsGt([NotNull] BosParser.VsGtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eCS_MemberProcedureCall"/>.
+	/// Visit a parse tree produced by the <c>vsEq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1654,9 +1593,10 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitECS_MemberProcedureCall([NotNull] BOSParser.ECS_MemberProcedureCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsEq([NotNull] BosParser.VsEqContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InBlock"/>.
+	/// Visit a parse tree produced by the <c>vsMid</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1664,9 +1604,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitImplicitCallStmt_InBlock([NotNull] BOSParser.ImplicitCallStmt_InBlockContext context) { return VisitChildren(context); }
+	public virtual Result VisitVsMid([NotNull] BosParser.VsMidContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_B_ProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.variableStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1674,9 +1614,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_B_ProcedureCall([NotNull] BOSParser.ICS_B_ProcedureCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitVariableStmt([NotNull] BosParser.VariableStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_B_MemberProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.variableListStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1684,9 +1624,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_B_MemberProcedureCall([NotNull] BOSParser.ICS_B_MemberProcedureCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitVariableListStmt([NotNull] BosParser.VariableListStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.variableSubStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1694,9 +1634,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitImplicitCallStmt_InStmt([NotNull] BOSParser.ImplicitCallStmt_InStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitVariableSubStmt([NotNull] BosParser.VariableSubStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_VariableOrProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.whileWendStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1704,9 +1644,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_S_VariableOrProcedureCall([NotNull] BOSParser.ICS_S_VariableOrProcedureCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitWhileWendStmt([NotNull] BosParser.WhileWendStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_ProcedureOrArrayCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.widthStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1714,9 +1654,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_S_ProcedureOrArrayCall([NotNull] BOSParser.ICS_S_ProcedureOrArrayCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitWidthStmt([NotNull] BosParser.WidthStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_NestedProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.withStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1724,9 +1664,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_S_NestedProcedureCall([NotNull] BOSParser.ICS_S_NestedProcedureCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitWithStmt([NotNull] BosParser.WithStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_MembersCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.writeStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1734,9 +1674,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_S_MembersCall([NotNull] BOSParser.ICS_S_MembersCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitWriteStmt([NotNull] BosParser.WriteStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_MemberCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.explicitCallStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1744,9 +1684,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_S_MemberCall([NotNull] BOSParser.ICS_S_MemberCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitExplicitCallStmt([NotNull] BosParser.ExplicitCallStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_DictionaryCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eCS_ProcedureCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1754,9 +1694,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitICS_S_DictionaryCall([NotNull] BOSParser.ICS_S_DictionaryCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitECS_ProcedureCall([NotNull] BosParser.ECS_ProcedureCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argsCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eCS_MemberProcedureCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1764,9 +1704,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitArgsCall([NotNull] BOSParser.ArgsCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitECS_MemberProcedureCall([NotNull] BosParser.ECS_MemberProcedureCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.implicitCallStmt_InBlock"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1774,9 +1714,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitArgCall([NotNull] BOSParser.ArgCallContext context) { return VisitChildren(context); }
+	public virtual Result VisitImplicitCallStmt_InBlock([NotNull] BosParser.ImplicitCallStmt_InBlockContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.dictionaryCallStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_B_ProcedureCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1784,9 +1724,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitDictionaryCallStmt([NotNull] BOSParser.DictionaryCallStmtContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_B_ProcedureCall([NotNull] BosParser.ICS_B_ProcedureCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argList"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_B_MemberProcedureCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1794,9 +1734,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitArgList([NotNull] BOSParser.ArgListContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_B_MemberProcedureCall([NotNull] BosParser.ICS_B_MemberProcedureCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.arg"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.implicitCallStmt_InStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1804,9 +1744,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitArg([NotNull] BOSParser.ArgContext context) { return VisitChildren(context); }
+	public virtual Result VisitImplicitCallStmt_InStmt([NotNull] BosParser.ImplicitCallStmt_InStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argDefaultValue"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_VariableOrProcedureCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1814,9 +1754,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitArgDefaultValue([NotNull] BOSParser.ArgDefaultValueContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_S_VariableOrProcedureCall([NotNull] BosParser.ICS_S_VariableOrProcedureCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.subscripts"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_ProcedureOrArrayCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1824,9 +1764,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSubscripts([NotNull] BOSParser.SubscriptsContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_S_ProcedureOrArrayCall([NotNull] BosParser.ICS_S_ProcedureOrArrayCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.subscript"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_NestedProcedureCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1834,9 +1774,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitSubscript([NotNull] BOSParser.SubscriptContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_S_NestedProcedureCall([NotNull] BosParser.ICS_S_NestedProcedureCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ambiguousIdentifier"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_MembersCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1844,9 +1784,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitAmbiguousIdentifier([NotNull] BOSParser.AmbiguousIdentifierContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_S_MembersCall([NotNull] BosParser.ICS_S_MembersCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.asTypeClause"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_MemberCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1854,9 +1794,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitAsTypeClause([NotNull] BOSParser.AsTypeClauseContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_S_MemberCall([NotNull] BosParser.ICS_S_MemberCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.baseType"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_DictionaryCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1864,9 +1804,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitBaseType([NotNull] BOSParser.BaseTypeContext context) { return VisitChildren(context); }
+	public virtual Result VisitICS_S_DictionaryCall([NotNull] BosParser.ICS_S_DictionaryCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.certainIdentifier"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argsCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1874,9 +1814,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitCertainIdentifier([NotNull] BOSParser.CertainIdentifierContext context) { return VisitChildren(context); }
+	public virtual Result VisitArgsCall([NotNull] BosParser.ArgsCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.comparisonOperator"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argCall"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1884,9 +1824,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitComparisonOperator([NotNull] BOSParser.ComparisonOperatorContext context) { return VisitChildren(context); }
+	public virtual Result VisitArgCall([NotNull] BosParser.ArgCallContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.complexType"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.dictionaryCallStmt"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1894,9 +1834,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitComplexType([NotNull] BOSParser.ComplexTypeContext context) { return VisitChildren(context); }
+	public virtual Result VisitDictionaryCallStmt([NotNull] BosParser.DictionaryCallStmtContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.fieldLength"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argList"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1904,9 +1844,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitFieldLength([NotNull] BOSParser.FieldLengthContext context) { return VisitChildren(context); }
+	public virtual Result VisitArgList([NotNull] BosParser.ArgListContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.letterrange"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.arg"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1914,9 +1854,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLetterrange([NotNull] BOSParser.LetterrangeContext context) { return VisitChildren(context); }
+	public virtual Result VisitArg([NotNull] BosParser.ArgContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lineLabel"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argDefaultValue"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1924,9 +1864,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLineLabel([NotNull] BOSParser.LineLabelContext context) { return VisitChildren(context); }
+	public virtual Result VisitArgDefaultValue([NotNull] BosParser.ArgDefaultValueContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.literal"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.subscripts"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1934,9 +1874,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitLiteral([NotNull] BOSParser.LiteralContext context) { return VisitChildren(context); }
+	public virtual Result VisitSubscripts([NotNull] BosParser.SubscriptsContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.publicPrivateVisibility"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.subscript"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1944,9 +1884,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitPublicPrivateVisibility([NotNull] BOSParser.PublicPrivateVisibilityContext context) { return VisitChildren(context); }
+	public virtual Result VisitSubscript([NotNull] BosParser.SubscriptContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.publicPrivateGlobalVisibility"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ambiguousIdentifier"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1954,9 +1894,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitPublicPrivateGlobalVisibility([NotNull] BOSParser.PublicPrivateGlobalVisibilityContext context) { return VisitChildren(context); }
+	public virtual Result VisitAmbiguousIdentifier([NotNull] BosParser.AmbiguousIdentifierContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.type"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.asTypeClause"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1964,9 +1904,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitType([NotNull] BOSParser.TypeContext context) { return VisitChildren(context); }
+	public virtual Result VisitAsTypeClause([NotNull] BosParser.AsTypeClauseContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeHint"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.baseType"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1974,9 +1914,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitTypeHint([NotNull] BOSParser.TypeHintContext context) { return VisitChildren(context); }
+	public virtual Result VisitBaseType([NotNull] BosParser.BaseTypeContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.visibility"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.certainIdentifier"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1984,9 +1924,9 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVisibility([NotNull] BOSParser.VisibilityContext context) { return VisitChildren(context); }
+	public virtual Result VisitCertainIdentifier([NotNull] BosParser.CertainIdentifierContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ambiguousKeyword"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.comparisonOperator"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -1994,5 +1934,115 @@ public partial class BOSBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, 
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitAmbiguousKeyword([NotNull] BOSParser.AmbiguousKeywordContext context) { return VisitChildren(context); }
+	public virtual Result VisitComparisonOperator([NotNull] BosParser.ComparisonOperatorContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.complexType"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitComplexType([NotNull] BosParser.ComplexTypeContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.fieldLength"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitFieldLength([NotNull] BosParser.FieldLengthContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.letterrange"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitLetterrange([NotNull] BosParser.LetterrangeContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.lineLabel"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitLineLabel([NotNull] BosParser.LineLabelContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.literal"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitLiteral([NotNull] BosParser.LiteralContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.publicPrivateVisibility"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitPublicPrivateVisibility([NotNull] BosParser.PublicPrivateVisibilityContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.publicPrivateGlobalVisibility"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitPublicPrivateGlobalVisibility([NotNull] BosParser.PublicPrivateGlobalVisibilityContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.type"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitType([NotNull] BosParser.TypeContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.typeHint"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitTypeHint([NotNull] BosParser.TypeHintContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.visibility"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitVisibility([NotNull] BosParser.VisibilityContext context) { return VisitChildren(context); }
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.ambiguousKeyword"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	public virtual Result VisitAmbiguousKeyword([NotNull] BosParser.AmbiguousKeywordContext context) { return VisitChildren(context); }
 }

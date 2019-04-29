@@ -1,0 +1,22 @@
+Import System.Collections
+Import System.ComponentModel
+
+Import SBW.Base
+Import SBW.Data
+Import SBW.DDef
+Import SBW.Foundation
+Import SBW.Windows.Controls
+
+Class TestSnippets
+
+    Sub TestSnippets()
+        //Dim _var As Object
+        Dim _wnar As Int32
+        Dim nline As String //WithComment
+    End Sub
+
+    Sub Main()
+        Var ert = 23
+    End Sub
+
+End Class

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from ../Grammar/BOS.g4 by ANTLR 4.7.2
+// Generated from ./Grammar/Bos.g4 by ANTLR 4.7.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -25,1204 +25,1234 @@ using IToken = Antlr4.Runtime.IToken;
 
 /// <summary>
 /// This interface defines a complete generic visitor for a parse tree produced
-/// by <see cref="BOSParser"/>.
+/// by <see cref="BosParser"/>.
 /// </summary>
 /// <typeparam name="Result">The return type of the visit operation.</typeparam>
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.7.2")]
 [System.CLSCompliant(false)]
-public interface IBOSVisitor<Result> : IParseTreeVisitor<Result> {
+public interface IBosVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.startRule"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.startRule"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitStartRule([NotNull] BOSParser.StartRuleContext context);
+	Result VisitStartRule([NotNull] BosParser.StartRuleContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.module"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.module"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModule([NotNull] BOSParser.ModuleContext context);
+	Result VisitModule([NotNull] BosParser.ModuleContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReferences"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReferences"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleReferences([NotNull] BOSParser.ModuleReferencesContext context);
+	Result VisitModuleReferences([NotNull] BosParser.ModuleReferencesContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReference"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleImports"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleReference([NotNull] BOSParser.ModuleReferenceContext context);
+	Result VisitModuleImports([NotNull] BosParser.ModuleImportsContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReferenceValue"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReference"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleReferenceValue([NotNull] BOSParser.ModuleReferenceValueContext context);
+	Result VisitModuleReference([NotNull] BosParser.ModuleReferenceContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleReferenceComponent"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReferenceValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleReferenceComponent([NotNull] BOSParser.ModuleReferenceComponentContext context);
+	Result VisitModuleReferenceValue([NotNull] BosParser.ModuleReferenceValueContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleHeader"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleReferenceComponent"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleHeader([NotNull] BOSParser.ModuleHeaderContext context);
+	Result VisitModuleReferenceComponent([NotNull] BosParser.ModuleReferenceComponentContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleConfig"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleHeader"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleConfig([NotNull] BOSParser.ModuleConfigContext context);
+	Result VisitModuleHeader([NotNull] BosParser.ModuleHeaderContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleConfigElement"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleConfig"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleConfigElement([NotNull] BOSParser.ModuleConfigElementContext context);
+	Result VisitModuleConfig([NotNull] BosParser.ModuleConfigContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleAttributes"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleConfigElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleAttributes([NotNull] BOSParser.ModuleAttributesContext context);
+	Result VisitModuleConfigElement([NotNull] BosParser.ModuleConfigElementContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleOptions"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleAttributes"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleOptions([NotNull] BOSParser.ModuleOptionsContext context);
+	Result VisitModuleAttributes([NotNull] BosParser.ModuleAttributesContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.moduleOptions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitModuleOptions([NotNull] BosParser.ModuleOptionsContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionBaseStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOptionBaseStmt([NotNull] BOSParser.OptionBaseStmtContext context);
+	Result VisitOptionBaseStmt([NotNull] BosParser.OptionBaseStmtContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionCompareStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOptionCompareStmt([NotNull] BOSParser.OptionCompareStmtContext context);
+	Result VisitOptionCompareStmt([NotNull] BosParser.OptionCompareStmtContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionExplicitStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOptionExplicitStmt([NotNull] BOSParser.OptionExplicitStmtContext context);
+	Result VisitOptionExplicitStmt([NotNull] BosParser.OptionExplicitStmtContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>optionPrivateModuleStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOptionPrivateModuleStmt([NotNull] BOSParser.OptionPrivateModuleStmtContext context);
+	Result VisitOptionPrivateModuleStmt([NotNull] BosParser.OptionPrivateModuleStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleBody"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleBody([NotNull] BOSParser.ModuleBodyContext context);
+	Result VisitModuleBody([NotNull] BosParser.ModuleBodyContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleBodyElement"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleBodyElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleBodyElement([NotNull] BOSParser.ModuleBodyElementContext context);
+	Result VisitModuleBodyElement([NotNull] BosParser.ModuleBodyElementContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.controlProperties"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.classBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitControlProperties([NotNull] BOSParser.ControlPropertiesContext context);
+	Result VisitClassBody([NotNull] BosParser.ClassBodyContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_Properties"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.classBodyElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCp_Properties([NotNull] BOSParser.Cp_PropertiesContext context);
+	Result VisitClassBodyElement([NotNull] BosParser.ClassBodyElementContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_SingleProperty"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.controlProperties"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCp_SingleProperty([NotNull] BOSParser.Cp_SinglePropertyContext context);
+	Result VisitControlProperties([NotNull] BosParser.ControlPropertiesContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_PropertyName"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_Properties"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCp_PropertyName([NotNull] BOSParser.Cp_PropertyNameContext context);
+	Result VisitCp_Properties([NotNull] BosParser.Cp_PropertiesContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_PropertyValue"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_SingleProperty"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCp_PropertyValue([NotNull] BOSParser.Cp_PropertyValueContext context);
+	Result VisitCp_SingleProperty([NotNull] BosParser.Cp_SinglePropertyContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_NestedProperty"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_PropertyName"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCp_NestedProperty([NotNull] BOSParser.Cp_NestedPropertyContext context);
+	Result VisitCp_PropertyName([NotNull] BosParser.Cp_PropertyNameContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_ControlType"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_PropertyValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCp_ControlType([NotNull] BOSParser.Cp_ControlTypeContext context);
+	Result VisitCp_PropertyValue([NotNull] BosParser.Cp_PropertyValueContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.cp_ControlIdentifier"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_NestedProperty"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCp_ControlIdentifier([NotNull] BOSParser.Cp_ControlIdentifierContext context);
+	Result VisitCp_NestedProperty([NotNull] BosParser.Cp_NestedPropertyContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.moduleBlock"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_ControlType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitModuleBlock([NotNull] BOSParser.ModuleBlockContext context);
+	Result VisitCp_ControlType([NotNull] BosParser.Cp_ControlTypeContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.attributeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.cp_ControlIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAttributeStmt([NotNull] BOSParser.AttributeStmtContext context);
+	Result VisitCp_ControlIdentifier([NotNull] BosParser.Cp_ControlIdentifierContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.block"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.moduleBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitBlock([NotNull] BOSParser.BlockContext context);
+	Result VisitModuleBlock([NotNull] BosParser.ModuleBlockContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.blockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.importStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitBlockStmt([NotNull] BOSParser.BlockStmtContext context);
+	Result VisitImportStmt([NotNull] BosParser.ImportStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.appActivateStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.attributeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAppActivateStmt([NotNull] BOSParser.AppActivateStmtContext context);
+	Result VisitAttributeStmt([NotNull] BosParser.AttributeStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.beepStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.block"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitBeepStmt([NotNull] BOSParser.BeepStmtContext context);
+	Result VisitBlock([NotNull] BosParser.BlockContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.chDirStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.blockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitChDirStmt([NotNull] BOSParser.ChDirStmtContext context);
+	Result VisitBlockStmt([NotNull] BosParser.BlockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.chDriveStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.appActivateStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitChDriveStmt([NotNull] BOSParser.ChDriveStmtContext context);
+	Result VisitAppActivateStmt([NotNull] BosParser.AppActivateStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.closeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.beepStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCloseStmt([NotNull] BOSParser.CloseStmtContext context);
+	Result VisitBeepStmt([NotNull] BosParser.BeepStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.constStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.chDirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitConstStmt([NotNull] BOSParser.ConstStmtContext context);
+	Result VisitChDirStmt([NotNull] BosParser.ChDirStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.constSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.chDriveStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitConstSubStmt([NotNull] BOSParser.ConstSubStmtContext context);
+	Result VisitChDriveStmt([NotNull] BosParser.ChDriveStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.dateStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.classStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitDateStmt([NotNull] BOSParser.DateStmtContext context);
+	Result VisitClassStmt([NotNull] BosParser.ClassStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.declareStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.closeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitDeclareStmt([NotNull] BOSParser.DeclareStmtContext context);
+	Result VisitCloseStmt([NotNull] BosParser.CloseStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.deftypeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.constStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitDeftypeStmt([NotNull] BOSParser.DeftypeStmtContext context);
+	Result VisitConstStmt([NotNull] BosParser.ConstStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.deleteSettingStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.constSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitDeleteSettingStmt([NotNull] BOSParser.DeleteSettingStmtContext context);
+	Result VisitConstSubStmt([NotNull] BosParser.ConstSubStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.doLoopStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.dateStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitDoLoopStmt([NotNull] BOSParser.DoLoopStmtContext context);
+	Result VisitDateStmt([NotNull] BosParser.DateStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.endStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.declareStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitEndStmt([NotNull] BOSParser.EndStmtContext context);
+	Result VisitDeclareStmt([NotNull] BosParser.DeclareStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.enumerationStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.deftypeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitEnumerationStmt([NotNull] BOSParser.EnumerationStmtContext context);
+	Result VisitDeftypeStmt([NotNull] BosParser.DeftypeStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.enumerationStmt_Constant"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.deleteSettingStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitEnumerationStmt_Constant([NotNull] BOSParser.EnumerationStmt_ConstantContext context);
+	Result VisitDeleteSettingStmt([NotNull] BosParser.DeleteSettingStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eraseStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.doLoopStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitEraseStmt([NotNull] BOSParser.EraseStmtContext context);
+	Result VisitDoLoopStmt([NotNull] BosParser.DoLoopStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.errorStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.endStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitErrorStmt([NotNull] BOSParser.ErrorStmtContext context);
+	Result VisitEndStmt([NotNull] BosParser.EndStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eventStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.enumerationStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitEventStmt([NotNull] BOSParser.EventStmtContext context);
+	Result VisitEnumerationStmt([NotNull] BosParser.EnumerationStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.exitStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.enumerationStmt_Constant"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitExitStmt([NotNull] BOSParser.ExitStmtContext context);
+	Result VisitEnumerationStmt_Constant([NotNull] BosParser.EnumerationStmt_ConstantContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.filecopyStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eraseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFilecopyStmt([NotNull] BOSParser.FilecopyStmtContext context);
+	Result VisitEraseStmt([NotNull] BosParser.EraseStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.forEachStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.errorStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitForEachStmt([NotNull] BOSParser.ForEachStmtContext context);
+	Result VisitErrorStmt([NotNull] BosParser.ErrorStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.forNextStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eventStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitForNextStmt([NotNull] BOSParser.ForNextStmtContext context);
+	Result VisitEventStmt([NotNull] BosParser.EventStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.functionStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.exitStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFunctionStmt([NotNull] BOSParser.FunctionStmtContext context);
+	Result VisitExitStmt([NotNull] BosParser.ExitStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.getStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.filecopyStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitGetStmt([NotNull] BOSParser.GetStmtContext context);
+	Result VisitFilecopyStmt([NotNull] BosParser.FilecopyStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.goSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.forEachStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitGoSubStmt([NotNull] BOSParser.GoSubStmtContext context);
+	Result VisitForEachStmt([NotNull] BosParser.ForEachStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.goToStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.forNextStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitGoToStmt([NotNull] BOSParser.GoToStmtContext context);
+	Result VisitForNextStmt([NotNull] BosParser.ForNextStmtContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.functionStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitFunctionStmt([NotNull] BosParser.FunctionStmtContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.getStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitGetStmt([NotNull] BosParser.GetStmtContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.goSubStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitGoSubStmt([NotNull] BosParser.GoSubStmtContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.goToStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitGoToStmt([NotNull] BosParser.GoToStmtContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>inlineIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitInlineIfThenElse([NotNull] BOSParser.InlineIfThenElseContext context);
+	Result VisitInlineIfThenElse([NotNull] BosParser.InlineIfThenElseContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>blockIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitBlockIfThenElse([NotNull] BOSParser.BlockIfThenElseContext context);
+	Result VisitBlockIfThenElse([NotNull] BosParser.BlockIfThenElseContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitIfBlockStmt([NotNull] BOSParser.IfBlockStmtContext context);
+	Result VisitIfBlockStmt([NotNull] BosParser.IfBlockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifConditionStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifConditionStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitIfConditionStmt([NotNull] BOSParser.IfConditionStmtContext context);
+	Result VisitIfConditionStmt([NotNull] BosParser.IfConditionStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifElseIfBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifElseIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitIfElseIfBlockStmt([NotNull] BOSParser.IfElseIfBlockStmtContext context);
+	Result VisitIfElseIfBlockStmt([NotNull] BosParser.IfElseIfBlockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ifElseBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ifElseBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitIfElseBlockStmt([NotNull] BOSParser.IfElseBlockStmtContext context);
+	Result VisitIfElseBlockStmt([NotNull] BosParser.IfElseBlockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.implementsStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.implementsStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitImplementsStmt([NotNull] BOSParser.ImplementsStmtContext context);
+	Result VisitImplementsStmt([NotNull] BosParser.ImplementsStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.inputStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.inputStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitInputStmt([NotNull] BOSParser.InputStmtContext context);
+	Result VisitInputStmt([NotNull] BosParser.InputStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.killStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.killStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitKillStmt([NotNull] BOSParser.KillStmtContext context);
+	Result VisitKillStmt([NotNull] BosParser.KillStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.letStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.letStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLetStmt([NotNull] BOSParser.LetStmtContext context);
+	Result VisitLetStmt([NotNull] BosParser.LetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lineInputStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.lineInputStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineInputStmt([NotNull] BOSParser.LineInputStmtContext context);
+	Result VisitLineInputStmt([NotNull] BosParser.LineInputStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.loadStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.loadStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLoadStmt([NotNull] BOSParser.LoadStmtContext context);
+	Result VisitLoadStmt([NotNull] BosParser.LoadStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.lockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLockStmt([NotNull] BOSParser.LockStmtContext context);
+	Result VisitLockStmt([NotNull] BosParser.LockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lsetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.lsetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLsetStmt([NotNull] BOSParser.LsetStmtContext context);
+	Result VisitLsetStmt([NotNull] BosParser.LsetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroIfThenElseStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroIfThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitMacroIfThenElseStmt([NotNull] BOSParser.MacroIfThenElseStmtContext context);
+	Result VisitMacroIfThenElseStmt([NotNull] BosParser.MacroIfThenElseStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroIfBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitMacroIfBlockStmt([NotNull] BOSParser.MacroIfBlockStmtContext context);
+	Result VisitMacroIfBlockStmt([NotNull] BosParser.MacroIfBlockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroElseIfBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroElseIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitMacroElseIfBlockStmt([NotNull] BOSParser.MacroElseIfBlockStmtContext context);
+	Result VisitMacroElseIfBlockStmt([NotNull] BosParser.MacroElseIfBlockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.macroElseBlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.macroElseBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitMacroElseBlockStmt([NotNull] BOSParser.MacroElseBlockStmtContext context);
+	Result VisitMacroElseBlockStmt([NotNull] BosParser.MacroElseBlockStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.midStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.midStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitMidStmt([NotNull] BOSParser.MidStmtContext context);
+	Result VisitMidStmt([NotNull] BosParser.MidStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.mkdirStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.mkdirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitMkdirStmt([NotNull] BOSParser.MkdirStmtContext context);
+	Result VisitMkdirStmt([NotNull] BosParser.MkdirStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.nameStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.nameStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitNameStmt([NotNull] BOSParser.NameStmtContext context);
+	Result VisitNameStmt([NotNull] BosParser.NameStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.onErrorStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.onErrorStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOnErrorStmt([NotNull] BOSParser.OnErrorStmtContext context);
+	Result VisitOnErrorStmt([NotNull] BosParser.OnErrorStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.onGoToStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.onGoToStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOnGoToStmt([NotNull] BOSParser.OnGoToStmtContext context);
+	Result VisitOnGoToStmt([NotNull] BosParser.OnGoToStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.onGoSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.onGoSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOnGoSubStmt([NotNull] BOSParser.OnGoSubStmtContext context);
+	Result VisitOnGoSubStmt([NotNull] BosParser.OnGoSubStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.openStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.openStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOpenStmt([NotNull] BOSParser.OpenStmtContext context);
+	Result VisitOpenStmt([NotNull] BosParser.OpenStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.outputList"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.outputList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOutputList([NotNull] BOSParser.OutputListContext context);
+	Result VisitOutputList([NotNull] BosParser.OutputListContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.outputList_Expression"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.outputList_Expression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOutputList_Expression([NotNull] BOSParser.OutputList_ExpressionContext context);
+	Result VisitOutputList_Expression([NotNull] BosParser.OutputList_ExpressionContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.printStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.printStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPrintStmt([NotNull] BOSParser.PrintStmtContext context);
+	Result VisitPrintStmt([NotNull] BosParser.PrintStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.propertyGetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.propertyGetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPropertyGetStmt([NotNull] BOSParser.PropertyGetStmtContext context);
+	Result VisitPropertyGetStmt([NotNull] BosParser.PropertyGetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.propertySetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.propertySetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPropertySetStmt([NotNull] BOSParser.PropertySetStmtContext context);
+	Result VisitPropertySetStmt([NotNull] BosParser.PropertySetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.propertyLetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.propertyLetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPropertyLetStmt([NotNull] BOSParser.PropertyLetStmtContext context);
+	Result VisitPropertyLetStmt([NotNull] BosParser.PropertyLetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.putStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.putStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPutStmt([NotNull] BOSParser.PutStmtContext context);
+	Result VisitPutStmt([NotNull] BosParser.PutStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.raiseEventStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.raiseEventStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitRaiseEventStmt([NotNull] BOSParser.RaiseEventStmtContext context);
+	Result VisitRaiseEventStmt([NotNull] BosParser.RaiseEventStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.randomizeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.randomizeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitRandomizeStmt([NotNull] BOSParser.RandomizeStmtContext context);
+	Result VisitRandomizeStmt([NotNull] BosParser.RandomizeStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.redimStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.redimStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitRedimStmt([NotNull] BOSParser.RedimStmtContext context);
+	Result VisitRedimStmt([NotNull] BosParser.RedimStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.redimSubStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.redimSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitRedimSubStmt([NotNull] BOSParser.RedimSubStmtContext context);
+	Result VisitRedimSubStmt([NotNull] BosParser.RedimSubStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.resetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.resetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitResetStmt([NotNull] BOSParser.ResetStmtContext context);
+	Result VisitResetStmt([NotNull] BosParser.ResetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.resumeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.resumeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitResumeStmt([NotNull] BOSParser.ResumeStmtContext context);
+	Result VisitResumeStmt([NotNull] BosParser.ResumeStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.returnStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.returnStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitReturnStmt([NotNull] BOSParser.ReturnStmtContext context);
+	Result VisitReturnStmt([NotNull] BosParser.ReturnStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.rmdirStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.rmdirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitRmdirStmt([NotNull] BOSParser.RmdirStmtContext context);
+	Result VisitRmdirStmt([NotNull] BosParser.RmdirStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.rsetStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.rsetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitRsetStmt([NotNull] BOSParser.RsetStmtContext context);
+	Result VisitRsetStmt([NotNull] BosParser.RsetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.savepictureStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.savepictureStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSavepictureStmt([NotNull] BOSParser.SavepictureStmtContext context);
+	Result VisitSavepictureStmt([NotNull] BosParser.SavepictureStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.saveSettingStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.saveSettingStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSaveSettingStmt([NotNull] BOSParser.SaveSettingStmtContext context);
+	Result VisitSaveSettingStmt([NotNull] BosParser.SaveSettingStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.seekStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.seekStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSeekStmt([NotNull] BOSParser.SeekStmtContext context);
+	Result VisitSeekStmt([NotNull] BosParser.SeekStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.selectCaseStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.selectCaseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSelectCaseStmt([NotNull] BOSParser.SelectCaseStmtContext context);
+	Result VisitSelectCaseStmt([NotNull] BosParser.SelectCaseStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.sC_Case"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.sC_Case"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSC_Case([NotNull] BOSParser.SC_CaseContext context);
+	Result VisitSC_Case([NotNull] BosParser.SC_CaseContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondElse</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCaseCondElse([NotNull] BOSParser.CaseCondElseContext context);
+	Result VisitCaseCondElse([NotNull] BosParser.CaseCondElseContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExpr</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCaseCondExpr([NotNull] BOSParser.CaseCondExprContext context);
+	Result VisitCaseCondExpr([NotNull] BosParser.CaseCondExprContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExprIs</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCaseCondExprIs([NotNull] BOSParser.CaseCondExprIsContext context);
+	Result VisitCaseCondExprIs([NotNull] BosParser.CaseCondExprIsContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExprValue</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCaseCondExprValue([NotNull] BOSParser.CaseCondExprValueContext context);
+	Result VisitCaseCondExprValue([NotNull] BosParser.CaseCondExprValueContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>caseCondExprTo</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCaseCondExprTo([NotNull] BOSParser.CaseCondExprToContext context);
+	Result VisitCaseCondExprTo([NotNull] BosParser.CaseCondExprToContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.sendkeysStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.sendkeysStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSendkeysStmt([NotNull] BOSParser.SendkeysStmtContext context);
+	Result VisitSendkeysStmt([NotNull] BosParser.SendkeysStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.setattrStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.setattrStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSetattrStmt([NotNull] BOSParser.SetattrStmtContext context);
+	Result VisitSetattrStmt([NotNull] BosParser.SetattrStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.setStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.setStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSetStmt([NotNull] BOSParser.SetStmtContext context);
+	Result VisitSetStmt([NotNull] BosParser.SetStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.stopStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.stopStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitStopStmt([NotNull] BOSParser.StopStmtContext context);
+	Result VisitStopStmt([NotNull] BosParser.StopStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.subStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.subStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSubStmt([NotNull] BOSParser.SubStmtContext context);
+	Result VisitSubStmt([NotNull] BosParser.SubStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.timeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.timeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTimeStmt([NotNull] BOSParser.TimeStmtContext context);
+	Result VisitTimeStmt([NotNull] BosParser.TimeStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.typeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTypeStmt([NotNull] BOSParser.TypeStmtContext context);
+	Result VisitTypeStmt([NotNull] BosParser.TypeStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeStmt_Element"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.typeStmt_Element"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTypeStmt_Element([NotNull] BOSParser.TypeStmt_ElementContext context);
+	Result VisitTypeStmt_Element([NotNull] BosParser.TypeStmt_ElementContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeOfStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.typeOfStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTypeOfStmt([NotNull] BOSParser.TypeOfStmtContext context);
+	Result VisitTypeOfStmt([NotNull] BosParser.TypeOfStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.unloadStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.unloadStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitUnloadStmt([NotNull] BOSParser.UnloadStmtContext context);
+	Result VisitUnloadStmt([NotNull] BosParser.UnloadStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.unlockStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.unlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitUnlockStmt([NotNull] BOSParser.UnlockStmtContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsDiv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsDiv([NotNull] BOSParser.VsDivContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsNegation</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsNegation([NotNull] BOSParser.VsNegationContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMinus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsMinus([NotNull] BOSParser.VsMinusContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsImp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsImp([NotNull] BOSParser.VsImpContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsGeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsGeq([NotNull] BOSParser.VsGeqContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsLt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsLt([NotNull] BOSParser.VsLtContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsLiteral</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsLiteral([NotNull] BOSParser.VsLiteralContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsEqv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsEqv([NotNull] BOSParser.VsEqvContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsLike</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsLike([NotNull] BOSParser.VsLikeContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsICS</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsICS([NotNull] BOSParser.VsICSContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsNeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsNeq([NotNull] BOSParser.VsNeqContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsTypeOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsTypeOf([NotNull] BOSParser.VsTypeOfContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsPow</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsPow([NotNull] BOSParser.VsPowContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMult</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsMult([NotNull] BOSParser.VsMultContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAssign</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsAssign([NotNull] BOSParser.VsAssignContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAdd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsAdd([NotNull] BOSParser.VsAddContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsPlus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsPlus([NotNull] BOSParser.VsPlusContext context);
+	Result VisitUnlockStmt([NotNull] BosParser.UnlockStmtContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsStruct</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsStruct([NotNull] BOSParser.VsStructContext context);
+	Result VisitVsStruct([NotNull] BosParser.VsStructContext context);
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsOr</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsAdd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsOr([NotNull] BOSParser.VsOrContext context);
+	Result VisitVsAdd([NotNull] BosParser.VsAddContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsLt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsLt([NotNull] BosParser.VsLtContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsAddressOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsAddressOf([NotNull] BOSParser.VsAddressOfContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMod</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsMod([NotNull] BOSParser.VsModContext context);
+	Result VisitVsAddressOf([NotNull] BosParser.VsAddressOfContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsNew</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsNew([NotNull] BOSParser.VsNewContext context);
+	Result VisitVsNew([NotNull] BosParser.VsNewContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsMult</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsMult([NotNull] BosParser.VsMultContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsNegation</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsNegation([NotNull] BosParser.VsNegationContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsAssign</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsAssign([NotNull] BosParser.VsAssignContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsDiv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsDiv([NotNull] BosParser.VsDivContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsLike</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsLike([NotNull] BosParser.VsLikeContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsPlus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsPlus([NotNull] BosParser.VsPlusContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsNot</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsNot([NotNull] BOSParser.VsNotContext context);
+	Result VisitVsNot([NotNull] BosParser.VsNotContext context);
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAmp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsGeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsAmp([NotNull] BOSParser.VsAmpContext context);
+	Result VisitVsGeq([NotNull] BosParser.VsGeqContext context);
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsMid</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsTypeOf</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsMid([NotNull] BOSParser.VsMidContext context);
+	Result VisitVsTypeOf([NotNull] BosParser.VsTypeOfContext context);
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsAnd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsICS</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsAnd([NotNull] BOSParser.VsAndContext context);
+	Result VisitVsICS([NotNull] BosParser.VsICSContext context);
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsEq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsNeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsEq([NotNull] BOSParser.VsEqContext context);
-	/// <summary>
-	/// Visit a parse tree produced by the <c>vsIs</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVsIs([NotNull] BOSParser.VsIsContext context);
+	Result VisitVsNeq([NotNull] BosParser.VsNeqContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsXor</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsXor([NotNull] BOSParser.VsXorContext context);
+	Result VisitVsXor([NotNull] BosParser.VsXorContext context);
 	/// <summary>
-	/// Visit a parse tree produced by the <c>vsGt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Visit a parse tree produced by the <c>vsAnd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsGt([NotNull] BOSParser.VsGtContext context);
+	Result VisitVsAnd([NotNull] BosParser.VsAndContext context);
+	/// <summary>
+	/// Visit a parse tree produced by the <c>vsPow</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVsPow([NotNull] BosParser.VsPowContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>vsLeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVsLeq([NotNull] BOSParser.VsLeqContext context);
+	Result VisitVsLeq([NotNull] BosParser.VsLeqContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.variableStmt"/>.
+	/// Visit a parse tree produced by the <c>vsIs</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVariableStmt([NotNull] BOSParser.VariableStmtContext context);
+	Result VisitVsIs([NotNull] BosParser.VsIsContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.variableListStmt"/>.
+	/// Visit a parse tree produced by the <c>vsMod</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVariableListStmt([NotNull] BOSParser.VariableListStmtContext context);
+	Result VisitVsMod([NotNull] BosParser.VsModContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.variableSubStmt"/>.
+	/// Visit a parse tree produced by the <c>vsAmp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVariableSubStmt([NotNull] BOSParser.VariableSubStmtContext context);
+	Result VisitVsAmp([NotNull] BosParser.VsAmpContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.whileWendStmt"/>.
+	/// Visit a parse tree produced by the <c>vsOr</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitWhileWendStmt([NotNull] BOSParser.WhileWendStmtContext context);
+	Result VisitVsOr([NotNull] BosParser.VsOrContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.widthStmt"/>.
+	/// Visit a parse tree produced by the <c>vsMinus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitWidthStmt([NotNull] BOSParser.WidthStmtContext context);
+	Result VisitVsMinus([NotNull] BosParser.VsMinusContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.withStmt"/>.
+	/// Visit a parse tree produced by the <c>vsLiteral</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitWithStmt([NotNull] BOSParser.WithStmtContext context);
+	Result VisitVsLiteral([NotNull] BosParser.VsLiteralContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.writeStmt"/>.
+	/// Visit a parse tree produced by the <c>vsEqv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitWriteStmt([NotNull] BOSParser.WriteStmtContext context);
+	Result VisitVsEqv([NotNull] BosParser.VsEqvContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.explicitCallStmt"/>.
+	/// Visit a parse tree produced by the <c>vsImp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitExplicitCallStmt([NotNull] BOSParser.ExplicitCallStmtContext context);
+	Result VisitVsImp([NotNull] BosParser.VsImpContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eCS_ProcedureCall"/>.
+	/// Visit a parse tree produced by the <c>vsGt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitECS_ProcedureCall([NotNull] BOSParser.ECS_ProcedureCallContext context);
+	Result VisitVsGt([NotNull] BosParser.VsGtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.eCS_MemberProcedureCall"/>.
+	/// Visit a parse tree produced by the <c>vsEq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitECS_MemberProcedureCall([NotNull] BOSParser.ECS_MemberProcedureCallContext context);
+	Result VisitVsEq([NotNull] BosParser.VsEqContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InBlock"/>.
+	/// Visit a parse tree produced by the <c>vsMid</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitImplicitCallStmt_InBlock([NotNull] BOSParser.ImplicitCallStmt_InBlockContext context);
+	Result VisitVsMid([NotNull] BosParser.VsMidContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_B_ProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.variableStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_B_ProcedureCall([NotNull] BOSParser.ICS_B_ProcedureCallContext context);
+	Result VisitVariableStmt([NotNull] BosParser.VariableStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_B_MemberProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.variableListStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_B_MemberProcedureCall([NotNull] BOSParser.ICS_B_MemberProcedureCallContext context);
+	Result VisitVariableListStmt([NotNull] BosParser.VariableListStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.variableSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitImplicitCallStmt_InStmt([NotNull] BOSParser.ImplicitCallStmt_InStmtContext context);
+	Result VisitVariableSubStmt([NotNull] BosParser.VariableSubStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_VariableOrProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.whileWendStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_S_VariableOrProcedureCall([NotNull] BOSParser.ICS_S_VariableOrProcedureCallContext context);
+	Result VisitWhileWendStmt([NotNull] BosParser.WhileWendStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_ProcedureOrArrayCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.widthStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_S_ProcedureOrArrayCall([NotNull] BOSParser.ICS_S_ProcedureOrArrayCallContext context);
+	Result VisitWidthStmt([NotNull] BosParser.WidthStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_NestedProcedureCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.withStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_S_NestedProcedureCall([NotNull] BOSParser.ICS_S_NestedProcedureCallContext context);
+	Result VisitWithStmt([NotNull] BosParser.WithStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_MembersCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.writeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_S_MembersCall([NotNull] BOSParser.ICS_S_MembersCallContext context);
+	Result VisitWriteStmt([NotNull] BosParser.WriteStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_MemberCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.explicitCallStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_S_MemberCall([NotNull] BOSParser.ICS_S_MemberCallContext context);
+	Result VisitExplicitCallStmt([NotNull] BosParser.ExplicitCallStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.iCS_S_DictionaryCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eCS_ProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitICS_S_DictionaryCall([NotNull] BOSParser.ICS_S_DictionaryCallContext context);
+	Result VisitECS_ProcedureCall([NotNull] BosParser.ECS_ProcedureCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argsCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.eCS_MemberProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitArgsCall([NotNull] BOSParser.ArgsCallContext context);
+	Result VisitECS_MemberProcedureCall([NotNull] BosParser.ECS_MemberProcedureCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argCall"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.implicitCallStmt_InBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitArgCall([NotNull] BOSParser.ArgCallContext context);
+	Result VisitImplicitCallStmt_InBlock([NotNull] BosParser.ImplicitCallStmt_InBlockContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.dictionaryCallStmt"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_B_ProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitDictionaryCallStmt([NotNull] BOSParser.DictionaryCallStmtContext context);
+	Result VisitICS_B_ProcedureCall([NotNull] BosParser.ICS_B_ProcedureCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argList"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_B_MemberProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitArgList([NotNull] BOSParser.ArgListContext context);
+	Result VisitICS_B_MemberProcedureCall([NotNull] BosParser.ICS_B_MemberProcedureCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.arg"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.implicitCallStmt_InStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitArg([NotNull] BOSParser.ArgContext context);
+	Result VisitImplicitCallStmt_InStmt([NotNull] BosParser.ImplicitCallStmt_InStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.argDefaultValue"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_VariableOrProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitArgDefaultValue([NotNull] BOSParser.ArgDefaultValueContext context);
+	Result VisitICS_S_VariableOrProcedureCall([NotNull] BosParser.ICS_S_VariableOrProcedureCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.subscripts"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_ProcedureOrArrayCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSubscripts([NotNull] BOSParser.SubscriptsContext context);
+	Result VisitICS_S_ProcedureOrArrayCall([NotNull] BosParser.ICS_S_ProcedureOrArrayCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.subscript"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_NestedProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitSubscript([NotNull] BOSParser.SubscriptContext context);
+	Result VisitICS_S_NestedProcedureCall([NotNull] BosParser.ICS_S_NestedProcedureCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ambiguousIdentifier"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_MembersCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAmbiguousIdentifier([NotNull] BOSParser.AmbiguousIdentifierContext context);
+	Result VisitICS_S_MembersCall([NotNull] BosParser.ICS_S_MembersCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.asTypeClause"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_MemberCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAsTypeClause([NotNull] BOSParser.AsTypeClauseContext context);
+	Result VisitICS_S_MemberCall([NotNull] BosParser.ICS_S_MemberCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.baseType"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.iCS_S_DictionaryCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitBaseType([NotNull] BOSParser.BaseTypeContext context);
+	Result VisitICS_S_DictionaryCall([NotNull] BosParser.ICS_S_DictionaryCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.certainIdentifier"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argsCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCertainIdentifier([NotNull] BOSParser.CertainIdentifierContext context);
+	Result VisitArgsCall([NotNull] BosParser.ArgsCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.comparisonOperator"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitComparisonOperator([NotNull] BOSParser.ComparisonOperatorContext context);
+	Result VisitArgCall([NotNull] BosParser.ArgCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.complexType"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.dictionaryCallStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitComplexType([NotNull] BOSParser.ComplexTypeContext context);
+	Result VisitDictionaryCallStmt([NotNull] BosParser.DictionaryCallStmtContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.fieldLength"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFieldLength([NotNull] BOSParser.FieldLengthContext context);
+	Result VisitArgList([NotNull] BosParser.ArgListContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.letterrange"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.arg"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLetterrange([NotNull] BOSParser.LetterrangeContext context);
+	Result VisitArg([NotNull] BosParser.ArgContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.lineLabel"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.argDefaultValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineLabel([NotNull] BOSParser.LineLabelContext context);
+	Result VisitArgDefaultValue([NotNull] BosParser.ArgDefaultValueContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.literal"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.subscripts"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLiteral([NotNull] BOSParser.LiteralContext context);
+	Result VisitSubscripts([NotNull] BosParser.SubscriptsContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.publicPrivateVisibility"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.subscript"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPublicPrivateVisibility([NotNull] BOSParser.PublicPrivateVisibilityContext context);
+	Result VisitSubscript([NotNull] BosParser.SubscriptContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.publicPrivateGlobalVisibility"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.ambiguousIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPublicPrivateGlobalVisibility([NotNull] BOSParser.PublicPrivateGlobalVisibilityContext context);
+	Result VisitAmbiguousIdentifier([NotNull] BosParser.AmbiguousIdentifierContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.type"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.asTypeClause"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitType([NotNull] BOSParser.TypeContext context);
+	Result VisitAsTypeClause([NotNull] BosParser.AsTypeClauseContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.typeHint"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.baseType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTypeHint([NotNull] BOSParser.TypeHintContext context);
+	Result VisitBaseType([NotNull] BosParser.BaseTypeContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.visibility"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.certainIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVisibility([NotNull] BOSParser.VisibilityContext context);
+	Result VisitCertainIdentifier([NotNull] BosParser.CertainIdentifierContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="BOSParser.ambiguousKeyword"/>.
+	/// Visit a parse tree produced by <see cref="BosParser.comparisonOperator"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAmbiguousKeyword([NotNull] BOSParser.AmbiguousKeywordContext context);
+	Result VisitComparisonOperator([NotNull] BosParser.ComparisonOperatorContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.complexType"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitComplexType([NotNull] BosParser.ComplexTypeContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.fieldLength"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitFieldLength([NotNull] BosParser.FieldLengthContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.letterrange"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitLetterrange([NotNull] BosParser.LetterrangeContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.lineLabel"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitLineLabel([NotNull] BosParser.LineLabelContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.literal"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitLiteral([NotNull] BosParser.LiteralContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.publicPrivateVisibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitPublicPrivateVisibility([NotNull] BosParser.PublicPrivateVisibilityContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.publicPrivateGlobalVisibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitPublicPrivateGlobalVisibility([NotNull] BosParser.PublicPrivateGlobalVisibilityContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitType([NotNull] BosParser.TypeContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.typeHint"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitTypeHint([NotNull] BosParser.TypeHintContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.visibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVisibility([NotNull] BosParser.VisibilityContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="BosParser.ambiguousKeyword"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAmbiguousKeyword([NotNull] BosParser.AmbiguousKeywordContext context);
 }

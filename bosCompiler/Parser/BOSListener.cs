@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from ../Grammar/BOS.g4 by ANTLR 4.7.2
+// Generated from ./Grammar/Bos.g4 by ANTLR 4.7.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -25,2013 +25,2063 @@ using IToken = Antlr4.Runtime.IToken;
 
 /// <summary>
 /// This interface defines a complete listener for a parse tree produced by
-/// <see cref="BOSParser"/>.
+/// <see cref="BosParser"/>.
 /// </summary>
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.7.2")]
 [System.CLSCompliant(false)]
-public interface IBOSListener : IParseTreeListener {
+public interface IBosListener : IParseTreeListener {
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.startRule"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.startRule"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterStartRule([NotNull] BOSParser.StartRuleContext context);
+	void EnterStartRule([NotNull] BosParser.StartRuleContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.startRule"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.startRule"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitStartRule([NotNull] BOSParser.StartRuleContext context);
+	void ExitStartRule([NotNull] BosParser.StartRuleContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.module"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.module"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModule([NotNull] BOSParser.ModuleContext context);
+	void EnterModule([NotNull] BosParser.ModuleContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.module"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.module"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModule([NotNull] BOSParser.ModuleContext context);
+	void ExitModule([NotNull] BosParser.ModuleContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReferences"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReferences"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleReferences([NotNull] BOSParser.ModuleReferencesContext context);
+	void EnterModuleReferences([NotNull] BosParser.ModuleReferencesContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReferences"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReferences"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleReferences([NotNull] BOSParser.ModuleReferencesContext context);
+	void ExitModuleReferences([NotNull] BosParser.ModuleReferencesContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReference"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleImports"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleReference([NotNull] BOSParser.ModuleReferenceContext context);
+	void EnterModuleImports([NotNull] BosParser.ModuleImportsContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReference"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleImports"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleReference([NotNull] BOSParser.ModuleReferenceContext context);
+	void ExitModuleImports([NotNull] BosParser.ModuleImportsContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReferenceValue"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReference"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleReferenceValue([NotNull] BOSParser.ModuleReferenceValueContext context);
+	void EnterModuleReference([NotNull] BosParser.ModuleReferenceContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReferenceValue"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReference"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleReferenceValue([NotNull] BOSParser.ModuleReferenceValueContext context);
+	void ExitModuleReference([NotNull] BosParser.ModuleReferenceContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleReferenceComponent"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReferenceValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleReferenceComponent([NotNull] BOSParser.ModuleReferenceComponentContext context);
+	void EnterModuleReferenceValue([NotNull] BosParser.ModuleReferenceValueContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleReferenceComponent"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReferenceValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleReferenceComponent([NotNull] BOSParser.ModuleReferenceComponentContext context);
+	void ExitModuleReferenceValue([NotNull] BosParser.ModuleReferenceValueContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleHeader"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleReferenceComponent"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleHeader([NotNull] BOSParser.ModuleHeaderContext context);
+	void EnterModuleReferenceComponent([NotNull] BosParser.ModuleReferenceComponentContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleHeader"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleReferenceComponent"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleHeader([NotNull] BOSParser.ModuleHeaderContext context);
+	void ExitModuleReferenceComponent([NotNull] BosParser.ModuleReferenceComponentContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleConfig"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleHeader"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleConfig([NotNull] BOSParser.ModuleConfigContext context);
+	void EnterModuleHeader([NotNull] BosParser.ModuleHeaderContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleConfig"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleHeader"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleConfig([NotNull] BOSParser.ModuleConfigContext context);
+	void ExitModuleHeader([NotNull] BosParser.ModuleHeaderContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleConfigElement"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleConfig"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleConfigElement([NotNull] BOSParser.ModuleConfigElementContext context);
+	void EnterModuleConfig([NotNull] BosParser.ModuleConfigContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleConfigElement"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleConfig"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleConfigElement([NotNull] BOSParser.ModuleConfigElementContext context);
+	void ExitModuleConfig([NotNull] BosParser.ModuleConfigContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleAttributes"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleConfigElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleAttributes([NotNull] BOSParser.ModuleAttributesContext context);
+	void EnterModuleConfigElement([NotNull] BosParser.ModuleConfigElementContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleAttributes"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleConfigElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleAttributes([NotNull] BOSParser.ModuleAttributesContext context);
+	void ExitModuleConfigElement([NotNull] BosParser.ModuleConfigElementContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleOptions"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleAttributes"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleOptions([NotNull] BOSParser.ModuleOptionsContext context);
+	void EnterModuleAttributes([NotNull] BosParser.ModuleAttributesContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleOptions"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleAttributes"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleOptions([NotNull] BOSParser.ModuleOptionsContext context);
+	void ExitModuleAttributes([NotNull] BosParser.ModuleAttributesContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.moduleOptions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterModuleOptions([NotNull] BosParser.ModuleOptionsContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.moduleOptions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitModuleOptions([NotNull] BosParser.ModuleOptionsContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionBaseStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOptionBaseStmt([NotNull] BOSParser.OptionBaseStmtContext context);
+	void EnterOptionBaseStmt([NotNull] BosParser.OptionBaseStmtContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionBaseStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOptionBaseStmt([NotNull] BOSParser.OptionBaseStmtContext context);
+	void ExitOptionBaseStmt([NotNull] BosParser.OptionBaseStmtContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionCompareStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOptionCompareStmt([NotNull] BOSParser.OptionCompareStmtContext context);
+	void EnterOptionCompareStmt([NotNull] BosParser.OptionCompareStmtContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionCompareStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOptionCompareStmt([NotNull] BOSParser.OptionCompareStmtContext context);
+	void ExitOptionCompareStmt([NotNull] BosParser.OptionCompareStmtContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionExplicitStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOptionExplicitStmt([NotNull] BOSParser.OptionExplicitStmtContext context);
+	void EnterOptionExplicitStmt([NotNull] BosParser.OptionExplicitStmtContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionExplicitStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOptionExplicitStmt([NotNull] BOSParser.OptionExplicitStmtContext context);
+	void ExitOptionExplicitStmt([NotNull] BosParser.OptionExplicitStmtContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>optionPrivateModuleStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOptionPrivateModuleStmt([NotNull] BOSParser.OptionPrivateModuleStmtContext context);
+	void EnterOptionPrivateModuleStmt([NotNull] BosParser.OptionPrivateModuleStmtContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>optionPrivateModuleStmt</c>
-	/// labeled alternative in <see cref="BOSParser.moduleOption"/>.
+	/// labeled alternative in <see cref="BosParser.moduleOption"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOptionPrivateModuleStmt([NotNull] BOSParser.OptionPrivateModuleStmtContext context);
+	void ExitOptionPrivateModuleStmt([NotNull] BosParser.OptionPrivateModuleStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleBody"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleBody([NotNull] BOSParser.ModuleBodyContext context);
+	void EnterModuleBody([NotNull] BosParser.ModuleBodyContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleBody"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleBody([NotNull] BOSParser.ModuleBodyContext context);
+	void ExitModuleBody([NotNull] BosParser.ModuleBodyContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleBodyElement"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleBodyElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleBodyElement([NotNull] BOSParser.ModuleBodyElementContext context);
+	void EnterModuleBodyElement([NotNull] BosParser.ModuleBodyElementContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleBodyElement"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleBodyElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleBodyElement([NotNull] BOSParser.ModuleBodyElementContext context);
+	void ExitModuleBodyElement([NotNull] BosParser.ModuleBodyElementContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.controlProperties"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.classBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterControlProperties([NotNull] BOSParser.ControlPropertiesContext context);
+	void EnterClassBody([NotNull] BosParser.ClassBodyContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.controlProperties"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.classBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitControlProperties([NotNull] BOSParser.ControlPropertiesContext context);
+	void ExitClassBody([NotNull] BosParser.ClassBodyContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_Properties"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.classBodyElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCp_Properties([NotNull] BOSParser.Cp_PropertiesContext context);
+	void EnterClassBodyElement([NotNull] BosParser.ClassBodyElementContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_Properties"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.classBodyElement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCp_Properties([NotNull] BOSParser.Cp_PropertiesContext context);
+	void ExitClassBodyElement([NotNull] BosParser.ClassBodyElementContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_SingleProperty"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.controlProperties"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCp_SingleProperty([NotNull] BOSParser.Cp_SinglePropertyContext context);
+	void EnterControlProperties([NotNull] BosParser.ControlPropertiesContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_SingleProperty"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.controlProperties"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCp_SingleProperty([NotNull] BOSParser.Cp_SinglePropertyContext context);
+	void ExitControlProperties([NotNull] BosParser.ControlPropertiesContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_PropertyName"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_Properties"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCp_PropertyName([NotNull] BOSParser.Cp_PropertyNameContext context);
+	void EnterCp_Properties([NotNull] BosParser.Cp_PropertiesContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_PropertyName"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_Properties"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCp_PropertyName([NotNull] BOSParser.Cp_PropertyNameContext context);
+	void ExitCp_Properties([NotNull] BosParser.Cp_PropertiesContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_PropertyValue"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_SingleProperty"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCp_PropertyValue([NotNull] BOSParser.Cp_PropertyValueContext context);
+	void EnterCp_SingleProperty([NotNull] BosParser.Cp_SinglePropertyContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_PropertyValue"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_SingleProperty"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCp_PropertyValue([NotNull] BOSParser.Cp_PropertyValueContext context);
+	void ExitCp_SingleProperty([NotNull] BosParser.Cp_SinglePropertyContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_NestedProperty"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_PropertyName"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCp_NestedProperty([NotNull] BOSParser.Cp_NestedPropertyContext context);
+	void EnterCp_PropertyName([NotNull] BosParser.Cp_PropertyNameContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_NestedProperty"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_PropertyName"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCp_NestedProperty([NotNull] BOSParser.Cp_NestedPropertyContext context);
+	void ExitCp_PropertyName([NotNull] BosParser.Cp_PropertyNameContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_ControlType"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_PropertyValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCp_ControlType([NotNull] BOSParser.Cp_ControlTypeContext context);
+	void EnterCp_PropertyValue([NotNull] BosParser.Cp_PropertyValueContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_ControlType"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_PropertyValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCp_ControlType([NotNull] BOSParser.Cp_ControlTypeContext context);
+	void ExitCp_PropertyValue([NotNull] BosParser.Cp_PropertyValueContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.cp_ControlIdentifier"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_NestedProperty"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCp_ControlIdentifier([NotNull] BOSParser.Cp_ControlIdentifierContext context);
+	void EnterCp_NestedProperty([NotNull] BosParser.Cp_NestedPropertyContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.cp_ControlIdentifier"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_NestedProperty"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCp_ControlIdentifier([NotNull] BOSParser.Cp_ControlIdentifierContext context);
+	void ExitCp_NestedProperty([NotNull] BosParser.Cp_NestedPropertyContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.moduleBlock"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_ControlType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterModuleBlock([NotNull] BOSParser.ModuleBlockContext context);
+	void EnterCp_ControlType([NotNull] BosParser.Cp_ControlTypeContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.moduleBlock"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_ControlType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitModuleBlock([NotNull] BOSParser.ModuleBlockContext context);
+	void ExitCp_ControlType([NotNull] BosParser.Cp_ControlTypeContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.attributeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.cp_ControlIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAttributeStmt([NotNull] BOSParser.AttributeStmtContext context);
+	void EnterCp_ControlIdentifier([NotNull] BosParser.Cp_ControlIdentifierContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.attributeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.cp_ControlIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAttributeStmt([NotNull] BOSParser.AttributeStmtContext context);
+	void ExitCp_ControlIdentifier([NotNull] BosParser.Cp_ControlIdentifierContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.block"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.moduleBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBlock([NotNull] BOSParser.BlockContext context);
+	void EnterModuleBlock([NotNull] BosParser.ModuleBlockContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.block"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.moduleBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBlock([NotNull] BOSParser.BlockContext context);
+	void ExitModuleBlock([NotNull] BosParser.ModuleBlockContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.blockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.importStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBlockStmt([NotNull] BOSParser.BlockStmtContext context);
+	void EnterImportStmt([NotNull] BosParser.ImportStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.blockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.importStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBlockStmt([NotNull] BOSParser.BlockStmtContext context);
+	void ExitImportStmt([NotNull] BosParser.ImportStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.appActivateStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.attributeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAppActivateStmt([NotNull] BOSParser.AppActivateStmtContext context);
+	void EnterAttributeStmt([NotNull] BosParser.AttributeStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.appActivateStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.attributeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAppActivateStmt([NotNull] BOSParser.AppActivateStmtContext context);
+	void ExitAttributeStmt([NotNull] BosParser.AttributeStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.beepStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.block"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBeepStmt([NotNull] BOSParser.BeepStmtContext context);
+	void EnterBlock([NotNull] BosParser.BlockContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.beepStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.block"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBeepStmt([NotNull] BOSParser.BeepStmtContext context);
+	void ExitBlock([NotNull] BosParser.BlockContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.chDirStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.blockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterChDirStmt([NotNull] BOSParser.ChDirStmtContext context);
+	void EnterBlockStmt([NotNull] BosParser.BlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.chDirStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.blockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitChDirStmt([NotNull] BOSParser.ChDirStmtContext context);
+	void ExitBlockStmt([NotNull] BosParser.BlockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.chDriveStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.appActivateStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterChDriveStmt([NotNull] BOSParser.ChDriveStmtContext context);
+	void EnterAppActivateStmt([NotNull] BosParser.AppActivateStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.chDriveStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.appActivateStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitChDriveStmt([NotNull] BOSParser.ChDriveStmtContext context);
+	void ExitAppActivateStmt([NotNull] BosParser.AppActivateStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.closeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.beepStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCloseStmt([NotNull] BOSParser.CloseStmtContext context);
+	void EnterBeepStmt([NotNull] BosParser.BeepStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.closeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.beepStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCloseStmt([NotNull] BOSParser.CloseStmtContext context);
+	void ExitBeepStmt([NotNull] BosParser.BeepStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.constStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.chDirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterConstStmt([NotNull] BOSParser.ConstStmtContext context);
+	void EnterChDirStmt([NotNull] BosParser.ChDirStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.constStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.chDirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitConstStmt([NotNull] BOSParser.ConstStmtContext context);
+	void ExitChDirStmt([NotNull] BosParser.ChDirStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.constSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.chDriveStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterConstSubStmt([NotNull] BOSParser.ConstSubStmtContext context);
+	void EnterChDriveStmt([NotNull] BosParser.ChDriveStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.constSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.chDriveStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitConstSubStmt([NotNull] BOSParser.ConstSubStmtContext context);
+	void ExitChDriveStmt([NotNull] BosParser.ChDriveStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.dateStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.classStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterDateStmt([NotNull] BOSParser.DateStmtContext context);
+	void EnterClassStmt([NotNull] BosParser.ClassStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.dateStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.classStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitDateStmt([NotNull] BOSParser.DateStmtContext context);
+	void ExitClassStmt([NotNull] BosParser.ClassStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.declareStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.closeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterDeclareStmt([NotNull] BOSParser.DeclareStmtContext context);
+	void EnterCloseStmt([NotNull] BosParser.CloseStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.declareStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.closeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitDeclareStmt([NotNull] BOSParser.DeclareStmtContext context);
+	void ExitCloseStmt([NotNull] BosParser.CloseStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.deftypeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.constStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterDeftypeStmt([NotNull] BOSParser.DeftypeStmtContext context);
+	void EnterConstStmt([NotNull] BosParser.ConstStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.deftypeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.constStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitDeftypeStmt([NotNull] BOSParser.DeftypeStmtContext context);
+	void ExitConstStmt([NotNull] BosParser.ConstStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.deleteSettingStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.constSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterDeleteSettingStmt([NotNull] BOSParser.DeleteSettingStmtContext context);
+	void EnterConstSubStmt([NotNull] BosParser.ConstSubStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.deleteSettingStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.constSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitDeleteSettingStmt([NotNull] BOSParser.DeleteSettingStmtContext context);
+	void ExitConstSubStmt([NotNull] BosParser.ConstSubStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.doLoopStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.dateStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterDoLoopStmt([NotNull] BOSParser.DoLoopStmtContext context);
+	void EnterDateStmt([NotNull] BosParser.DateStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.doLoopStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.dateStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitDoLoopStmt([NotNull] BOSParser.DoLoopStmtContext context);
+	void ExitDateStmt([NotNull] BosParser.DateStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.endStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.declareStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterEndStmt([NotNull] BOSParser.EndStmtContext context);
+	void EnterDeclareStmt([NotNull] BosParser.DeclareStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.endStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.declareStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitEndStmt([NotNull] BOSParser.EndStmtContext context);
+	void ExitDeclareStmt([NotNull] BosParser.DeclareStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.enumerationStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.deftypeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterEnumerationStmt([NotNull] BOSParser.EnumerationStmtContext context);
+	void EnterDeftypeStmt([NotNull] BosParser.DeftypeStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.enumerationStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.deftypeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitEnumerationStmt([NotNull] BOSParser.EnumerationStmtContext context);
+	void ExitDeftypeStmt([NotNull] BosParser.DeftypeStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.enumerationStmt_Constant"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.deleteSettingStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterEnumerationStmt_Constant([NotNull] BOSParser.EnumerationStmt_ConstantContext context);
+	void EnterDeleteSettingStmt([NotNull] BosParser.DeleteSettingStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.enumerationStmt_Constant"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.deleteSettingStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitEnumerationStmt_Constant([NotNull] BOSParser.EnumerationStmt_ConstantContext context);
+	void ExitDeleteSettingStmt([NotNull] BosParser.DeleteSettingStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eraseStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.doLoopStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterEraseStmt([NotNull] BOSParser.EraseStmtContext context);
+	void EnterDoLoopStmt([NotNull] BosParser.DoLoopStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eraseStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.doLoopStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitEraseStmt([NotNull] BOSParser.EraseStmtContext context);
+	void ExitDoLoopStmt([NotNull] BosParser.DoLoopStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.errorStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.endStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterErrorStmt([NotNull] BOSParser.ErrorStmtContext context);
+	void EnterEndStmt([NotNull] BosParser.EndStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.errorStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.endStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitErrorStmt([NotNull] BOSParser.ErrorStmtContext context);
+	void ExitEndStmt([NotNull] BosParser.EndStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eventStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.enumerationStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterEventStmt([NotNull] BOSParser.EventStmtContext context);
+	void EnterEnumerationStmt([NotNull] BosParser.EnumerationStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eventStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.enumerationStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitEventStmt([NotNull] BOSParser.EventStmtContext context);
+	void ExitEnumerationStmt([NotNull] BosParser.EnumerationStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.exitStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.enumerationStmt_Constant"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterExitStmt([NotNull] BOSParser.ExitStmtContext context);
+	void EnterEnumerationStmt_Constant([NotNull] BosParser.EnumerationStmt_ConstantContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.exitStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.enumerationStmt_Constant"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitExitStmt([NotNull] BOSParser.ExitStmtContext context);
+	void ExitEnumerationStmt_Constant([NotNull] BosParser.EnumerationStmt_ConstantContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.filecopyStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eraseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFilecopyStmt([NotNull] BOSParser.FilecopyStmtContext context);
+	void EnterEraseStmt([NotNull] BosParser.EraseStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.filecopyStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eraseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFilecopyStmt([NotNull] BOSParser.FilecopyStmtContext context);
+	void ExitEraseStmt([NotNull] BosParser.EraseStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.forEachStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.errorStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterForEachStmt([NotNull] BOSParser.ForEachStmtContext context);
+	void EnterErrorStmt([NotNull] BosParser.ErrorStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.forEachStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.errorStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitForEachStmt([NotNull] BOSParser.ForEachStmtContext context);
+	void ExitErrorStmt([NotNull] BosParser.ErrorStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.forNextStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eventStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterForNextStmt([NotNull] BOSParser.ForNextStmtContext context);
+	void EnterEventStmt([NotNull] BosParser.EventStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.forNextStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eventStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitForNextStmt([NotNull] BOSParser.ForNextStmtContext context);
+	void ExitEventStmt([NotNull] BosParser.EventStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.functionStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.exitStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFunctionStmt([NotNull] BOSParser.FunctionStmtContext context);
+	void EnterExitStmt([NotNull] BosParser.ExitStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.functionStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.exitStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFunctionStmt([NotNull] BOSParser.FunctionStmtContext context);
+	void ExitExitStmt([NotNull] BosParser.ExitStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.getStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.filecopyStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterGetStmt([NotNull] BOSParser.GetStmtContext context);
+	void EnterFilecopyStmt([NotNull] BosParser.FilecopyStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.getStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.filecopyStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitGetStmt([NotNull] BOSParser.GetStmtContext context);
+	void ExitFilecopyStmt([NotNull] BosParser.FilecopyStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.goSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.forEachStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterGoSubStmt([NotNull] BOSParser.GoSubStmtContext context);
+	void EnterForEachStmt([NotNull] BosParser.ForEachStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.goSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.forEachStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitGoSubStmt([NotNull] BOSParser.GoSubStmtContext context);
+	void ExitForEachStmt([NotNull] BosParser.ForEachStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.goToStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.forNextStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterGoToStmt([NotNull] BOSParser.GoToStmtContext context);
+	void EnterForNextStmt([NotNull] BosParser.ForNextStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.goToStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.forNextStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitGoToStmt([NotNull] BOSParser.GoToStmtContext context);
+	void ExitForNextStmt([NotNull] BosParser.ForNextStmtContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.functionStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFunctionStmt([NotNull] BosParser.FunctionStmtContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.functionStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFunctionStmt([NotNull] BosParser.FunctionStmtContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.getStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterGetStmt([NotNull] BosParser.GetStmtContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.getStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitGetStmt([NotNull] BosParser.GetStmtContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.goSubStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterGoSubStmt([NotNull] BosParser.GoSubStmtContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.goSubStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitGoSubStmt([NotNull] BosParser.GoSubStmtContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.goToStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterGoToStmt([NotNull] BosParser.GoToStmtContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.goToStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitGoToStmt([NotNull] BosParser.GoToStmtContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>inlineIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterInlineIfThenElse([NotNull] BOSParser.InlineIfThenElseContext context);
+	void EnterInlineIfThenElse([NotNull] BosParser.InlineIfThenElseContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>inlineIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitInlineIfThenElse([NotNull] BOSParser.InlineIfThenElseContext context);
+	void ExitInlineIfThenElse([NotNull] BosParser.InlineIfThenElseContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>blockIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBlockIfThenElse([NotNull] BOSParser.BlockIfThenElseContext context);
+	void EnterBlockIfThenElse([NotNull] BosParser.BlockIfThenElseContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>blockIfThenElse</c>
-	/// labeled alternative in <see cref="BOSParser.ifThenElseStmt"/>.
+	/// labeled alternative in <see cref="BosParser.ifThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBlockIfThenElse([NotNull] BOSParser.BlockIfThenElseContext context);
+	void ExitBlockIfThenElse([NotNull] BosParser.BlockIfThenElseContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterIfBlockStmt([NotNull] BOSParser.IfBlockStmtContext context);
+	void EnterIfBlockStmt([NotNull] BosParser.IfBlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitIfBlockStmt([NotNull] BOSParser.IfBlockStmtContext context);
+	void ExitIfBlockStmt([NotNull] BosParser.IfBlockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifConditionStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifConditionStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterIfConditionStmt([NotNull] BOSParser.IfConditionStmtContext context);
+	void EnterIfConditionStmt([NotNull] BosParser.IfConditionStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifConditionStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifConditionStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitIfConditionStmt([NotNull] BOSParser.IfConditionStmtContext context);
+	void ExitIfConditionStmt([NotNull] BosParser.IfConditionStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifElseIfBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifElseIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterIfElseIfBlockStmt([NotNull] BOSParser.IfElseIfBlockStmtContext context);
+	void EnterIfElseIfBlockStmt([NotNull] BosParser.IfElseIfBlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifElseIfBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifElseIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitIfElseIfBlockStmt([NotNull] BOSParser.IfElseIfBlockStmtContext context);
+	void ExitIfElseIfBlockStmt([NotNull] BosParser.IfElseIfBlockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ifElseBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ifElseBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterIfElseBlockStmt([NotNull] BOSParser.IfElseBlockStmtContext context);
+	void EnterIfElseBlockStmt([NotNull] BosParser.IfElseBlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ifElseBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ifElseBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitIfElseBlockStmt([NotNull] BOSParser.IfElseBlockStmtContext context);
+	void ExitIfElseBlockStmt([NotNull] BosParser.IfElseBlockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.implementsStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.implementsStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterImplementsStmt([NotNull] BOSParser.ImplementsStmtContext context);
+	void EnterImplementsStmt([NotNull] BosParser.ImplementsStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.implementsStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.implementsStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitImplementsStmt([NotNull] BOSParser.ImplementsStmtContext context);
+	void ExitImplementsStmt([NotNull] BosParser.ImplementsStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.inputStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.inputStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterInputStmt([NotNull] BOSParser.InputStmtContext context);
+	void EnterInputStmt([NotNull] BosParser.InputStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.inputStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.inputStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitInputStmt([NotNull] BOSParser.InputStmtContext context);
+	void ExitInputStmt([NotNull] BosParser.InputStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.killStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.killStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterKillStmt([NotNull] BOSParser.KillStmtContext context);
+	void EnterKillStmt([NotNull] BosParser.KillStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.killStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.killStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitKillStmt([NotNull] BOSParser.KillStmtContext context);
+	void ExitKillStmt([NotNull] BosParser.KillStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.letStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.letStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLetStmt([NotNull] BOSParser.LetStmtContext context);
+	void EnterLetStmt([NotNull] BosParser.LetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.letStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.letStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLetStmt([NotNull] BOSParser.LetStmtContext context);
+	void ExitLetStmt([NotNull] BosParser.LetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lineInputStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.lineInputStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineInputStmt([NotNull] BOSParser.LineInputStmtContext context);
+	void EnterLineInputStmt([NotNull] BosParser.LineInputStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lineInputStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.lineInputStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineInputStmt([NotNull] BOSParser.LineInputStmtContext context);
+	void ExitLineInputStmt([NotNull] BosParser.LineInputStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.loadStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.loadStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLoadStmt([NotNull] BOSParser.LoadStmtContext context);
+	void EnterLoadStmt([NotNull] BosParser.LoadStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.loadStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.loadStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLoadStmt([NotNull] BOSParser.LoadStmtContext context);
+	void ExitLoadStmt([NotNull] BosParser.LoadStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.lockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLockStmt([NotNull] BOSParser.LockStmtContext context);
+	void EnterLockStmt([NotNull] BosParser.LockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.lockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLockStmt([NotNull] BOSParser.LockStmtContext context);
+	void ExitLockStmt([NotNull] BosParser.LockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lsetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.lsetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLsetStmt([NotNull] BOSParser.LsetStmtContext context);
+	void EnterLsetStmt([NotNull] BosParser.LsetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lsetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.lsetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLsetStmt([NotNull] BOSParser.LsetStmtContext context);
+	void ExitLsetStmt([NotNull] BosParser.LsetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroIfThenElseStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroIfThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterMacroIfThenElseStmt([NotNull] BOSParser.MacroIfThenElseStmtContext context);
+	void EnterMacroIfThenElseStmt([NotNull] BosParser.MacroIfThenElseStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroIfThenElseStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroIfThenElseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitMacroIfThenElseStmt([NotNull] BOSParser.MacroIfThenElseStmtContext context);
+	void ExitMacroIfThenElseStmt([NotNull] BosParser.MacroIfThenElseStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroIfBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterMacroIfBlockStmt([NotNull] BOSParser.MacroIfBlockStmtContext context);
+	void EnterMacroIfBlockStmt([NotNull] BosParser.MacroIfBlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroIfBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitMacroIfBlockStmt([NotNull] BOSParser.MacroIfBlockStmtContext context);
+	void ExitMacroIfBlockStmt([NotNull] BosParser.MacroIfBlockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroElseIfBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroElseIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterMacroElseIfBlockStmt([NotNull] BOSParser.MacroElseIfBlockStmtContext context);
+	void EnterMacroElseIfBlockStmt([NotNull] BosParser.MacroElseIfBlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroElseIfBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroElseIfBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitMacroElseIfBlockStmt([NotNull] BOSParser.MacroElseIfBlockStmtContext context);
+	void ExitMacroElseIfBlockStmt([NotNull] BosParser.MacroElseIfBlockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.macroElseBlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.macroElseBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterMacroElseBlockStmt([NotNull] BOSParser.MacroElseBlockStmtContext context);
+	void EnterMacroElseBlockStmt([NotNull] BosParser.MacroElseBlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.macroElseBlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.macroElseBlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitMacroElseBlockStmt([NotNull] BOSParser.MacroElseBlockStmtContext context);
+	void ExitMacroElseBlockStmt([NotNull] BosParser.MacroElseBlockStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.midStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.midStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterMidStmt([NotNull] BOSParser.MidStmtContext context);
+	void EnterMidStmt([NotNull] BosParser.MidStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.midStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.midStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitMidStmt([NotNull] BOSParser.MidStmtContext context);
+	void ExitMidStmt([NotNull] BosParser.MidStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.mkdirStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.mkdirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterMkdirStmt([NotNull] BOSParser.MkdirStmtContext context);
+	void EnterMkdirStmt([NotNull] BosParser.MkdirStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.mkdirStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.mkdirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitMkdirStmt([NotNull] BOSParser.MkdirStmtContext context);
+	void ExitMkdirStmt([NotNull] BosParser.MkdirStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.nameStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.nameStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterNameStmt([NotNull] BOSParser.NameStmtContext context);
+	void EnterNameStmt([NotNull] BosParser.NameStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.nameStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.nameStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitNameStmt([NotNull] BOSParser.NameStmtContext context);
+	void ExitNameStmt([NotNull] BosParser.NameStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.onErrorStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.onErrorStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOnErrorStmt([NotNull] BOSParser.OnErrorStmtContext context);
+	void EnterOnErrorStmt([NotNull] BosParser.OnErrorStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.onErrorStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.onErrorStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOnErrorStmt([NotNull] BOSParser.OnErrorStmtContext context);
+	void ExitOnErrorStmt([NotNull] BosParser.OnErrorStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.onGoToStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.onGoToStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOnGoToStmt([NotNull] BOSParser.OnGoToStmtContext context);
+	void EnterOnGoToStmt([NotNull] BosParser.OnGoToStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.onGoToStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.onGoToStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOnGoToStmt([NotNull] BOSParser.OnGoToStmtContext context);
+	void ExitOnGoToStmt([NotNull] BosParser.OnGoToStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.onGoSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.onGoSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOnGoSubStmt([NotNull] BOSParser.OnGoSubStmtContext context);
+	void EnterOnGoSubStmt([NotNull] BosParser.OnGoSubStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.onGoSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.onGoSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOnGoSubStmt([NotNull] BOSParser.OnGoSubStmtContext context);
+	void ExitOnGoSubStmt([NotNull] BosParser.OnGoSubStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.openStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.openStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOpenStmt([NotNull] BOSParser.OpenStmtContext context);
+	void EnterOpenStmt([NotNull] BosParser.OpenStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.openStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.openStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOpenStmt([NotNull] BOSParser.OpenStmtContext context);
+	void ExitOpenStmt([NotNull] BosParser.OpenStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.outputList"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.outputList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOutputList([NotNull] BOSParser.OutputListContext context);
+	void EnterOutputList([NotNull] BosParser.OutputListContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.outputList"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.outputList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOutputList([NotNull] BOSParser.OutputListContext context);
+	void ExitOutputList([NotNull] BosParser.OutputListContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.outputList_Expression"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.outputList_Expression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOutputList_Expression([NotNull] BOSParser.OutputList_ExpressionContext context);
+	void EnterOutputList_Expression([NotNull] BosParser.OutputList_ExpressionContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.outputList_Expression"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.outputList_Expression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOutputList_Expression([NotNull] BOSParser.OutputList_ExpressionContext context);
+	void ExitOutputList_Expression([NotNull] BosParser.OutputList_ExpressionContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.printStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.printStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterPrintStmt([NotNull] BOSParser.PrintStmtContext context);
+	void EnterPrintStmt([NotNull] BosParser.PrintStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.printStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.printStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitPrintStmt([NotNull] BOSParser.PrintStmtContext context);
+	void ExitPrintStmt([NotNull] BosParser.PrintStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.propertyGetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.propertyGetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterPropertyGetStmt([NotNull] BOSParser.PropertyGetStmtContext context);
+	void EnterPropertyGetStmt([NotNull] BosParser.PropertyGetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.propertyGetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.propertyGetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitPropertyGetStmt([NotNull] BOSParser.PropertyGetStmtContext context);
+	void ExitPropertyGetStmt([NotNull] BosParser.PropertyGetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.propertySetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.propertySetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterPropertySetStmt([NotNull] BOSParser.PropertySetStmtContext context);
+	void EnterPropertySetStmt([NotNull] BosParser.PropertySetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.propertySetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.propertySetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitPropertySetStmt([NotNull] BOSParser.PropertySetStmtContext context);
+	void ExitPropertySetStmt([NotNull] BosParser.PropertySetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.propertyLetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.propertyLetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterPropertyLetStmt([NotNull] BOSParser.PropertyLetStmtContext context);
+	void EnterPropertyLetStmt([NotNull] BosParser.PropertyLetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.propertyLetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.propertyLetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitPropertyLetStmt([NotNull] BOSParser.PropertyLetStmtContext context);
+	void ExitPropertyLetStmt([NotNull] BosParser.PropertyLetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.putStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.putStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterPutStmt([NotNull] BOSParser.PutStmtContext context);
+	void EnterPutStmt([NotNull] BosParser.PutStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.putStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.putStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitPutStmt([NotNull] BOSParser.PutStmtContext context);
+	void ExitPutStmt([NotNull] BosParser.PutStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.raiseEventStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.raiseEventStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterRaiseEventStmt([NotNull] BOSParser.RaiseEventStmtContext context);
+	void EnterRaiseEventStmt([NotNull] BosParser.RaiseEventStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.raiseEventStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.raiseEventStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitRaiseEventStmt([NotNull] BOSParser.RaiseEventStmtContext context);
+	void ExitRaiseEventStmt([NotNull] BosParser.RaiseEventStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.randomizeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.randomizeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterRandomizeStmt([NotNull] BOSParser.RandomizeStmtContext context);
+	void EnterRandomizeStmt([NotNull] BosParser.RandomizeStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.randomizeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.randomizeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitRandomizeStmt([NotNull] BOSParser.RandomizeStmtContext context);
+	void ExitRandomizeStmt([NotNull] BosParser.RandomizeStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.redimStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.redimStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterRedimStmt([NotNull] BOSParser.RedimStmtContext context);
+	void EnterRedimStmt([NotNull] BosParser.RedimStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.redimStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.redimStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitRedimStmt([NotNull] BOSParser.RedimStmtContext context);
+	void ExitRedimStmt([NotNull] BosParser.RedimStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.redimSubStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.redimSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterRedimSubStmt([NotNull] BOSParser.RedimSubStmtContext context);
+	void EnterRedimSubStmt([NotNull] BosParser.RedimSubStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.redimSubStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.redimSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitRedimSubStmt([NotNull] BOSParser.RedimSubStmtContext context);
+	void ExitRedimSubStmt([NotNull] BosParser.RedimSubStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.resetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.resetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterResetStmt([NotNull] BOSParser.ResetStmtContext context);
+	void EnterResetStmt([NotNull] BosParser.ResetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.resetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.resetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitResetStmt([NotNull] BOSParser.ResetStmtContext context);
+	void ExitResetStmt([NotNull] BosParser.ResetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.resumeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.resumeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterResumeStmt([NotNull] BOSParser.ResumeStmtContext context);
+	void EnterResumeStmt([NotNull] BosParser.ResumeStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.resumeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.resumeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitResumeStmt([NotNull] BOSParser.ResumeStmtContext context);
+	void ExitResumeStmt([NotNull] BosParser.ResumeStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.returnStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.returnStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterReturnStmt([NotNull] BOSParser.ReturnStmtContext context);
+	void EnterReturnStmt([NotNull] BosParser.ReturnStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.returnStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.returnStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitReturnStmt([NotNull] BOSParser.ReturnStmtContext context);
+	void ExitReturnStmt([NotNull] BosParser.ReturnStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.rmdirStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.rmdirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterRmdirStmt([NotNull] BOSParser.RmdirStmtContext context);
+	void EnterRmdirStmt([NotNull] BosParser.RmdirStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.rmdirStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.rmdirStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitRmdirStmt([NotNull] BOSParser.RmdirStmtContext context);
+	void ExitRmdirStmt([NotNull] BosParser.RmdirStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.rsetStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.rsetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterRsetStmt([NotNull] BOSParser.RsetStmtContext context);
+	void EnterRsetStmt([NotNull] BosParser.RsetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.rsetStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.rsetStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitRsetStmt([NotNull] BOSParser.RsetStmtContext context);
+	void ExitRsetStmt([NotNull] BosParser.RsetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.savepictureStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.savepictureStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSavepictureStmt([NotNull] BOSParser.SavepictureStmtContext context);
+	void EnterSavepictureStmt([NotNull] BosParser.SavepictureStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.savepictureStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.savepictureStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSavepictureStmt([NotNull] BOSParser.SavepictureStmtContext context);
+	void ExitSavepictureStmt([NotNull] BosParser.SavepictureStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.saveSettingStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.saveSettingStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSaveSettingStmt([NotNull] BOSParser.SaveSettingStmtContext context);
+	void EnterSaveSettingStmt([NotNull] BosParser.SaveSettingStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.saveSettingStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.saveSettingStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSaveSettingStmt([NotNull] BOSParser.SaveSettingStmtContext context);
+	void ExitSaveSettingStmt([NotNull] BosParser.SaveSettingStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.seekStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.seekStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSeekStmt([NotNull] BOSParser.SeekStmtContext context);
+	void EnterSeekStmt([NotNull] BosParser.SeekStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.seekStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.seekStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSeekStmt([NotNull] BOSParser.SeekStmtContext context);
+	void ExitSeekStmt([NotNull] BosParser.SeekStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.selectCaseStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.selectCaseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSelectCaseStmt([NotNull] BOSParser.SelectCaseStmtContext context);
+	void EnterSelectCaseStmt([NotNull] BosParser.SelectCaseStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.selectCaseStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.selectCaseStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSelectCaseStmt([NotNull] BOSParser.SelectCaseStmtContext context);
+	void ExitSelectCaseStmt([NotNull] BosParser.SelectCaseStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.sC_Case"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.sC_Case"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSC_Case([NotNull] BOSParser.SC_CaseContext context);
+	void EnterSC_Case([NotNull] BosParser.SC_CaseContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.sC_Case"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.sC_Case"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSC_Case([NotNull] BOSParser.SC_CaseContext context);
+	void ExitSC_Case([NotNull] BosParser.SC_CaseContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondElse</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCaseCondElse([NotNull] BOSParser.CaseCondElseContext context);
+	void EnterCaseCondElse([NotNull] BosParser.CaseCondElseContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondElse</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCaseCondElse([NotNull] BOSParser.CaseCondElseContext context);
+	void ExitCaseCondElse([NotNull] BosParser.CaseCondElseContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExpr</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCaseCondExpr([NotNull] BOSParser.CaseCondExprContext context);
+	void EnterCaseCondExpr([NotNull] BosParser.CaseCondExprContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExpr</c>
-	/// labeled alternative in <see cref="BOSParser.sC_Cond"/>.
+	/// labeled alternative in <see cref="BosParser.sC_Cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCaseCondExpr([NotNull] BOSParser.CaseCondExprContext context);
+	void ExitCaseCondExpr([NotNull] BosParser.CaseCondExprContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExprIs</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCaseCondExprIs([NotNull] BOSParser.CaseCondExprIsContext context);
+	void EnterCaseCondExprIs([NotNull] BosParser.CaseCondExprIsContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExprIs</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCaseCondExprIs([NotNull] BOSParser.CaseCondExprIsContext context);
+	void ExitCaseCondExprIs([NotNull] BosParser.CaseCondExprIsContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExprValue</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCaseCondExprValue([NotNull] BOSParser.CaseCondExprValueContext context);
+	void EnterCaseCondExprValue([NotNull] BosParser.CaseCondExprValueContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExprValue</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCaseCondExprValue([NotNull] BOSParser.CaseCondExprValueContext context);
+	void ExitCaseCondExprValue([NotNull] BosParser.CaseCondExprValueContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>caseCondExprTo</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCaseCondExprTo([NotNull] BOSParser.CaseCondExprToContext context);
+	void EnterCaseCondExprTo([NotNull] BosParser.CaseCondExprToContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>caseCondExprTo</c>
-	/// labeled alternative in <see cref="BOSParser.sC_CondExpr"/>.
+	/// labeled alternative in <see cref="BosParser.sC_CondExpr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCaseCondExprTo([NotNull] BOSParser.CaseCondExprToContext context);
+	void ExitCaseCondExprTo([NotNull] BosParser.CaseCondExprToContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.sendkeysStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.sendkeysStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSendkeysStmt([NotNull] BOSParser.SendkeysStmtContext context);
+	void EnterSendkeysStmt([NotNull] BosParser.SendkeysStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.sendkeysStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.sendkeysStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSendkeysStmt([NotNull] BOSParser.SendkeysStmtContext context);
+	void ExitSendkeysStmt([NotNull] BosParser.SendkeysStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.setattrStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.setattrStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSetattrStmt([NotNull] BOSParser.SetattrStmtContext context);
+	void EnterSetattrStmt([NotNull] BosParser.SetattrStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.setattrStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.setattrStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSetattrStmt([NotNull] BOSParser.SetattrStmtContext context);
+	void ExitSetattrStmt([NotNull] BosParser.SetattrStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.setStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.setStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSetStmt([NotNull] BOSParser.SetStmtContext context);
+	void EnterSetStmt([NotNull] BosParser.SetStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.setStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.setStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSetStmt([NotNull] BOSParser.SetStmtContext context);
+	void ExitSetStmt([NotNull] BosParser.SetStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.stopStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.stopStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterStopStmt([NotNull] BOSParser.StopStmtContext context);
+	void EnterStopStmt([NotNull] BosParser.StopStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.stopStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.stopStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitStopStmt([NotNull] BOSParser.StopStmtContext context);
+	void ExitStopStmt([NotNull] BosParser.StopStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.subStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.subStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSubStmt([NotNull] BOSParser.SubStmtContext context);
+	void EnterSubStmt([NotNull] BosParser.SubStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.subStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.subStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSubStmt([NotNull] BOSParser.SubStmtContext context);
+	void ExitSubStmt([NotNull] BosParser.SubStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.timeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.timeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTimeStmt([NotNull] BOSParser.TimeStmtContext context);
+	void EnterTimeStmt([NotNull] BosParser.TimeStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.timeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.timeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTimeStmt([NotNull] BOSParser.TimeStmtContext context);
+	void ExitTimeStmt([NotNull] BosParser.TimeStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.typeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTypeStmt([NotNull] BOSParser.TypeStmtContext context);
+	void EnterTypeStmt([NotNull] BosParser.TypeStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.typeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTypeStmt([NotNull] BOSParser.TypeStmtContext context);
+	void ExitTypeStmt([NotNull] BosParser.TypeStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeStmt_Element"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.typeStmt_Element"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTypeStmt_Element([NotNull] BOSParser.TypeStmt_ElementContext context);
+	void EnterTypeStmt_Element([NotNull] BosParser.TypeStmt_ElementContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeStmt_Element"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.typeStmt_Element"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTypeStmt_Element([NotNull] BOSParser.TypeStmt_ElementContext context);
+	void ExitTypeStmt_Element([NotNull] BosParser.TypeStmt_ElementContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeOfStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.typeOfStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTypeOfStmt([NotNull] BOSParser.TypeOfStmtContext context);
+	void EnterTypeOfStmt([NotNull] BosParser.TypeOfStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeOfStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.typeOfStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTypeOfStmt([NotNull] BOSParser.TypeOfStmtContext context);
+	void ExitTypeOfStmt([NotNull] BosParser.TypeOfStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.unloadStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.unloadStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterUnloadStmt([NotNull] BOSParser.UnloadStmtContext context);
+	void EnterUnloadStmt([NotNull] BosParser.UnloadStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.unloadStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.unloadStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitUnloadStmt([NotNull] BOSParser.UnloadStmtContext context);
+	void ExitUnloadStmt([NotNull] BosParser.UnloadStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.unlockStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.unlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterUnlockStmt([NotNull] BOSParser.UnlockStmtContext context);
+	void EnterUnlockStmt([NotNull] BosParser.UnlockStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.unlockStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.unlockStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitUnlockStmt([NotNull] BOSParser.UnlockStmtContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsDiv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsDiv([NotNull] BOSParser.VsDivContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsDiv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsDiv([NotNull] BOSParser.VsDivContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsNegation</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsNegation([NotNull] BOSParser.VsNegationContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsNegation</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsNegation([NotNull] BOSParser.VsNegationContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMinus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsMinus([NotNull] BOSParser.VsMinusContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMinus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsMinus([NotNull] BOSParser.VsMinusContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsImp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsImp([NotNull] BOSParser.VsImpContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsImp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsImp([NotNull] BOSParser.VsImpContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsGeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsGeq([NotNull] BOSParser.VsGeqContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsGeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsGeq([NotNull] BOSParser.VsGeqContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsLt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsLt([NotNull] BOSParser.VsLtContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsLt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsLt([NotNull] BOSParser.VsLtContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsLiteral</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsLiteral([NotNull] BOSParser.VsLiteralContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsLiteral</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsLiteral([NotNull] BOSParser.VsLiteralContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsEqv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsEqv([NotNull] BOSParser.VsEqvContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsEqv</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsEqv([NotNull] BOSParser.VsEqvContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsLike</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsLike([NotNull] BOSParser.VsLikeContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsLike</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsLike([NotNull] BOSParser.VsLikeContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsICS</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsICS([NotNull] BOSParser.VsICSContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsICS</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsICS([NotNull] BOSParser.VsICSContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsNeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsNeq([NotNull] BOSParser.VsNeqContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsNeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsNeq([NotNull] BOSParser.VsNeqContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsTypeOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsTypeOf([NotNull] BOSParser.VsTypeOfContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsTypeOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsTypeOf([NotNull] BOSParser.VsTypeOfContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsPow</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsPow([NotNull] BOSParser.VsPowContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsPow</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsPow([NotNull] BOSParser.VsPowContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMult</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsMult([NotNull] BOSParser.VsMultContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMult</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsMult([NotNull] BOSParser.VsMultContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAssign</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsAssign([NotNull] BOSParser.VsAssignContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAssign</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsAssign([NotNull] BOSParser.VsAssignContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAdd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsAdd([NotNull] BOSParser.VsAddContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAdd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsAdd([NotNull] BOSParser.VsAddContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsPlus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsPlus([NotNull] BOSParser.VsPlusContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsPlus</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsPlus([NotNull] BOSParser.VsPlusContext context);
+	void ExitUnlockStmt([NotNull] BosParser.UnlockStmtContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsStruct</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsStruct([NotNull] BOSParser.VsStructContext context);
+	void EnterVsStruct([NotNull] BosParser.VsStructContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsStruct</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsStruct([NotNull] BOSParser.VsStructContext context);
+	void ExitVsStruct([NotNull] BosParser.VsStructContext context);
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsOr</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsAdd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsOr([NotNull] BOSParser.VsOrContext context);
+	void EnterVsAdd([NotNull] BosParser.VsAddContext context);
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsOr</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsAdd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsOr([NotNull] BOSParser.VsOrContext context);
+	void ExitVsAdd([NotNull] BosParser.VsAddContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsLt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsLt([NotNull] BosParser.VsLtContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsLt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsLt([NotNull] BosParser.VsLtContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsAddressOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsAddressOf([NotNull] BOSParser.VsAddressOfContext context);
+	void EnterVsAddressOf([NotNull] BosParser.VsAddressOfContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsAddressOf</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsAddressOf([NotNull] BOSParser.VsAddressOfContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMod</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsMod([NotNull] BOSParser.VsModContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMod</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsMod([NotNull] BOSParser.VsModContext context);
+	void ExitVsAddressOf([NotNull] BosParser.VsAddressOfContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsNew</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsNew([NotNull] BOSParser.VsNewContext context);
+	void EnterVsNew([NotNull] BosParser.VsNewContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsNew</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsNew([NotNull] BOSParser.VsNewContext context);
+	void ExitVsNew([NotNull] BosParser.VsNewContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsMult</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsMult([NotNull] BosParser.VsMultContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsMult</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsMult([NotNull] BosParser.VsMultContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsNegation</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsNegation([NotNull] BosParser.VsNegationContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsNegation</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsNegation([NotNull] BosParser.VsNegationContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsAssign</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsAssign([NotNull] BosParser.VsAssignContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsAssign</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsAssign([NotNull] BosParser.VsAssignContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsDiv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsDiv([NotNull] BosParser.VsDivContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsDiv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsDiv([NotNull] BosParser.VsDivContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsLike</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsLike([NotNull] BosParser.VsLikeContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsLike</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsLike([NotNull] BosParser.VsLikeContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsPlus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsPlus([NotNull] BosParser.VsPlusContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsPlus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsPlus([NotNull] BosParser.VsPlusContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsNot</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsNot([NotNull] BOSParser.VsNotContext context);
+	void EnterVsNot([NotNull] BosParser.VsNotContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsNot</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsNot([NotNull] BOSParser.VsNotContext context);
+	void ExitVsNot([NotNull] BosParser.VsNotContext context);
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAmp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsGeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsAmp([NotNull] BOSParser.VsAmpContext context);
+	void EnterVsGeq([NotNull] BosParser.VsGeqContext context);
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAmp</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsGeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsAmp([NotNull] BOSParser.VsAmpContext context);
+	void ExitVsGeq([NotNull] BosParser.VsGeqContext context);
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsMid</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsTypeOf</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsMid([NotNull] BOSParser.VsMidContext context);
+	void EnterVsTypeOf([NotNull] BosParser.VsTypeOfContext context);
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsMid</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsTypeOf</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsMid([NotNull] BOSParser.VsMidContext context);
+	void ExitVsTypeOf([NotNull] BosParser.VsTypeOfContext context);
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsAnd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsICS</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsAnd([NotNull] BOSParser.VsAndContext context);
+	void EnterVsICS([NotNull] BosParser.VsICSContext context);
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsAnd</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsICS</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsAnd([NotNull] BOSParser.VsAndContext context);
+	void ExitVsICS([NotNull] BosParser.VsICSContext context);
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsEq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsNeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsEq([NotNull] BOSParser.VsEqContext context);
+	void EnterVsNeq([NotNull] BosParser.VsNeqContext context);
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsEq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsNeq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsEq([NotNull] BOSParser.VsEqContext context);
-	/// <summary>
-	/// Enter a parse tree produced by the <c>vsIs</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVsIs([NotNull] BOSParser.VsIsContext context);
-	/// <summary>
-	/// Exit a parse tree produced by the <c>vsIs</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVsIs([NotNull] BOSParser.VsIsContext context);
+	void ExitVsNeq([NotNull] BosParser.VsNeqContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsXor</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsXor([NotNull] BOSParser.VsXorContext context);
+	void EnterVsXor([NotNull] BosParser.VsXorContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsXor</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsXor([NotNull] BOSParser.VsXorContext context);
+	void ExitVsXor([NotNull] BosParser.VsXorContext context);
 	/// <summary>
-	/// Enter a parse tree produced by the <c>vsGt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Enter a parse tree produced by the <c>vsAnd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsGt([NotNull] BOSParser.VsGtContext context);
+	void EnterVsAnd([NotNull] BosParser.VsAndContext context);
 	/// <summary>
-	/// Exit a parse tree produced by the <c>vsGt</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// Exit a parse tree produced by the <c>vsAnd</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsGt([NotNull] BOSParser.VsGtContext context);
+	void ExitVsAnd([NotNull] BosParser.VsAndContext context);
+	/// <summary>
+	/// Enter a parse tree produced by the <c>vsPow</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVsPow([NotNull] BosParser.VsPowContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>vsPow</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVsPow([NotNull] BosParser.VsPowContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>vsLeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVsLeq([NotNull] BOSParser.VsLeqContext context);
+	void EnterVsLeq([NotNull] BosParser.VsLeqContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>vsLeq</c>
-	/// labeled alternative in <see cref="BOSParser.valueStmt"/>.
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVsLeq([NotNull] BOSParser.VsLeqContext context);
+	void ExitVsLeq([NotNull] BosParser.VsLeqContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.variableStmt"/>.
+	/// Enter a parse tree produced by the <c>vsIs</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVariableStmt([NotNull] BOSParser.VariableStmtContext context);
+	void EnterVsIs([NotNull] BosParser.VsIsContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.variableStmt"/>.
+	/// Exit a parse tree produced by the <c>vsIs</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVariableStmt([NotNull] BOSParser.VariableStmtContext context);
+	void ExitVsIs([NotNull] BosParser.VsIsContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.variableListStmt"/>.
+	/// Enter a parse tree produced by the <c>vsMod</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVariableListStmt([NotNull] BOSParser.VariableListStmtContext context);
+	void EnterVsMod([NotNull] BosParser.VsModContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.variableListStmt"/>.
+	/// Exit a parse tree produced by the <c>vsMod</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVariableListStmt([NotNull] BOSParser.VariableListStmtContext context);
+	void ExitVsMod([NotNull] BosParser.VsModContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.variableSubStmt"/>.
+	/// Enter a parse tree produced by the <c>vsAmp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVariableSubStmt([NotNull] BOSParser.VariableSubStmtContext context);
+	void EnterVsAmp([NotNull] BosParser.VsAmpContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.variableSubStmt"/>.
+	/// Exit a parse tree produced by the <c>vsAmp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVariableSubStmt([NotNull] BOSParser.VariableSubStmtContext context);
+	void ExitVsAmp([NotNull] BosParser.VsAmpContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.whileWendStmt"/>.
+	/// Enter a parse tree produced by the <c>vsOr</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterWhileWendStmt([NotNull] BOSParser.WhileWendStmtContext context);
+	void EnterVsOr([NotNull] BosParser.VsOrContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.whileWendStmt"/>.
+	/// Exit a parse tree produced by the <c>vsOr</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitWhileWendStmt([NotNull] BOSParser.WhileWendStmtContext context);
+	void ExitVsOr([NotNull] BosParser.VsOrContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.widthStmt"/>.
+	/// Enter a parse tree produced by the <c>vsMinus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterWidthStmt([NotNull] BOSParser.WidthStmtContext context);
+	void EnterVsMinus([NotNull] BosParser.VsMinusContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.widthStmt"/>.
+	/// Exit a parse tree produced by the <c>vsMinus</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitWidthStmt([NotNull] BOSParser.WidthStmtContext context);
+	void ExitVsMinus([NotNull] BosParser.VsMinusContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.withStmt"/>.
+	/// Enter a parse tree produced by the <c>vsLiteral</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterWithStmt([NotNull] BOSParser.WithStmtContext context);
+	void EnterVsLiteral([NotNull] BosParser.VsLiteralContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.withStmt"/>.
+	/// Exit a parse tree produced by the <c>vsLiteral</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitWithStmt([NotNull] BOSParser.WithStmtContext context);
+	void ExitVsLiteral([NotNull] BosParser.VsLiteralContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.writeStmt"/>.
+	/// Enter a parse tree produced by the <c>vsEqv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterWriteStmt([NotNull] BOSParser.WriteStmtContext context);
+	void EnterVsEqv([NotNull] BosParser.VsEqvContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.writeStmt"/>.
+	/// Exit a parse tree produced by the <c>vsEqv</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitWriteStmt([NotNull] BOSParser.WriteStmtContext context);
+	void ExitVsEqv([NotNull] BosParser.VsEqvContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.explicitCallStmt"/>.
+	/// Enter a parse tree produced by the <c>vsImp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterExplicitCallStmt([NotNull] BOSParser.ExplicitCallStmtContext context);
+	void EnterVsImp([NotNull] BosParser.VsImpContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.explicitCallStmt"/>.
+	/// Exit a parse tree produced by the <c>vsImp</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitExplicitCallStmt([NotNull] BOSParser.ExplicitCallStmtContext context);
+	void ExitVsImp([NotNull] BosParser.VsImpContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eCS_ProcedureCall"/>.
+	/// Enter a parse tree produced by the <c>vsGt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterECS_ProcedureCall([NotNull] BOSParser.ECS_ProcedureCallContext context);
+	void EnterVsGt([NotNull] BosParser.VsGtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eCS_ProcedureCall"/>.
+	/// Exit a parse tree produced by the <c>vsGt</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitECS_ProcedureCall([NotNull] BOSParser.ECS_ProcedureCallContext context);
+	void ExitVsGt([NotNull] BosParser.VsGtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.eCS_MemberProcedureCall"/>.
+	/// Enter a parse tree produced by the <c>vsEq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterECS_MemberProcedureCall([NotNull] BOSParser.ECS_MemberProcedureCallContext context);
+	void EnterVsEq([NotNull] BosParser.VsEqContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.eCS_MemberProcedureCall"/>.
+	/// Exit a parse tree produced by the <c>vsEq</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitECS_MemberProcedureCall([NotNull] BOSParser.ECS_MemberProcedureCallContext context);
+	void ExitVsEq([NotNull] BosParser.VsEqContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.implicitCallStmt_InBlock"/>.
+	/// Enter a parse tree produced by the <c>vsMid</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterImplicitCallStmt_InBlock([NotNull] BOSParser.ImplicitCallStmt_InBlockContext context);
+	void EnterVsMid([NotNull] BosParser.VsMidContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InBlock"/>.
+	/// Exit a parse tree produced by the <c>vsMid</c>
+	/// labeled alternative in <see cref="BosParser.valueStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitImplicitCallStmt_InBlock([NotNull] BOSParser.ImplicitCallStmt_InBlockContext context);
+	void ExitVsMid([NotNull] BosParser.VsMidContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_B_ProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.variableStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_B_ProcedureCall([NotNull] BOSParser.ICS_B_ProcedureCallContext context);
+	void EnterVariableStmt([NotNull] BosParser.VariableStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_B_ProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.variableStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_B_ProcedureCall([NotNull] BOSParser.ICS_B_ProcedureCallContext context);
+	void ExitVariableStmt([NotNull] BosParser.VariableStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_B_MemberProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.variableListStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_B_MemberProcedureCall([NotNull] BOSParser.ICS_B_MemberProcedureCallContext context);
+	void EnterVariableListStmt([NotNull] BosParser.VariableListStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_B_MemberProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.variableListStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_B_MemberProcedureCall([NotNull] BOSParser.ICS_B_MemberProcedureCallContext context);
+	void ExitVariableListStmt([NotNull] BosParser.VariableListStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.implicitCallStmt_InStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.variableSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterImplicitCallStmt_InStmt([NotNull] BOSParser.ImplicitCallStmt_InStmtContext context);
+	void EnterVariableSubStmt([NotNull] BosParser.VariableSubStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.implicitCallStmt_InStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.variableSubStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitImplicitCallStmt_InStmt([NotNull] BOSParser.ImplicitCallStmt_InStmtContext context);
+	void ExitVariableSubStmt([NotNull] BosParser.VariableSubStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_VariableOrProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.whileWendStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_S_VariableOrProcedureCall([NotNull] BOSParser.ICS_S_VariableOrProcedureCallContext context);
+	void EnterWhileWendStmt([NotNull] BosParser.WhileWendStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_VariableOrProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.whileWendStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_S_VariableOrProcedureCall([NotNull] BOSParser.ICS_S_VariableOrProcedureCallContext context);
+	void ExitWhileWendStmt([NotNull] BosParser.WhileWendStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_ProcedureOrArrayCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.widthStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_S_ProcedureOrArrayCall([NotNull] BOSParser.ICS_S_ProcedureOrArrayCallContext context);
+	void EnterWidthStmt([NotNull] BosParser.WidthStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_ProcedureOrArrayCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.widthStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_S_ProcedureOrArrayCall([NotNull] BOSParser.ICS_S_ProcedureOrArrayCallContext context);
+	void ExitWidthStmt([NotNull] BosParser.WidthStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_NestedProcedureCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.withStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_S_NestedProcedureCall([NotNull] BOSParser.ICS_S_NestedProcedureCallContext context);
+	void EnterWithStmt([NotNull] BosParser.WithStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_NestedProcedureCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.withStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_S_NestedProcedureCall([NotNull] BOSParser.ICS_S_NestedProcedureCallContext context);
+	void ExitWithStmt([NotNull] BosParser.WithStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_MembersCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.writeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_S_MembersCall([NotNull] BOSParser.ICS_S_MembersCallContext context);
+	void EnterWriteStmt([NotNull] BosParser.WriteStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_MembersCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.writeStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_S_MembersCall([NotNull] BOSParser.ICS_S_MembersCallContext context);
+	void ExitWriteStmt([NotNull] BosParser.WriteStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_MemberCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.explicitCallStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_S_MemberCall([NotNull] BOSParser.ICS_S_MemberCallContext context);
+	void EnterExplicitCallStmt([NotNull] BosParser.ExplicitCallStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_MemberCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.explicitCallStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_S_MemberCall([NotNull] BOSParser.ICS_S_MemberCallContext context);
+	void ExitExplicitCallStmt([NotNull] BosParser.ExplicitCallStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.iCS_S_DictionaryCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eCS_ProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterICS_S_DictionaryCall([NotNull] BOSParser.ICS_S_DictionaryCallContext context);
+	void EnterECS_ProcedureCall([NotNull] BosParser.ECS_ProcedureCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.iCS_S_DictionaryCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eCS_ProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitICS_S_DictionaryCall([NotNull] BOSParser.ICS_S_DictionaryCallContext context);
+	void ExitECS_ProcedureCall([NotNull] BosParser.ECS_ProcedureCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argsCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.eCS_MemberProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterArgsCall([NotNull] BOSParser.ArgsCallContext context);
+	void EnterECS_MemberProcedureCall([NotNull] BosParser.ECS_MemberProcedureCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argsCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.eCS_MemberProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitArgsCall([NotNull] BOSParser.ArgsCallContext context);
+	void ExitECS_MemberProcedureCall([NotNull] BosParser.ECS_MemberProcedureCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argCall"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.implicitCallStmt_InBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterArgCall([NotNull] BOSParser.ArgCallContext context);
+	void EnterImplicitCallStmt_InBlock([NotNull] BosParser.ImplicitCallStmt_InBlockContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argCall"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.implicitCallStmt_InBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitArgCall([NotNull] BOSParser.ArgCallContext context);
+	void ExitImplicitCallStmt_InBlock([NotNull] BosParser.ImplicitCallStmt_InBlockContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.dictionaryCallStmt"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_B_ProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterDictionaryCallStmt([NotNull] BOSParser.DictionaryCallStmtContext context);
+	void EnterICS_B_ProcedureCall([NotNull] BosParser.ICS_B_ProcedureCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.dictionaryCallStmt"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_B_ProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitDictionaryCallStmt([NotNull] BOSParser.DictionaryCallStmtContext context);
+	void ExitICS_B_ProcedureCall([NotNull] BosParser.ICS_B_ProcedureCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argList"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_B_MemberProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterArgList([NotNull] BOSParser.ArgListContext context);
+	void EnterICS_B_MemberProcedureCall([NotNull] BosParser.ICS_B_MemberProcedureCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argList"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_B_MemberProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitArgList([NotNull] BOSParser.ArgListContext context);
+	void ExitICS_B_MemberProcedureCall([NotNull] BosParser.ICS_B_MemberProcedureCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.arg"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.implicitCallStmt_InStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterArg([NotNull] BOSParser.ArgContext context);
+	void EnterImplicitCallStmt_InStmt([NotNull] BosParser.ImplicitCallStmt_InStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.arg"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.implicitCallStmt_InStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitArg([NotNull] BOSParser.ArgContext context);
+	void ExitImplicitCallStmt_InStmt([NotNull] BosParser.ImplicitCallStmt_InStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.argDefaultValue"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_VariableOrProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterArgDefaultValue([NotNull] BOSParser.ArgDefaultValueContext context);
+	void EnterICS_S_VariableOrProcedureCall([NotNull] BosParser.ICS_S_VariableOrProcedureCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.argDefaultValue"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_VariableOrProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitArgDefaultValue([NotNull] BOSParser.ArgDefaultValueContext context);
+	void ExitICS_S_VariableOrProcedureCall([NotNull] BosParser.ICS_S_VariableOrProcedureCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.subscripts"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_ProcedureOrArrayCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSubscripts([NotNull] BOSParser.SubscriptsContext context);
+	void EnterICS_S_ProcedureOrArrayCall([NotNull] BosParser.ICS_S_ProcedureOrArrayCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.subscripts"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_ProcedureOrArrayCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSubscripts([NotNull] BOSParser.SubscriptsContext context);
+	void ExitICS_S_ProcedureOrArrayCall([NotNull] BosParser.ICS_S_ProcedureOrArrayCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.subscript"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_NestedProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterSubscript([NotNull] BOSParser.SubscriptContext context);
+	void EnterICS_S_NestedProcedureCall([NotNull] BosParser.ICS_S_NestedProcedureCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.subscript"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_NestedProcedureCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitSubscript([NotNull] BOSParser.SubscriptContext context);
+	void ExitICS_S_NestedProcedureCall([NotNull] BosParser.ICS_S_NestedProcedureCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ambiguousIdentifier"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_MembersCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAmbiguousIdentifier([NotNull] BOSParser.AmbiguousIdentifierContext context);
+	void EnterICS_S_MembersCall([NotNull] BosParser.ICS_S_MembersCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ambiguousIdentifier"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_MembersCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAmbiguousIdentifier([NotNull] BOSParser.AmbiguousIdentifierContext context);
+	void ExitICS_S_MembersCall([NotNull] BosParser.ICS_S_MembersCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.asTypeClause"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_MemberCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAsTypeClause([NotNull] BOSParser.AsTypeClauseContext context);
+	void EnterICS_S_MemberCall([NotNull] BosParser.ICS_S_MemberCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.asTypeClause"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_MemberCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAsTypeClause([NotNull] BOSParser.AsTypeClauseContext context);
+	void ExitICS_S_MemberCall([NotNull] BosParser.ICS_S_MemberCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.baseType"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.iCS_S_DictionaryCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBaseType([NotNull] BOSParser.BaseTypeContext context);
+	void EnterICS_S_DictionaryCall([NotNull] BosParser.ICS_S_DictionaryCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.baseType"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.iCS_S_DictionaryCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBaseType([NotNull] BOSParser.BaseTypeContext context);
+	void ExitICS_S_DictionaryCall([NotNull] BosParser.ICS_S_DictionaryCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.certainIdentifier"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argsCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCertainIdentifier([NotNull] BOSParser.CertainIdentifierContext context);
+	void EnterArgsCall([NotNull] BosParser.ArgsCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.certainIdentifier"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argsCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCertainIdentifier([NotNull] BOSParser.CertainIdentifierContext context);
+	void ExitArgsCall([NotNull] BosParser.ArgsCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.comparisonOperator"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterComparisonOperator([NotNull] BOSParser.ComparisonOperatorContext context);
+	void EnterArgCall([NotNull] BosParser.ArgCallContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.comparisonOperator"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitComparisonOperator([NotNull] BOSParser.ComparisonOperatorContext context);
+	void ExitArgCall([NotNull] BosParser.ArgCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.complexType"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.dictionaryCallStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterComplexType([NotNull] BOSParser.ComplexTypeContext context);
+	void EnterDictionaryCallStmt([NotNull] BosParser.DictionaryCallStmtContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.complexType"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.dictionaryCallStmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitComplexType([NotNull] BOSParser.ComplexTypeContext context);
+	void ExitDictionaryCallStmt([NotNull] BosParser.DictionaryCallStmtContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.fieldLength"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFieldLength([NotNull] BOSParser.FieldLengthContext context);
+	void EnterArgList([NotNull] BosParser.ArgListContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.fieldLength"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFieldLength([NotNull] BOSParser.FieldLengthContext context);
+	void ExitArgList([NotNull] BosParser.ArgListContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.letterrange"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.arg"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLetterrange([NotNull] BOSParser.LetterrangeContext context);
+	void EnterArg([NotNull] BosParser.ArgContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.letterrange"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.arg"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLetterrange([NotNull] BOSParser.LetterrangeContext context);
+	void ExitArg([NotNull] BosParser.ArgContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.lineLabel"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.argDefaultValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineLabel([NotNull] BOSParser.LineLabelContext context);
+	void EnterArgDefaultValue([NotNull] BosParser.ArgDefaultValueContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.lineLabel"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.argDefaultValue"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineLabel([NotNull] BOSParser.LineLabelContext context);
+	void ExitArgDefaultValue([NotNull] BosParser.ArgDefaultValueContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.literal"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.subscripts"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLiteral([NotNull] BOSParser.LiteralContext context);
+	void EnterSubscripts([NotNull] BosParser.SubscriptsContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.literal"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.subscripts"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLiteral([NotNull] BOSParser.LiteralContext context);
+	void ExitSubscripts([NotNull] BosParser.SubscriptsContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.publicPrivateVisibility"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.subscript"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterPublicPrivateVisibility([NotNull] BOSParser.PublicPrivateVisibilityContext context);
+	void EnterSubscript([NotNull] BosParser.SubscriptContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.publicPrivateVisibility"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.subscript"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitPublicPrivateVisibility([NotNull] BOSParser.PublicPrivateVisibilityContext context);
+	void ExitSubscript([NotNull] BosParser.SubscriptContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.publicPrivateGlobalVisibility"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.ambiguousIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterPublicPrivateGlobalVisibility([NotNull] BOSParser.PublicPrivateGlobalVisibilityContext context);
+	void EnterAmbiguousIdentifier([NotNull] BosParser.AmbiguousIdentifierContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.publicPrivateGlobalVisibility"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.ambiguousIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitPublicPrivateGlobalVisibility([NotNull] BOSParser.PublicPrivateGlobalVisibilityContext context);
+	void ExitAmbiguousIdentifier([NotNull] BosParser.AmbiguousIdentifierContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.type"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.asTypeClause"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterType([NotNull] BOSParser.TypeContext context);
+	void EnterAsTypeClause([NotNull] BosParser.AsTypeClauseContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.type"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.asTypeClause"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitType([NotNull] BOSParser.TypeContext context);
+	void ExitAsTypeClause([NotNull] BosParser.AsTypeClauseContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.typeHint"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.baseType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTypeHint([NotNull] BOSParser.TypeHintContext context);
+	void EnterBaseType([NotNull] BosParser.BaseTypeContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.typeHint"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.baseType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTypeHint([NotNull] BOSParser.TypeHintContext context);
+	void ExitBaseType([NotNull] BosParser.BaseTypeContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.visibility"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.certainIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVisibility([NotNull] BOSParser.VisibilityContext context);
+	void EnterCertainIdentifier([NotNull] BosParser.CertainIdentifierContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.visibility"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.certainIdentifier"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVisibility([NotNull] BOSParser.VisibilityContext context);
+	void ExitCertainIdentifier([NotNull] BosParser.CertainIdentifierContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="BOSParser.ambiguousKeyword"/>.
+	/// Enter a parse tree produced by <see cref="BosParser.comparisonOperator"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAmbiguousKeyword([NotNull] BOSParser.AmbiguousKeywordContext context);
+	void EnterComparisonOperator([NotNull] BosParser.ComparisonOperatorContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="BOSParser.ambiguousKeyword"/>.
+	/// Exit a parse tree produced by <see cref="BosParser.comparisonOperator"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAmbiguousKeyword([NotNull] BOSParser.AmbiguousKeywordContext context);
+	void ExitComparisonOperator([NotNull] BosParser.ComparisonOperatorContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.complexType"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterComplexType([NotNull] BosParser.ComplexTypeContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.complexType"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitComplexType([NotNull] BosParser.ComplexTypeContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.fieldLength"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFieldLength([NotNull] BosParser.FieldLengthContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.fieldLength"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFieldLength([NotNull] BosParser.FieldLengthContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.letterrange"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterLetterrange([NotNull] BosParser.LetterrangeContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.letterrange"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitLetterrange([NotNull] BosParser.LetterrangeContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.lineLabel"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterLineLabel([NotNull] BosParser.LineLabelContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.lineLabel"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitLineLabel([NotNull] BosParser.LineLabelContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.literal"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterLiteral([NotNull] BosParser.LiteralContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.literal"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitLiteral([NotNull] BosParser.LiteralContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.publicPrivateVisibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterPublicPrivateVisibility([NotNull] BosParser.PublicPrivateVisibilityContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.publicPrivateVisibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitPublicPrivateVisibility([NotNull] BosParser.PublicPrivateVisibilityContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.publicPrivateGlobalVisibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterPublicPrivateGlobalVisibility([NotNull] BosParser.PublicPrivateGlobalVisibilityContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.publicPrivateGlobalVisibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitPublicPrivateGlobalVisibility([NotNull] BosParser.PublicPrivateGlobalVisibilityContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterType([NotNull] BosParser.TypeContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitType([NotNull] BosParser.TypeContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.typeHint"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterTypeHint([NotNull] BosParser.TypeHintContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.typeHint"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitTypeHint([NotNull] BosParser.TypeHintContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.visibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVisibility([NotNull] BosParser.VisibilityContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.visibility"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVisibility([NotNull] BosParser.VisibilityContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="BosParser.ambiguousKeyword"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAmbiguousKeyword([NotNull] BosParser.AmbiguousKeywordContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="BosParser.ambiguousKeyword"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAmbiguousKeyword([NotNull] BosParser.AmbiguousKeywordContext context);
 }
