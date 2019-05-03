@@ -234,6 +234,7 @@ blockStmt
    | withStmt
    | writeStmt
    | implicitCallStmt_InBlock
+   | implicitCallStmt_InStmt
    ;
 
 // statements ----------------------------------
@@ -635,7 +636,7 @@ variableListStmt
    ;
 
 variableSubStmt
-   : ambiguousIdentifier typeHint? (WS? LPAREN WS? (subscripts WS?)? RPAREN WS?)? (WS asTypeClause)?
+   : ambiguousIdentifier typeHint? (WS? LPAREN WS? (subscripts WS?)? RPAREN WS?)? (WS asTypeClause)? (WS? EQ WS? valueStmt)?
    ;
 
 whileWendStmt
