@@ -505,7 +505,7 @@ resumeStmt
    ;
 
 returnStmt
-   : RETURN
+   : RETURN (WS valueStmt)?
    ;
 
 rmdirStmt

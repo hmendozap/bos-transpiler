@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from ./Grammar/Bos.g4 by ANTLR 4.7.2
+// Generated from ../Grammar/Bos.g4 by ANTLR 4.7.2
 
 // Unreachable code detected
 #pragma warning disable 0162
