@@ -76,35 +76,16 @@ namespace BosTranspiler
             Console.WriteLine("=== Process of Transpilation completed ===");
             sw.Stop();
             Console.WriteLine($"Time elapsed {sw.Elapsed}");
-
-            #region old tutorial tryout program
-
-            //Program program = new Program();
-            //try {
-            //    string input = program.GetInput();
-            //    int result = program.EvaluateInput(input);
-            //    //program.DisplayResult(result);
-
-            //} catch (Exception ex ) {
-            //    program.DisplayError(ex);
-            //}
-            //Console.Write($"{Environment.NewLine} Press enter to exit: ");
-            //Console.ReadKey();
-            #endregion 
         }
 
         private static void ParseFile(string bosFile, ref List<Error> firstPassErrors)
         {
             Console.WriteLine($"Parsing {Path.GetFileName(bosFile)}");
 
-
             ICharStream inputStream = CharStreams.fromPath(bosFile);
             BosLexer lexer = new BosLexer(inputStream);
             var tokenStreams = new CommonTokenStream(lexer);
             BosParser parser = new BosParser(tokenStreams);
-
-            var tokenCommentStreams = new CommonTokenStream(lexer, 2);
-            var alltokenComments = CollectTokens(tokenCommentStreams);
 
             // remove standard listener to add custom
             parser.RemoveErrorListeners();
@@ -119,7 +100,6 @@ namespace BosTranspiler
             // first processing (pass) of transpilation
             FixerListener listener = new FixerListener(tokenStreams, Path.GetFileName(bosFile));
             ParseTreeWalker.Default.Walk(listener, parsedTree);
-            listener.ReplaceCommentTokens(alltokenComments);
 
             if (listener.IsMainFile)
                 NameProgram = listener.FileName;
@@ -135,13 +115,14 @@ namespace BosTranspiler
 
         private static List<IToken> CollectTokens(CommonTokenStream cts)
         {
-            IList<IToken> tokens = new List<IToken>();
-            while (cts.LA(1) != BosParser.Eof) {
-                tokens.Add(cts.LT(1));
-                cts.Consume();
+            IList<IToken> lTokenList = cts.Get(0, cts.Size);
+            List<IToken> tokens = new List<IToken>();
+            foreach (IToken it in lTokenList)
+            {
+                if (it.Channel == 2)
+                    tokens.Add(it);
             }
-            return tokens?.ToList();
-            // throw new NotImplementedException();
+            return tokens;
         }
 
         private static void CompileCode(string nameProgram)

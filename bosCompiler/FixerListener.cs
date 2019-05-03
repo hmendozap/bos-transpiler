@@ -78,6 +78,11 @@ namespace BosTranspiler
             StreamRewriter.Replace(context.IMPORT().Symbol, "Imports");
         }
 
+        public override void ExitImportStmt(BosParser.ImportStmtContext context) {
+            IToken semi = context.Stop;
+            RewriteComment(semi);
+        }
+
         // Is not needed for Bos
         //public override void EnterModule(BosParser.ModuleContext context) {
         //    // check if an option is present
@@ -224,8 +229,15 @@ namespace BosTranspiler
         public override void ExitSubStmt([NotNull] BosParser.SubStmtContext context)
         {
             var newlineTokens = context.NEWLINE();
-            foreach (var tkn in newlineTokens)
-            {
+            foreach (var tkn in newlineTokens) {
+                IToken tk = tkn.Symbol;
+                RewriteComment(tk);
+            }
+        }
+
+        public override void ExitClassStmt(BosParser.ClassStmtContext context){
+            var newlineTokens = context.NEWLINE();
+            foreach (var tkn in newlineTokens) {
                 IToken tk = tkn.Symbol;
                 RewriteComment(tk);
             }
