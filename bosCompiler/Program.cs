@@ -131,6 +131,7 @@ namespace BosTranspiler
 
             List<SyntaxTree> vbTrees = new List<SyntaxTree>();
             var files = Directory.EnumerateFiles($"{BasePath}/TransOutput/transpiled_files");
+
             foreach (var file in files)
             {
                 vbTrees.Add(
@@ -161,7 +162,7 @@ namespace BosTranspiler
 
             // All required options for compiling
             var options = new VisualBasicCompilationOptions(
-                outputKind: OutputKind.ConsoleApplication,
+                outputKind: OutputKind.DynamicallyLinkedLibrary,
                 optimizationLevel: OptimizationLevel.Debug,
                 platform: Platform.AnyCpu,
                 optionInfer: true,
@@ -182,7 +183,7 @@ namespace BosTranspiler
             );
 
             Directory.CreateDirectory($"{BasePath}/TransOutput/compilation/");
-            var emit = compilation.Emit($"{BasePath}/TransOutput/compilation/{nameProgram}.exe");
+            var emit = compilation.Emit($"{BasePath}/TransOutput/compilation/{nameProgram}.dll");
 
             if (!emit.Success)
                 ReportErrorsAfterCompilation(emit);
@@ -212,7 +213,8 @@ namespace BosTranspiler
             {
                 if (diags.Severity == DiagnosticSeverity.Error)
                 {
-                    Console.WriteLine(diags.GetMessage(fmtProv));
+                    var errMsg = $"Err: {diags.GetMessage(fmtProv)} on {diags.Location.GetMappedLineSpan().Span.ToString()}";
+                    Console.WriteLine(errMsg);
                 }
             }
 

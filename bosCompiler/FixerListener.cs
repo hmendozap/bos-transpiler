@@ -97,8 +97,8 @@ namespace BosTranspiler
             //  If an option is present it must be before everything else, therefore we have
             // to check where to put the start of the module
             var baseText = $"Imports System {Environment.NewLine}{Environment.NewLine}Imports Microsoft.VisualBasic{Environment.NewLine}Imports System.Math{Environment.NewLine}Imports System.Linq{Environment.NewLine}{Environment.NewLine}";
-            var moduleBaseText = $"Module {FileName}{Environment.NewLine}";
-            baseText = baseText + moduleBaseText;
+            // var moduleBaseText = $"Module {FileName}{Environment.NewLine}";
+            // baseText = baseText + moduleBaseText;
 
             if (TokenImport != null) {
                 // add imports and module
@@ -107,9 +107,10 @@ namespace BosTranspiler
                 StreamRewriter.InsertBefore(ruleContext.Start, baseText);
             }
 
-            string moduleEndText = $"{Environment.NewLine}End Module";
-            StreamRewriter.InsertAfter(ruleContext.Stop.StopIndex,
-                moduleEndText);
+            /// Commented module statements for vb compilation using libs
+            // string moduleEndText = $"{Environment.NewLine}End Module";
+            // StreamRewriter.InsertAfter(ruleContext.Stop.StopIndex,
+                // moduleEndText);
         }
 
         internal void ReplaceCommentTokens(List<IToken> alltokenComments)
@@ -196,6 +197,9 @@ namespace BosTranspiler
                 IsMainFile = true;
                 StreamRewriter.Replace(context.ambiguousIdentifier().Start, "Main");
 
+                if (context.block() == null) {
+                    return; // Empty Main Statement
+                }
                 // Some function of VB.Net are culture-aware,
                 // this means, for instance, that when parsing a double from a
                 // string it searches for the proper-culture decimal separator
@@ -204,7 +208,8 @@ namespace BosTranspiler
                 string startWatchStr = $"{ Environment.NewLine} Dim sw As System.Diagnostics.Stopwatch = System.Diagnostics.Stopwatch.StartNew(){Environment.NewLine}";
                 string invariantCultureStr = $"{Environment.NewLine}System.Globalization.CultureInfo.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture{Environment.NewLine}";
 
-                StreamRewriter.InsertBefore(context.block().Start, startWatchStr);
+                //StreamRewriter.InsertBefore(context.block()?.Start, startWatchStr);
+                StreamRewriter.InsertBefore(null, startWatchStr);
                 // StreamRewriter.InsertBefore(context.block().Start, invariantCultureStr);
 
                 // Make the program wait at the end
@@ -214,8 +219,8 @@ namespace BosTranspiler
                 $"Console.WriteLine($\"Time elapsed {{sw.Elapsed}}\"){Environment.NewLine}";
                 // InsertBefore reverses the position of the transpiled lines,
                 // so at the end one has stopWatchStr and then waitStr
-                StreamRewriter.InsertAfter(context.block().Stop, waitStr);
-                StreamRewriter.InsertAfter(context.block().Stop, stopWatchStr);
+                StreamRewriter.InsertAfter(context.block()?.Stop, waitStr);
+                StreamRewriter.InsertAfter(context.block()?.Stop, stopWatchStr);
             }
             //base.EnterSubStmt(context);
         }
@@ -248,7 +253,6 @@ namespace BosTranspiler
             IToken semi = context.Stop;
             RewriteComment (semi);
         }
-
 
         // Returns the translated text
         public string GetText() {
