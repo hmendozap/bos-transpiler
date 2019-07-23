@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace BosTranspiler
 {
@@ -48,7 +49,10 @@ namespace BosTranspiler
             if (cmtChannel != null) {
                 IToken cmt = cmtChannel[0];
                 if (cmt != null) {
-                    string newCmt = cmt.Text.Replace("//", "'");
+                    string pattern = @"//\s*";
+                    string replacement = "' ";
+                    string newCmt = Regex.Replace(cmt.Text, pattern, replacement);
+                    // string newCmt = cmt.Text.Replace("//", "' ");
                     StreamRewriter.Replace(cmt, newCmt);
                 }
             }
@@ -208,9 +212,9 @@ namespace BosTranspiler
                 string startWatchStr = $"{ Environment.NewLine} Dim sw As System.Diagnostics.Stopwatch = System.Diagnostics.Stopwatch.StartNew(){Environment.NewLine}";
                 string invariantCultureStr = $"{Environment.NewLine}System.Globalization.CultureInfo.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture{Environment.NewLine}";
 
-                //StreamRewriter.InsertBefore(context.block()?.Start, startWatchStr);
-                StreamRewriter.InsertBefore(null, startWatchStr);
-                // StreamRewriter.InsertBefore(context.block().Start, invariantCultureStr);
+                // StreamRewriter.InsertBefore(null, startWatchStr);
+                StreamRewriter.InsertBefore(context.block().Start, startWatchStr);
+                StreamRewriter.InsertBefore(context.block().Start, invariantCultureStr);
 
                 // Make the program wait at the end
                 var waitStr = $"{Environment.NewLine}Console.WriteLine(\"Press any key to exit the program\"){Environment.NewLine}Console.ReadKey(){Environment.NewLine}";
@@ -234,6 +238,25 @@ namespace BosTranspiler
         public override void ExitSubStmt([NotNull] BosParser.SubStmtContext context)
         {
             var newlineTokens = context.NEWLINE();
+            foreach (var tkn in newlineTokens) {
+                IToken tk = tkn.Symbol;
+                RewriteComment(tk);
+            }
+        }
+
+        public override void ExitBlock([NotNull] BosParser.BlockContext context)
+        {
+            var newlineTokens = context.NEWLINE();
+            foreach (var tkn in newlineTokens) {
+                IToken tk = tkn.Symbol;
+                RewriteComment(tk);
+            }
+        }
+
+        public override void ExitFunctionStmt([NotNull] BosParser.FunctionStmtContext context)
+        {
+            var newlineTokens = context.NEWLINE();
+            // RewriteComment(newlineTokens);
             foreach (var tkn in newlineTokens) {
                 IToken tk = tkn.Symbol;
                 RewriteComment(tk);

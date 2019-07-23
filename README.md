@@ -11,3 +11,4 @@ This will result on something like: `testing.bat`
 3. Follow almost all instructions from:
 [transpiler tutorial](https://tomassetti.me/transpiling-languages-from-vba-to-vb-net/)
 
+[Antlr4 Extension Code](https://github.com/mike-lischke/vscode-antlr4/blob/master/src/extension.ts)
